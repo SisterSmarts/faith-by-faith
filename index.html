@@ -1,49 +1,213 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Faith Wich Walgwe | Heal. Grow. Become.</title>
+<title>Faith By Faith | Heal. Grow. Become.</title>
 
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+
+body{
+margin:0;
+font-family:Montserrat,sans-serif;
+background:#faf7f5;
+color:#2b2030;
+}
+
+.topbar{
+background:#4d014d;
+color:white;
+padding:12px;
+text-align:center;
+font-weight:600;
+letter-spacing:2px;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#4d014d;
+}
+
+.menu a{
+margin:0 15px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+.hero{
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+padding:80px 8%;
+background:linear-gradient(to right,#fff,#f9f1f4);
+}
+
+.hero img{
+width:100%;
+max-width:520px;
+border-radius:20px;
+}
+
+.hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:90px;
+line-height:.9;
+color:#4d014d;
+margin:0;
+}
+
+.hero p{
+font-size:20px;
+line-height:1.7;
+margin-top:20px;
+}
+
+.buttons{
+margin-top:35px;
+}
+
+.btn{
+padding:16px 34px;
+border-radius:40px;
+text-decoration:none;
+margin-right:15px;
+display:inline-block;
+font-weight:600;
+}
+
+.primary{
+background:#5c005c;
+color:white;
+}
+
+.secondary{
+border:2px solid #c89f3d;
+color:#5c005c;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+padding:60px 8%;
+gap:25px;
+background:white;
+}
+
+.card{
+background:#fff;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.card h3{
+color:#5c005c;
+}
+
+.book{
+background:#3f003f;
+color:white;
+padding:80px 8%;
+display:grid;
+grid-template-columns:300px 1fr;
+gap:60px;
+align-items:center;
+}
+
+.book img{
+width:100%;
+border-radius:16px;
+}
+
+.book h2{
+font-family:'Cormorant Garamond',serif;
+font-size:56px;
+margin:0;
+}
+
+.amazon{
+background:#d9a631;
+color:black;
+padding:15px 30px;
+display:inline-block;
+margin-top:25px;
+border-radius:10px;
+text-decoration:none;
+font-weight:700;
+}
+
+.footer{
+background:#240024;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+@media(max-width:900px){
+
+.hero{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.features{
+grid-template-columns:1fr;
+}
+
+.book{
+grid-template-columns:1fr;
+text-align:center;
+}
+}
+
+</style>
+
 </head>
 
 <body>
 
-<header class="topbar">
-<div class="container">
-<p>HEAL. GROW. BECOME.</p>
+<div class="topbar">
+HEAL. GROW. BECOME.
 </div>
-</header>
 
-<nav class="navbar">
-<div class="container">
+<nav>
 
 <div class="logo">
-<img src="logo.png" alt="Sisterhood Smarts">
+Faith By Faith
 </div>
 
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About Faith</a></li>
-<li><a href="books.html">Books</a></li>
-<li><a href="media-kit.html">Media Kit</a></li>
-<li><a href="work-with-faith.html">Work With Faith</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">About</a>
+<a href="#">Books</a>
+<a href="#">Media Kit</a>
+<a href="#">Work With Faith</a>
+<a href="#">Contact</a>
 </div>
+
 </nav>
 
 <section class="hero">
 
-<div class="hero-left">
-<img src="faith.jpg" alt="Faith Wich Walgwe">
-</div>
-
-<div class="hero-right">
+<div>
 
 <h1>
 Heal.<br>
@@ -51,56 +215,112 @@ Grow.<br>
 Become.
 </h1>
 
-<p class="subtitle">
-AUTHOR • SPEAKER • ADVOCATE • MENTOR
-</p>
-
 <p>
-Empowering women to build confidence,
-purpose and lasting impact through faith,
-leadership and entrepreneurship.
+Author • Speaker • Advocate • Mentor
+
+<br><br>
+
+Empowering women to walk confidently in purpose,
+lead with faith, and create lasting impact.
+
 </p>
 
 <div class="buttons">
-<a href="https://www.amazon.com/BECOMING-CONFIDENTLY-YOU-LIVE-CONFIDENCE/dp/B0CD91X4SG" class="btn-primary">
+
+<a href="https://www.amazon.com/BECOMING-CONFIDENTLY-YOU-LIVE-CONFIDENCE/dp/B0CD91X4SG" class="btn primary">
 Get The Book
 </a>
 
-<a href="work-with-faith.html" class="btn-secondary">
+<a href="#" class="btn secondary">
 Work With Faith
 </a>
+
 </div>
+
+</div>
+
+<div>
+
+<img src="IMG-9615.JPG">
 
 </div>
 
 </section>
 
-<section class="book-feature">
+<section class="features">
 
-<div class="book-text">
+<div class="card">
+<h3>Author</h3>
+<p>Inspiring women through transformational stories and practical wisdom.</p>
+</div>
+
+<div class="card">
+<h3>Speaker</h3>
+<p>Dynamic presentations that empower audiences to lead confidently.</p>
+</div>
+
+<div class="card">
+<h3>Mentor</h3>
+<p>Helping women step boldly into purpose and impact.</p>
+</div>
+
+<div class="card">
+<h3>Advocate</h3>
+<p>Creating opportunities and amplifying women's voices globally.</p>
+</div>
+
+</section>
+
+<section class="book">
+
+<div>
+
+<img src="ChatGPT Image Jun 10, 2026, 07_15_41 PM.png">
+
+</div>
+
+<div>
+
 <h2>Becoming Confidently You</h2>
 
 <p>
-A transformational guide helping women overcome self-doubt,
-embrace their God-given worth and step boldly into purpose.
+A transformational guide helping women embrace purpose,
+overcome self-doubt and walk boldly in confidence.
 </p>
 
-<a href="https://www.amazon.com/BECOMING-CONFIDENTLY-YOU-LIVE-CONFIDENCE/dp/B0CD91X4SG" class="btn-primary">
+<a class="amazon"
+href="https://www.amazon.com/BECOMING-CONFIDENTLY-YOU-LIVE-CONFIDENCE/dp/B0CD91X4SG">
+
 Order On Amazon
+
 </a>
+
 </div>
 
 </section>
 
-<footer>
+<div class="footer">
 
-<h3>Follow Faith</h3>
+<p>Follow Faith</p>
 
 <p>
-YouTube • TikTok • Instagram • LinkedIn
+
+YouTube:
+https://www.youtube.com/@Sisterhoodsmarts
+
+<br><br>
+
+TikTok:
+https://www.tiktok.com/@sisterhoodsmarts
+
 </p>
 
-</footer>
+<p>
+© Faith By Faith
+</p>
+
+</div>
 
 </body>
 </html>
+
