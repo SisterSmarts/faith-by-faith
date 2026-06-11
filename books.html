@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Books | Faith By Faith</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Montserrat',sans-serif;
+background:#faf7f5;
+color:#2b2030;
+line-height:1.8;
+}
+
+header{
+background:#4d014d;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+.hero{
+text-align:center;
+padding:80px 20px;
+background:white;
+}
+
+.hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:72px;
+color:#4d014d;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:22px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:60px 30px;
+}
+
+.featured-book{
+display:grid;
+grid-template-columns:300px 1fr;
+gap:50px;
+align-items:center;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.book-cover{
+width:100%;
+height:420px;
+background:#d9d1db;
+border-radius:15px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+}
+
+h2{
+font-family:'Cormorant Garamond',serif;
+font-size:48px;
+color:#4d014d;
+margin-top:0;
+}
+
+.amazon-btn{
+display:inline-block;
+padding:15px 35px;
+background:#4d014d;
+color:white;
+text-decoration:none;
+border-radius:40px;
+margin-top:20px;
+}
+
+.future-books{
+margin-top:80px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.placeholder{
+height:220px;
+background:#ece6ef;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+footer{
+background:#240024;
+color:white;
+text-align:center;
+padding:30px;
+margin-top:80px;
+}
+
+@media(max-width:900px){
+
+.featured-book{
+grid-template-columns:1fr;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:54px;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+Faith By Faith
+</header>
+
+<section class="hero">
+
+<h1>Books & Resources</h1>
+
+<p>
+Stories, tools and inspiration to help women heal, grow and become.
+</p>
+
+</section>
+
+<div class="container">
+
+<div class="featured-book">
+
+<div class="book-cover">
+Book Cover
+</div>
+
+<div>
+
+<h2>Becoming Confidently You</h2>
+
+<p>
+A transformational guide helping women overcome self-doubt, embrace their God-given worth and step boldly into purpose and confidence.
+</p>
+
+<p>
+Discover practical strategies, faith-based encouragement and powerful insights designed to help you thrive personally and professionally.
+</p>
+
+<a href="https://www.amazon.com/BECOMING-CONFIDENTLY-YOU-LIVE-CONFIDENCE/dp/B0CD91X4SG" class="amazon-btn">
+Order on Amazon
+</a>
+
+</div>
+
+</div>
+
+<div class="future-books">
+
+<h2>More Books Coming Soon</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="placeholder"></div>
+<h3>Future Title</h3>
+<p>Coming Soon</p>
+</div>
+
+<div class="card">
+<div class="placeholder"></div>
+<h3>Future Title</h3>
+<p>Coming Soon</p>
+</div>
+
+<div class="card">
+<div class="placeholder"></div>
+<h3>Future Title</h3>
+<p>Coming Soon</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+© Faith By Faith
+</footer>
+
+</body>
+</html>
