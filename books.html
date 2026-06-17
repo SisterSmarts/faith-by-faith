@@ -6,133 +6,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Books | Faith By Faith</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-
 <style>
 
 body{
-margin:0;
-font-family:'Montserrat',sans-serif;
+font-family: Arial, sans-serif;
+max-width: 1000px;
+margin: auto;
+padding: 40px;
+line-height: 1.7;
 background:#faf7f5;
-color:#2b2030;
-line-height:1.8;
+color:#333;
 }
 
-header{
-background:#4d014d;
-color:white;
+h1{
 text-align:center;
-padding:25px;
-}
-
-.hero{
-text-align:center;
-padding:80px 20px;
-background:white;
-}
-
-.hero h1{
-font-family:'Cormorant Garamond',serif;
-font-size:72px;
 color:#4d014d;
-margin-bottom:10px;
 }
 
-.hero p{
-font-size:22px;
-}
-
-.container{
-max-width:1200px;
-margin:auto;
-padding:60px 30px;
-}
-
-.featured-book{
-display:grid;
-grid-template-columns:300px 1fr;
-gap:50px;
-align-items:center;
+.book{
 background:white;
-padding:40px;
-border-radius:20px;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
-
-.book-cover{
-width:100%;
-height:420px;
-background:#d9d1db;
+padding:30px;
+margin-bottom:30px;
 border-radius:15px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-weight:bold;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
 }
 
-h2{
-font-family:'Cormorant Garamond',serif;
-font-size:48px;
-color:#4d014d;
-margin-top:0;
-}
-
-.amazon-btn{
+.button{
 display:inline-block;
-padding:15px 35px;
+padding:12px 24px;
 background:#4d014d;
 color:white;
 text-decoration:none;
-border-radius:40px;
-margin-top:20px;
+border-radius:30px;
+margin-top:15px;
 }
 
-.future-books{
-margin-top:80px;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:25px;
-}
-
-.card{
-background:white;
-padding:30px;
-border-radius:20px;
-text-align:center;
-box-shadow:0 5px 20px rgba(0,0,0,.05);
-}
-
-.placeholder{
-height:220px;
-background:#ece6ef;
-border-radius:15px;
-margin-bottom:20px;
-}
-
-footer{
-background:#240024;
-color:white;
-text-align:center;
-padding:30px;
-margin-top:80px;
-}
-
-@media(max-width:900px){
-
-.featured-book{
-grid-template-columns:1fr;
-}
-
-.grid{
-grid-template-columns:1fr;
-}
-
-.hero h1{
-font-size:54px;
-}
+.coming-soon{
+color:#4d014d;
+font-weight:bold;
 }
 
 </style>
@@ -141,81 +52,54 @@ font-size:54px;
 
 <body>
 
-<header>
-Faith By Faith
-</header>
-
-<section class="hero">
-
 <h1>Books & Resources</h1>
 
-<p>
-Stories, tools and inspiration to help women heal, grow and become.
+<p style="text-align:center;">
+Words to help you heal, grow and become.
 </p>
 
-</section>
-
-<div class="container">
-
-<div class="featured-book">
-
-<div class="book-cover">
-Book Cover
-</div>
-
-<div>
+<div class="book">
 
 <h2>Becoming Confidently You</h2>
 
 <p>
-A transformational guide helping women overcome self-doubt, embrace their God-given worth and step boldly into purpose and confidence.
+A guide to discovering confidence, purpose and the courage to become who you were created to be.
 </p>
+
+<a class="button"
+href="https://www.amazon.com/BECOMING-CONFIDENTLY-YOU-LIVE-CONFIDENCE/dp/B0CD91X4SG"
+target="_blank">
+Order on Amazon </a>
+
+</div>
+
+<div class="book">
+
+<h2>The Knowledge Key</h2>
 
 <p>
-Discover practical strategies, faith-based encouragement and powerful insights designed to help you thrive personally and professionally.
+Exploring hidden truths, ancient wisdom and deeper spiritual understanding.
 </p>
 
-<a href="https://www.amazon.com/BECOMING-CONFIDENTLY-YOU-LIVE-CONFIDENCE/dp/B0CD91X4SG" class="amazon-btn">
-Order on Amazon
-</a>
+<p class="coming-soon">
+Coming Soon
+</p>
 
 </div>
 
-</div>
+<div class="book">
 
-<div class="future-books">
+<h2>Luo Spirits: The Secret Path to Life & Legacy</h2>
 
-<h2>More Books Coming Soon</h2>
+<p>
+A journey into ancestry, identity, wisdom and the living legacy carried through generations.
+</p>
 
-<div class="grid">
-
-<div class="card">
-<div class="placeholder"></div>
-<h3>Future Title</h3>
-<p>Coming Soon</p>
-</div>
-
-<div class="card">
-<div class="placeholder"></div>
-<h3>Future Title</h3>
-<p>Coming Soon</p>
-</div>
-
-<div class="card">
-<div class="placeholder"></div>
-<h3>Future Title</h3>
-<p>Coming Soon</p>
-</div>
+<p class="coming-soon">
+Coming Soon
+</p>
 
 </div>
-
-</div>
-
-</div>
-
-<footer>
-© Faith By Faith
-</footer>
 
 </body>
 </html>
