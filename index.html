@@ -1,12 +1,28 @@
-<!DOCTYPE html>
+.footer{
+...
+}.social-icons{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:30px;
+margin:25px 0;
+}
 
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Faith By Faith | Heal. Grow. Become.</title>
+.social-icons a{
+display:flex;
+align-items:center;
+justify-content:center;
+width:50px;
+height:50px;
+border-radius:50%;
+background:#4d014d;
+transition:all .3s ease;
+}
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+.social-icons a:hover{
+transform:translateY(-3px);
+background:#7a1a7a;
+}
 
 <style>
 
@@ -303,23 +319,28 @@ Order On Amazon
 
 <h3>Heal. Grow. Become.</h3>
 
-<p>
-<a href="https://www.youtube.com/@Sisterhoodsmarts" target="_blank">
-YouTube – Sisterhood Smarts
-</a>
-</p>
+<div class="social-icons">
 
-<p>
-<a href="https://www.tiktok.com/@sisterhoodsmarts" target="_blank">
-TikTok – Sisterhood Smarts
+<a href="https://www.youtube.com/@Sisterhoodsmarts" target="_blank" aria-label="YouTube">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+<path d="M23.5 6.2a2.99 2.99 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A2.99 2.99 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a2.99 2.99 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a2.99 2.99 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.5 15.5v-7l6 3.5-6 3.5z"/>
+</svg>
 </a>
-</p>
 
-<p>
-<a href="https://x.com/HerstoryByFaith" target="_blank">
-X – HerStory By Faith
+<a href="https://www.tiktok.com/@sisterhoodsmarts" target="_blank" aria-label="TikTok">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+<path d="M19.6 8.6a6.4 6.4 0 0 1-3.7-1.2v7.1a5.5 5.5 0 1 1-5.5-5.5c.3 0 .6 0 .9.1v2.8a2.8 2.8 0 1 0 1.8 2.6V0h2.8a3.8 3.8 0 0 0 3.7 3.7z"/>
+</svg>
 </a>
-</p>
+
+<a href="https://x.com/HerstoryByFaith" target="_blank" aria-label="X">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+<path d="M18.9 2H22l-6.8 7.8L23 22h-6.4l-5-6.4L5.9 22H2.8l7.2-8.2L1 2h6.5l4.5 5.8L18.9 2z"/>
+</svg>
+</a>
+
+</div>
+
 
 <p>
 © Faith By Faith
