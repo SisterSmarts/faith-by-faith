@@ -1,30 +1,12 @@
-.social-icons{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:30px;
-margin:25px 0;
-}
+<!DOCTYPE html>
 
-.social-icons a{
-display:flex;
-align-items:center;
-justify-content:center;
-width:56px;
-height:56px;
-background:#4d014d;
-border-radius:50%;
-text-decoration:none;
-}
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faith By Faith</title>
 
-.social-icons svg{
-width:24px;
-height:24px;
-fill:white;
-}
-
-.social-icons a:hover{
-}
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
@@ -38,8 +20,8 @@ color:#2b2030;
 .topbar{
 background:#4d014d;
 color:white;
-padding:12px;
 text-align:center;
+padding:12px;
 font-weight:600;
 letter-spacing:2px;
 }
@@ -60,7 +42,7 @@ color:#4d014d;
 }
 
 .menu a{
-margin:0 15px;
+margin-left:20px;
 text-decoration:none;
 color:#333;
 font-weight:500;
@@ -71,108 +53,97 @@ display:grid;
 grid-template-columns:1fr 1fr;
 align-items:center;
 padding:80px 8%;
-background:linear-gradient(to right,#fff,#f9f1f4);
-}
-
-.hero img{
-width:100%;
-max-width:520px;
-border-radius:20px;
+background:linear-gradient(to right,#fff,#f8f2f7);
 }
 
 .hero h1{
 font-family:'Cormorant Garamond',serif;
-font-size:90px;
+font-size:88px;
 line-height:.9;
-color:#4d014d;
 margin:0;
+color:#4d014d;
 }
 
 .hero p{
 font-size:20px;
-line-height:1.7;
-margin-top:20px;
+line-height:1.8;
 }
 
-.buttons{
-margin-top:35px;
+.hero img{
+width:100%;
+max-width:500px;
+border-radius:20px;
 }
 
 .btn{
-padding:16px 34px;
+display:inline-block;
+padding:15px 30px;
 border-radius:40px;
 text-decoration:none;
 margin-right:15px;
-display:inline-block;
+margin-top:20px;
 font-weight:600;
 }
 
 .primary{
-background:#5c005c;
+background:#4d014d;
 color:white;
 }
 
 .secondary{
 border:2px solid #c89f3d;
-color:#5c005c;
+color:#4d014d;
 }
 
-.features{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-padding:60px 8%;
-gap:25px;
+.books-preview{
+padding:80px 8%;
 background:white;
+text-align:center;
 }
 
-.card{
-background:#fff;
+.books-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+margin-top:40px;
+}
+
+.book-card{
+background:#faf7f5;
 padding:30px;
 border-radius:20px;
 box-shadow:0 5px 20px rgba(0,0,0,.05);
 }
 
-.card h3{
-color:#5c005c;
+.book-card h3{
+color:#4d014d;
 }
 
-.book{
-background:#3f003f;
-color:white;
+.community{
 padding:80px 8%;
+background:#4d014d;
+color:white;
+text-align:center;
+}
+
+.community-grid{
 display:grid;
-grid-template-columns:300px 1fr;
-gap:60px;
-align-items:center;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-top:40px;
 }
 
-.book img{
-width:100%;
+.community-card{
+background:rgba(255,255,255,.08);
+padding:25px;
 border-radius:16px;
-}
-
-.book h2{
-font-family:'Cormorant Garamond',serif;
-font-size:56px;
-margin:0;
-}
-
-.amazon{
-background:#d9a631;
-color:black;
-padding:15px 30px;
-display:inline-block;
-margin-top:25px;
-border-radius:10px;
-text-decoration:none;
-font-weight:700;
 }
 
 .footer{
 background:#240024;
 color:white;
-padding:40px;
 text-align:center;
+padding:40px;
 }
 
 .social-icons{
@@ -183,21 +154,17 @@ margin:20px 0;
 }
 
 .social-icons a{
-width:56px;
-height:56px;
+width:50px;
+height:50px;
 background:#4d014d;
 border-radius:50%;
 display:flex;
-justify-content:center;
 align-items:center;
+justify-content:center;
+color:white;
+text-decoration:none;
+font-weight:bold;
 }
-
-.social-icons svg{
-width:24px;
-height:24px;
-fill:white;
-}
-
 
 @media(max-width:900px){
 
@@ -210,13 +177,9 @@ text-align:center;
 font-size:60px;
 }
 
-.features{
+.books-grid,
+.community-grid{
 grid-template-columns:1fr;
-}
-
-.book{
-grid-template-columns:1fr;
-text-align:center;
 }
 }
 
@@ -227,7 +190,7 @@ text-align:center;
 <body>
 
 <div class="topbar">
-HEAL. GROW. BECOME.
+LEARN. GROW. BECOME.
 </div>
 
 <nav>
@@ -237,12 +200,11 @@ Faith By Faith
 </div>
 
 <div class="menu">
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Books</a>
-<a href="#">Media Kit</a>
-<a href="#">Work With Faith</a>
-<a href="#">Contact</a>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="books.html">Books</a>
+<a href="grow-with-faith.html">Grow With Faith</a>
+<a href="contact.html">Contact</a>
 </div>
 
 </nav>
@@ -252,90 +214,88 @@ Faith By Faith
 <div>
 
 <h1>
-Heal.<br>
+Learn.<br>
 Grow.<br>
 Become.
 </h1>
 
 <p>
-Author • Speaker • Advocate • Mentor
+Faith Wich Walgwe
 
 <br><br>
 
-Empowering women to walk confidently in purpose,
-lead with faith, and create lasting impact.
+Author • Community Builder
+
+<br><br>
+
+Empowering women to grow in confidence,
+discover purpose, embrace wisdom,
+and create meaningful impact.
 
 </p>
 
-<div class="buttons">
-
-<a href="https://www.amazon.com/BECOMING-CONFIDENTLY-YOU-LIVE-CONFIDENCE/dp/B0CD91X4SG" class="btn primary">
-Get The Book
+<a href="books.html" class="btn primary">
+Explore My Books
 </a>
 
-<a href="#" class="btn secondary">
-Work With Faith
+<a href="grow-with-faith.html" class="btn secondary">
+Grow With Faith
 </a>
-
-</div>
 
 </div>
 
 <div>
-
 <img src="IMG-9615.JPG">
+</div>
+
+</section>
+
+<section class="books-preview">
+
+<h2>Featured Books</h2>
+
+<div class="books-grid">
+
+<div class="book-card">
+<h3>Becoming Confidently You</h3>
+<p>Available Now</p>
+</div>
+
+<div class="book-card">
+<h3>Luo Spirits</h3>
+<p>Coming Soon</p>
+</div>
+
+<div class="book-card">
+<h3>The Knowledge Key</h3>
+<p>Coming Soon</p>
+</div>
 
 </div>
 
 </section>
 
-<section class="features">
+<section class="community">
 
-<div class="card">
-<h3>Author</h3>
-<p>Inspiring women through transformational stories and practical wisdom.</p>
+<h2>Grow With Faith</h2>
+
+<div class="community-grid">
+
+<div class="community-card">
+Reflection Workshops
 </div>
 
-<div class="card">
-<h3>Speaker</h3>
-<p>Dynamic presentations that empower audiences to lead confidently.</p>
+<div class="community-card">
+Book Discussions
 </div>
 
-<div class="card">
-<h3>Mentor</h3>
-<p>Helping women step boldly into purpose and impact.</p>
+<div class="community-card">
+Community Conversations
 </div>
 
-<div class="card">
-<h3>Advocate</h3>
-<p>Creating opportunities and amplifying women's voices globally.</p>
+<div class="community-card">
+Purpose & Confidence Sessions
 </div>
-
-</section>
-
-<section class="book">
-
-<div>
-
-<img src="ChatGPT Image Jun 10, 2026, 07_15_41 PM.png">
-
-</div>
-
-<div>
-
-<h2>Becoming Confidently You</h2>
-
-<p>
-A transformational guide helping women embrace purpose,
-overcome self-doubt and walk boldly in confidence.
-</p>
-
-<a class="amazon"
-href="https://www.amazon.com/BECOMING-CONFIDENTLY-YOU-LIVE-CONFIDENCE/dp/B0CD91X4SG">
-
-Order On Amazon
-
-</a>
 
 </div>
 
@@ -343,38 +303,17 @@ Order On Amazon
 
 <div class="footer">
 
-<h3>Heal. Grow. Become.</h3>
+<p>Faith By Faith</p>
 
 <div class="social-icons">
-
-<a href="https://www.youtube.com/@Sisterhoodsmarts" target="_blank" aria-label="YouTube">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="white">
-<path d="M23.5 6.2a2.99 2.99 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A2.99 2.99 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a2.99 2.99 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a2.99 2.99 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.5 15.5v-7l6 3.5-6 3.5z"/>
-</svg>
-</a>
-
-<a href="https://www.tiktok.com/@sisterhoodsmarts" target="_blank" aria-label="TikTok">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="white">
-<path d="M19.6 8.6a6.4 6.4 0 0 1-3.7-1.2v7.1a5.5 5.5 0 1 1-5.5-5.5c.3 0 .6 0 .9.1v2.8a2.8 2.8 0 1 0 1.8 2.6V0h2.8a3.8 3.8 0 0 0 3.7 3.7z"/>
-</svg>
-</a>
-
-<a href="https://x.com/HerstoryByFaith" target="_blank" aria-label="X">
-<svg width="28" height="28" viewBox="0 0 24 24" fill="white">
-<path d="M18.9 2H22l-6.8 7.8L23 22h-6.4l-5-6.4L5.9 22H2.8l7.2-8.2L1 2h6.5l4.5 5.8L18.9 2z"/>
-</svg>
-</a>
-
+<a href="https://www.youtube.com/@Sisterhoodsmarts" target="_blank">Y</a>
+<a href="https://www.tiktok.com/@sisterhoodsmarts" target="_blank">T</a>
+<a href="https://x.com/HerstoryByFaith" target="_blank">X</a>
 </div>
 
-
-<p>
-© Faith By Faith
-</p>
+<p>© Faith By Faith</p>
 
 </div>
-
 
 </body>
 </html>
-
