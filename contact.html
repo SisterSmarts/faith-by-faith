@@ -4,78 +4,142 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | Faith By Faith</title>
+<title>Let's Connect | Faith By Faith</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
 body{
 margin:0;
-font-family:'Montserrat',sans-serif;
+font-family:Montserrat,sans-serif;
 background:#faf7f5;
 color:#2b2030;
-line-height:1.8;
 }
 
-header{
+.topbar{
 background:#4d014d;
 color:white;
-padding:25px;
 text-align:center;
+padding:12px;
+font-weight:600;
+letter-spacing:2px;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#4d014d;
+}
+
+.menu a{
+margin-left:20px;
+text-decoration:none;
+color:#333;
+font-weight:500;
 }
 
 .hero{
-padding:90px 20px;
 text-align:center;
-background:white;
+padding:100px 8%;
+background:linear-gradient(to right,#fff,#f8f2f7);
 }
 
 .hero h1{
 font-family:'Cormorant Garamond',serif;
 font-size:72px;
 color:#4d014d;
-margin-bottom:15px;
+margin:0;
 }
 
-.container{
+.hero p{
+font-size:20px;
+line-height:1.9;
+max-width:800px;
+margin:25px auto;
+}
+
+.connect{
+padding:70px 8%;
 max-width:900px;
 margin:auto;
-padding:60px 30px;
-text-align:center;
 }
 
-.contact-box{
+.contact-card{
 background:white;
 padding:40px;
 border-radius:20px;
 box-shadow:0 5px 20px rgba(0,0,0,.06);
+text-align:center;
 }
 
-.button{
-display:inline-block;
-margin-top:20px;
-padding:16px 36px;
+.contact-card h2{
+font-family:'Cormorant Garamond',serif;
+color:#4d014d;
+font-size:48px;
+margin-top:0;
+}
+
+.contact-links{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.contact-links a{
 background:#4d014d;
 color:white;
 text-decoration:none;
+padding:15px 25px;
 border-radius:40px;
-}
-
-.socials a{
-display:block;
-margin:15px 0;
-color:#4d014d;
-text-decoration:none;
 font-weight:600;
 }
 
-footer{
+.quote{
+background:#4d014d;
+color:white;
+text-align:center;
+padding:70px 8%;
+font-family:'Cormorant Garamond',serif;
+font-size:30px;
+}
+
+.footer{
 background:#240024;
 color:white;
 text-align:center;
-padding:30px;
-margin-top:60px;
+padding:40px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:52px;
+}
+
+nav{
+flex-direction:column;
+}
+
+.menu{
+margin-top:15px;
+}
+
+.contact-links{
+flex-direction:column;
+align-items:center;
+}
 }
 
 </style>
@@ -84,59 +148,82 @@ margin-top:60px;
 
 <body>
 
-<header>
+<div class="topbar">
+LEARN. GROW. BECOME.
+</div>
+
+<nav>
+
+<div class="logo">
 Faith By Faith
-</header>
+</div>
+
+<div class="menu">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="books.html">Books</a>
+<a href="grow-with-faith.html">Grow With Faith</a>
+<a href="contact.html">Contact</a>
+</div>
+
+</nav>
 
 <section class="hero">
 
 <h1>Let's Connect</h1>
 
 <p>
-I'd love to hear from you.
+Whether you'd like to discuss a book, collaborate on a project,
+join a conversation, or simply say hello, I'd love to hear from you.
 </p>
 
 </section>
 
-<div class="container">
+<section class="connect">
 
-<div class="contact-box">
+<div class="contact-card">
+
+<h2>Connect With Faith</h2>
 
 <p>
-Whether you're interested in mentoring conversations, reflection workshops, book discussions or community conversations, I welcome the opportunity to connect.
+Join the conversation and stay connected through social media.
 </p>
 
-<a href="mailto:hello@faith-by-faith.com" class="button">
-Send an Email
+<div class="contact-links">
+
+<a href="https://www.youtube.com/@Sisterhoodsmarts" target="_blank">
+YouTube
 </a>
 
-<div class="socials">
-
-<h2>Follow Faith</h2>
-
-<a href="https://www.youtube.com/@Sisterhoodsmarts">
-YouTube – Sisterhood Smarts
+<a href="https://www.tiktok.com/@sisterhoodsmarts" target="_blank">
+TikTok
 </a>
 
-<a href="https://www.tiktok.com/@sisterhoodsmarts">
-TikTok – Sisterhood Smarts
-</a>
-
-<a href="https://x.com/HerstoryByFaith">
-X – HerStory By Faith
+<a href="https://x.com/HerstoryByFaith" target="_blank">
+X
 </a>
 
 </div>
 
 </div>
 
+</section>
+
+<section class="quote">
+
+"Learn. Grow. Become."
+
+</section>
+
+<div class="footer">
+
+<p>Faith Wich Walgwe</p>
+
+<p>Author • Community Builder</p>
+
+<p>© Faith By Faith</p>
+
 </div>
-
-<footer>
-
-Heal. Grow. Become.
-
-</footer>
 
 </body>
 </html>
