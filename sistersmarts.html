@@ -6,53 +6,267 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SisterSmarts | Faith By Faith</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
-.social-links{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-margin-top:30px;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-.social-links a{
+body{
+font-family:'Montserrat',sans-serif;
+background:#faf7f5;
+color:#2b2030;
+line-height:1.8;
+}
+
+.topbar{
 background:#4d014d;
 color:white;
-padding:14px 26px;
+text-align:center;
+padding:12px;
+font-weight:600;
+letter-spacing:2px;
+font-size:14px;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
+
+.logo img{
+height:60px;
+width:auto;
+}
+
+.menu{
+display:flex;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.menu a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+.hero{
+background:#f8f1f3;
+text-align:center;
+padding:120px 8%;
+}
+
+.podcast-logo{
+width:260px;
+max-width:90%;
+margin-bottom:30px;
+}
+
+.hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:80px;
+color:#4d014d;
+margin-bottom:20px;
+}
+
+.tagline{
+font-size:28px;
+max-width:850px;
+margin:0 auto 35px;
+color:#4d014d;
+line-height:1.8;
+}
+
+.quote{
+font-size:22px;
+font-style:italic;
+color:#7b5c72;
+}
+
+.quote span{
+display:block;
+margin-top:10px;
+font-style:normal;
+font-weight:600;
+}
+
+.welcome{
+background:#fffaf7;
+padding:100px 10%;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+}
+
+.welcome h2,
+.listen h2,
+.topics h2,
+.guest h2,
+.connect h2{
+font-family:'Cormorant Garamond',serif;
+font-size:56px;
+color:#4d014d;
+text-align:center;
+margin-bottom:40px;
+}
+
+.welcome p{
+font-size:18px;
+margin-bottom:25px;
+}
+
+.listen{
+background:#4d014d;
+color:white;
+text-align:center;
+padding:100px 8%;
+}
+
+.listen h2{
+color:white;
+}
+
+.buttons{
+margin-top:40px;
+}
+
+.btn{
+display:inline-block;
+padding:16px 34px;
+margin:10px;
 border-radius:40px;
 text-decoration:none;
 font-weight:600;
 transition:.3s;
 }
 
-.social-links a:hover{
+.btn:hover{
 transform:translateY(-3px);
-opacity:.9;
 }
+
+.youtube{
+background:white;
+color:#4d014d;
+}
+
+.spotify{
+background:#d9a631;
+color:black;
+}
+
+.topics{
+background:#faf7f5;
+padding:100px 8%;
+}
+
+.topic-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+max-width:1200px;
+margin:auto;
+}
+
+.topic{
+background:#fffaf7;
+padding:35px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.topic h3{
+color:#4d014d;
+font-family:'Cormorant Garamond',serif;
+font-size:32px;
+margin-bottom:15px;
+}
+
+.guest{
+background:#f8f1f3;
+padding:100px 10%;
+text-align:center;
+}
+
+.guest p{
+max-width:700px;
+margin:0 auto 20px;
+font-size:18px;
+}
+
+.email{
+font-weight:600;
+color:#4d014d;
+font-size:20px;
+}
+
+.connect{
+background:#fffaf7;
+padding:100px 8%;
+text-align:center;
+}
+
+.social-links{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.social-links a{
+background:#4d014d;
+color:white;
+padding:14px 28px;
+border-radius:40px;
+text-decoration:none;
+font-weight:600;
+}
+
+.footer{
+background:#240024;
+color:white;
+text-align:center;
+padding:50px;
+}
+
+.footer p{
+margin:10px 0;
 }
 
 @media(max-width:900px){
 
-.topic-grid{
-grid-template-columns:1fr;
+nav{
+flex-direction:column;
+gap:20px;
 }
 
 .hero h1{
-font-size:50px;
+font-size:56px;
 }
 
-@media(max-width:900px){
-
-.topic-grid{
-grid-template-columns:1fr;
+.tagline{
+font-size:22px;
 }
 
-.hero h1{
-font-size:50px;
+.welcome h2,
+.listen h2,
+.topics h2,
+.guest h2,
+.connect h2{
+font-size:42px;
 }
+
 }
 
 </style>
@@ -84,40 +298,46 @@ LEARN. GROW. BECOME.
 
 <section class="hero">
 
-<img src="ChatGPT Image Jun 18, 2026, 01_36_34 AM.png" alt="SisterSmarts Logo">
+<img src="podcast logo.png" alt="SisterSmarts Logo" class="podcast-logo">
 
 <h1>SisterSmarts</h1>
 
-<div class="tagline">
+<p class="tagline">
 Conversations that make us think,<br>
 stories that help us grow,<br>
 and lessons we carry forward.
-</div>
+</p>
 
 <div class="quote">
 "When you know who you are, the mission is clear."
-— Faith
+<span>— Faith</span>
 </div>
 
 </section>
 
-<section class="intro">
+<section class="welcome">
+
+<div class="container">
+
+<h2>Welcome</h2>
 
 <p>
 Welcome to our corner of the internet, where meaningful conversations, shared wisdom, and lifelong learning take center stage.
 </p>
 
 <p>
-Sisterhood Smarts is a space for women, men, and anyone passionate about learning, unlearning, and relearning. Through thoughtful dialogue, diverse perspectives, and authentic stories, we explore the experiences that shape our lives and challenge us to grow.
+SisterSmarts is a space for women, men, and anyone passionate about learning, unlearning, and relearning. Through thoughtful dialogue, diverse perspectives, and authentic stories, we explore the experiences that shape our lives and challenge us to grow.
 </p>
 
 <p>
-Whether we are discussing identity, purpose, change, community, or the lessons hidden in everyday life, our goal is simple: to stay curious, think deeply, and continue becoming.
+Whether discussing identity, purpose, change, community, or the lessons hidden in everyday life, our goal is simple: to stay curious, think deeply, and continue becoming.
 </p>
 
 <p>
 Cheers to self-mastery, positive change, meaningful conversations, and transformation.
 </p>
+
+</div>
 
 </section>
 
@@ -125,15 +345,17 @@ Cheers to self-mastery, positive change, meaningful conversations, and transform
 
 <h2>Watch & Listen</h2>
 
-<a class="btn youtube"
-href="https://www.youtube.com/@Sisterhoodsmarts"
-target="_blank">
-Watch on YouTube </a>
+<div class="buttons">
 
-<a class="btn spotify"
-href="https://open.spotify.com/show/2eVqtqjsa0Pk2dtmMk3NB4"
-target="_blank">
-Listen on Spotify </a>
+<a href="https://www.youtube.com/@Sisterhoodsmarts" target="_blank" class="btn youtube">
+Watch on YouTube
+</a>
+
+<a href="https://open.spotify.com/show/2eVqtqjsa0Pk2dtmMk3NB4" target="_blank" class="btn spotify">
+Listen on Spotify
+</a>
+
+</div>
 
 </section>
 
@@ -186,18 +408,14 @@ Interested in joining the conversation?
 </p>
 
 <p>
-Sisterhood Smarts welcomes thoughtful guests from diverse backgrounds and experiences.
+SisterSmarts welcomes thoughtful guests from diverse backgrounds and experiences.
 </p>
 
-<p>
-Email: faithyshah@gmail.com
+<p class="email">
+faithyshah@gmail.com
 </p>
 
 </section>
-
-<section class="connect">
-
-<h2>Connect With SisterSmarts</h2>
 
 <section class="connect">
 
@@ -205,28 +423,15 @@ Email: faithyshah@gmail.com
 
 <div class="social-links">
 
-<a href="https://www.youtube.com/@Sisterhoodsmarts"
-target="_blank">
-YouTube
-</a>
+<a href="https://www.youtube.com/@Sisterhoodsmarts" target="_blank">YouTube</a>
 
-<a href="https://open.spotify.com/show/2eVqtqjsa0Pk2dtmMk3NB4"
-target="_blank">
-Spotify
-</a>
+<a href="https://open.spotify.com/show/2eVqtqjsa0Pk2dtmMk3NB4" target="_blank">Spotify</a>
 
-<a href="https://www.tiktok.com/@sisterhoodsmarts"
-target="_blank">
-TikTok
-</a>
+<a href="https://www.tiktok.com/@sisterhoodsmarts" target="_blank">TikTok</a>
 
-<a href="mailto:faithyshah@gmail.com">
-Email
-</a>
+<a href="mailto:faithyshah@gmail.com">Email</a>
 
 </div>
-
-</section>
 
 </section>
 
@@ -234,13 +439,9 @@ Email
 
 <p><strong>Faith By Faith</strong></p>
 
-<p>
-Learn. Grow. Become.
-</p>
+<p>Learn. Grow. Become.</p>
 
-<p>
-© Faith By Faith
-</p>
+<p>© Faith By Faith</p>
 
 </div>
 
