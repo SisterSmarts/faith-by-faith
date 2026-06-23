@@ -169,13 +169,14 @@ font-size:18px;
 }
 
 /* BELIEFS */
+/* FIX: BELIEFS SECTION */
 .beliefs{
-background:white;
+background:#faf7f5;
 padding:90px 8%;
 }
 
 .beliefs h2{
-font-family:'Cormorant+Garamond',serif;
+font-family:'Cormorant Garamond',serif;
 font-size:54px;
 text-align:center;
 color:#4d014d;
@@ -195,17 +196,22 @@ background:#fffaf7;
 padding:35px;
 border-radius:18px;
 text-align:center;
-box-shadow:0 5px 20px rgba(0,0,0,.05);
+box-shadow:0 10px 25px rgba(0,0,0,.06);
+border:1px solid rgba(77,1,77,0.06);
 }
 
 .card h3{
-font-family:'Cormorant+Garamond',serif;
+font-family:'Cormorant Garamond',serif;
 font-size:36px;
 color:#4d014d;
 margin-bottom:10px;
 }
 
-/* CTA */
+.card p{
+color:#6b5a6b;
+}
+
+/* FIX: CTA SECTION */
 .cta{
 background:#f8f1f3;
 padding:80px 8%;
@@ -219,24 +225,36 @@ border-radius:50px;
 text-decoration:none;
 font-weight:600;
 margin:10px;
+transition:0.3s;
 }
 
 .primary{
 background:#4d014d;
 color:white;
+border:2px solid #4d014d;
 }
 
 .secondary{
 border:2px solid #4d014d;
 color:#4d014d;
+background:white;
 }
 
-/* FOOTER */
+.secondary:hover{
+background:#4d014d;
+color:white;
+}
+
+/* FOOTER FIX */
 footer{
 background:#240024;
 color:white;
 text-align:center;
 padding:50px;
+}
+
+footer p{
+opacity:0.9;
 }
 
 /* RESPONSIVE */
