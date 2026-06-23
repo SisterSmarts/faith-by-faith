@@ -4,17 +4,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About | Faith By Faith</title>
+<title>About Faith | Faith By Faith</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
-body{
+*{
 margin:0;
-font-family:Montserrat,sans-serif;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
 background:#faf7f5;
 color:#2b2030;
+line-height:1.8;
 }
 
 .topbar{
@@ -24,6 +30,7 @@ text-align:center;
 padding:12px;
 font-weight:600;
 letter-spacing:2px;
+font-size:14px;
 }
 
 nav{
@@ -32,17 +39,21 @@ justify-content:space-between;
 align-items:center;
 padding:20px 8%;
 background:white;
-box-shadow:0 2px 10px rgba(0,0,0,.08);
+border-bottom:1px solid #f0ece8;
 }
 
 .logo img{
-height:90px;
+height:60px;
 width:auto;
-display:block;
+}
+
+.menu{
+display:flex;
+gap:25px;
+flex-wrap:wrap;
 }
 
 .menu a{
-margin-left:20px;
 text-decoration:none;
 color:#333;
 font-weight:500;
@@ -53,48 +64,165 @@ display:grid;
 grid-template-columns:1fr 1fr;
 gap:60px;
 align-items:center;
-padding:80px 8%;
+padding:100px 8%;
+background:#f8f1f3;
+}
+
+.hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:78px;
+color:#4d014d;
+line-height:1;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+color:#6b5a6b;
+max-width:550px;
 }
 
 .hero img{
 width:100%;
 max-width:500px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.12);
-}
-
-.hero h1{
-font-family:'Cormorant Garamond',serif;
-font-size:70px;
-color:#4d014d;
-margin:0;
+border-radius:25px;
+box-shadow:0 15px 40px rgba(0,0,0,.08);
 }
 
 .story{
-padding:0 8% 80px;
+padding:100px 10%;
+max-width:1000px;
+margin:auto;
+}
+
+.story h2{
+font-family:'Cormorant Garamond',serif;
+font-size:56px;
+color:#4d014d;
+margin-bottom:40px;
+text-align:center;
+}
+
+.story p{
+font-size:18px;
+margin-bottom:30px;
+}
+
+.beliefs{
+background:white;
+padding:100px 8%;
+}
+
+.beliefs h2{
+font-family:'Cormorant Garamond',serif;
+font-size:56px;
+color:#4d014d;
+text-align:center;
+margin-bottom:50px;
+}
+
+.belief-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+max-width:1200px;
+margin:auto;
+}
+
+.belief-card{
+background:#fffaf7;
+padding:40px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.05);
+text-align:center;
+}
+
+.belief-card h3{
+font-family:'Cormorant Garamond',serif;
+font-size:42px;
+color:#4d014d;
+margin-bottom:15px;
+}
+
+.beyond{
+padding:100px 10%;
 max-width:900px;
 margin:auto;
-line-height:2;
+text-align:center;
+}
+
+.beyond h2{
+font-family:'Cormorant Garamond',serif;
+font-size:56px;
+color:#4d014d;
+margin-bottom:40px;
+}
+
+.beyond p{
 font-size:18px;
+margin-bottom:25px;
 }
 
 .quote{
 background:#4d014d;
 color:white;
-padding:60px;
 text-align:center;
-font-size:28px;
+padding:90px 8%;
 font-family:'Cormorant Garamond',serif;
+}
+
+.quote-text{
+font-size:48px;
+line-height:1.4;
+}
+
+.quote-author{
+margin-top:25px;
+font-size:24px;
+}
+
+.cta{
+background:#f8f1f3;
+padding:80px 8%;
+text-align:center;
+}
+
+.btn{
+display:inline-block;
+padding:16px 34px;
+margin:10px;
+border-radius:40px;
+text-decoration:none;
+font-weight:600;
+}
+
+.primary{
+background:#4d014d;
+color:white;
+}
+
+.secondary{
+border:2px solid #c89f3d;
+color:#4d014d;
 }
 
 .footer{
 background:#240024;
 color:white;
 text-align:center;
-padding:40px;
+padding:50px;
+}
+
+.footer p{
+margin:10px 0;
 }
 
 @media(max-width:900px){
+
+nav{
+flex-direction:column;
+gap:20px;
+}
 
 .hero{
 grid-template-columns:1fr;
@@ -102,8 +230,23 @@ text-align:center;
 }
 
 .hero h1{
-font-size:50px;
+font-size:58px;
 }
+
+.hero p{
+margin:auto;
+}
+
+.story h2,
+.beliefs h2,
+.beyond h2{
+font-size:42px;
+}
+
+.quote-text{
+font-size:34px;
+}
+
 }
 
 </style>
@@ -131,29 +274,30 @@ LEARN. GROW. BECOME.
 <a href="contact.html">Contact</a>
 </div>
 
+</nav>
+
 <section class="hero">
 
 <div>
 
-<h1>
-About Faith
-</h1>
+<h1>About Faith</h1>
 
 <p>
-Author • Community Builder
+Learning, growing, and becoming—
+one conversation, one story, and one lesson at a time.
 </p>
 
 </div>
 
 <div>
-
-<img src="Screenshot 2026-06-18 1.36.03 AM.png" alt="Faith Wich Walgwe">
-
+<img src="IMG-9615.JPG" alt="Faith Wich Walgwe">
 </div>
 
 </section>
 
 <section class="story">
+
+<h2>Meet Faith</h2>
 
 <p>
 My journey has been shaped by faith, learning, reflection, and a deep desire to help others discover their purpose and potential.
@@ -168,31 +312,90 @@ As an author, my work explores confidence, identity, legacy, knowledge, and pers
 </p>
 
 <p>
-Faith By Faith is more than a collection of books and conversations. It is a space for learning, reflection, meaningful conversation, and personal growth—a place where ideas are explored, wisdom is shared, and transformation begins. Here, learning sparks growth, growth inspires purpose, and purpose shapes who we become.
+Faith By Faith is more than a collection of books and conversations. It is a space for learning, reflection, meaningful dialogue, and personal growth—a place where ideas are explored, wisdom is shared, and transformation begins.
+</p>
 
+<p>
+Here, learning sparks growth, growth inspires purpose, and purpose shapes who we become.
+</p>
+
+</section>
+
+<section class="beliefs">
+
+<h2>What I Believe</h2>
+
+<div class="belief-grid">
+
+<div class="belief-card">
+<h3>Learn</h3>
+<p>Growth begins with curiosity and a willingness to explore new ideas.</p>
+</div>
+
+<div class="belief-card">
+<h3>Grow</h3>
+<p>Reflection transforms knowledge into wisdom and wisdom into action.</p>
+</div>
+
+<div class="belief-card">
+<h3>Become</h3>
+<p>Every experience shapes who we are becoming and who we are called to be.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="beyond">
+
+<h2>Beyond The Books</h2>
+
+<p>
+Through Faith By Faith and SisterSmarts, I create spaces where learning, dialogue, and personal growth come together.
+</p>
+
+<p>
+Whether through books, meaningful conversations, podcast interviews, workshops, or community initiatives, my hope is to inspire deeper reflection, authentic connection, and lifelong learning.
+</p>
+
+<p>
+Learning is not a destination—it is a lifelong journey. Every conversation, every challenge, and every new perspective offers an opportunity to grow.
 </p>
 
 </section>
 
 <section class="quote">
 
-“Learn. Grow. Become.”
+<div class="quote-text">
+"When you know who you are,<br>
+the mission is clear."
+</div>
+
+<div class="quote-author">
+— Faith
+</div>
+
+</section>
+
+<section class="cta">
+
+<a href="books.html" class="btn primary">
+Explore My Books
+</a>
+
+<a href="sistersmarts.html" class="btn secondary">
+Visit SisterSmarts
+</a>
 
 </section>
 
 <div class="footer">
 
-<p>
-Faith Wich Walgwe
-</p>
+<p><strong>Faith By Faith</strong></p>
 
-<p>
-Author • Community Builder
-</p>
+<p>Learn. Grow. Become.</p>
 
-<p>
-© Faith By Faith
-</p>
+<p>© Faith By Faith</p>
 
 </div>
 
