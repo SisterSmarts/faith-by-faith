@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -61,22 +61,21 @@ font-weight:500;
 
 .hero{
 background:linear-gradient(to right,#fff,#f8f2f7);
-text-align:center;
 padding:100px 8%;
+text-align:center;
 }
 
 .hero h1{
 font-family:'Cormorant Garamond',serif;
 font-size:72px;
 color:#4d014d;
-margin-bottom:20px;
+margin-bottom:15px;
 }
 
 .hero h3{
-font-weight:500;
 color:#4d014d;
+font-weight:500;
 margin-bottom:25px;
-letter-spacing:1px;
 }
 
 .hero p{
@@ -90,43 +89,62 @@ line-height:2;
 padding:90px 8%;
 }
 
+.section-title{
+text-align:center;
+font-family:'Cormorant Garamond',serif;
+font-size:58px;
+color:#4d014d;
+margin-bottom:20px;
+}
+
+.section-intro{
+max-width:850px;
+margin:0 auto 60px;
+text-align:center;
+font-size:20px;
+}
+
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
-gap:35px;
-max-width:1200px;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+max-width:1300px;
 margin:auto;
 }
 
 .card{
 background:white;
-padding:40px;
+padding:35px;
 border-radius:22px;
 box-shadow:0 8px 25px rgba(0,0,0,.06);
+display:flex;
+flex-direction:column;
+justify-content:space-between;
 }
 
 .card h2{
 font-family:'Cormorant Garamond',serif;
-font-size:38px;
+font-size:34px;
 color:#4d014d;
 margin-bottom:18px;
 }
 
 .card p{
 font-size:17px;
-line-height:1.9;
+flex-grow:1;
 }
 
 .action-btn{
 display:inline-block;
 margin-top:30px;
-padding:15px 30px;
+padding:14px 28px;
 background:#4d014d;
 color:white;
 text-decoration:none;
 border-radius:40px;
 font-weight:600;
 transition:.3s;
+text-align:center;
 }
 
 .action-btn:hover{
@@ -134,27 +152,11 @@ background:#6d1b6d;
 transform:translateY(-2px);
 }
 
-.quote{
-background:#4d014d;
-color:white;
-padding:80px;
-text-align:center;
-font-family:'Cormorant Garamond',serif;
-font-size:32px;
-}
+@media(max-width:1000px){
 
-.footer{
-background:#240024;
-color:white;
-text-align:center;
-padding:50px;
+.grid{
+grid-template-columns:1fr;
 }
-
-.footer p{
-margin:10px 0;
-}
-
-@media(max-width:900px){
 
 nav{
 flex-direction:column;
@@ -185,12 +187,13 @@ LEARN. GROW. BECOME.
 
 <div class="logo">
 <img src="luxury logo white.png" alt="Faith By Faith">
+
 </div>
 
 <div class="menu">
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
-<a href="books.html">Featured Books</a>
+<a href="books.html">Books & Resources</a>
 <a href="sistersmarts.html">SisterSmarts</a>
 <a href="work-with-faith.html">Work With Faith</a>
 <a href="contact.html">Contact</a>
@@ -208,8 +211,7 @@ Author • Educator • Speaker | Social Impact Strategist
 
 <p>
 
-Helping people navigate life's biggest transitions through education,
-meaningful conversations, and practical guidance.
+Helping people navigate life's biggest transitions through education, meaningful conversations, and practical guidance.
 
 </p>
 
@@ -217,23 +219,27 @@ meaningful conversations, and practical guidance.
 
 <section class="section">
 
+<h2 class="section-title">
+Let's Work Together
+</h2>
+
+<p class="section-intro">
+
+Whether you're exploring a move to Kenya, inviting me to speak, interested in sharing your story, or looking to collaborate, here are some of the ways we can connect.
+
+</p>
+
 <div class="grid">
 
 <div class="card">
 
-<h2>🌍 Moving to Kenya? Start Here</h2>
+<h2>🌍 Moving to Kenya</h2>
 
 <p>
 
 Thinking about relocating to Kenya or East Africa?
 
-Whether you're moving for work, retirement, family, ministry, business or simply looking for a new beginning, I provide practical guidance based on local knowledge and lived experience.
-
-Together we'll explore everyday life, neighbourhoods, healthcare, banking, M-Pesa, transportation, culture, safety and what to expect before making the move.
-
-<br><br>
-
-<em>Educational guidance based on lived experience. This is not immigration or legal advice.</em>
+I provide practical guidance on everyday life, culture, housing, banking, healthcare, transportation, safety, and settling in—helping you make informed decisions before you move.
 
 </p>
 
@@ -249,9 +255,7 @@ Start Your Kenya Journey
 
 <p>
 
-I enjoy speaking at conferences, churches, universities, podcasts, community events and organisations.
-
-Topics include leadership, resilience, purpose, lifelong learning, women's empowerment, faith, social entrepreneurship and creating meaningful social impact.
+Book Faith for conferences, churches, universities, podcasts, organisations, and community events covering leadership, resilience, faith, purpose, lifelong learning, women's empowerment, and social impact.
 
 </p>
 
@@ -260,128 +264,19 @@ Invite Faith to Speak
 </a>
 
 </div>
-<div class="card">
-
-<h2>🎙 SisterSmarts Podcast</h2>
-
-<p>
-
-SisterSmarts is where meaningful conversations come to life.
-
-Each episode features researchers, authors, educators, spiritual leaders, entrepreneurs, survivors, and changemakers exploring faith, identity, wellness, purpose, science, and lifelong learning.
-
-It's a space for curiosity, thoughtful dialogue, and personal growth.
-
-</p>
-
-<a href="sistersmarts.html" class="action-btn">
-Explore the Podcast
-</a>
-
-</div>
 
 <div class="card">
 
-<h2>❤️ Community Impact</h2>
+<h2>🎙 Share Your Story</h2>
 
 <p>
 
-Creating positive change has always been at the heart of my work.
-
-Through educational initiatives, women's empowerment, social entrepreneurship, and our Kiva lending community, I continue supporting opportunities that help individuals and communities thrive.
-
-Small actions, shared knowledge, and meaningful collaboration can create lasting impact.
-
-</p>
-
-<a href="https://www.kiva.org/team/sisterhood_smarts/impact"
-target="_blank"
-class="action-btn">
-Join Our Kiva Community
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="section" style="background:white;">
-
-<div style="max-width:900px;margin:auto;">
-
-<h2 style="text-align:center;
-font-family:'Cormorant Garamond',serif;
-font-size:58px;
-color:#4d014d;
-margin-bottom:35px;">
-
-Guided by Purpose
-
-</h2>
-
-<p style="font-size:20px;line-height:2;">
-
-For more than two decades, I've had the privilege of working across Africa and Europe, partnering with non-profit organisations, businesses, educational institutions, international initiatives, and community-led programmes.
-
-</p>
-
-<p style="font-size:20px;line-height:2;">
-
-Over the years, I've worked alongside survivors, entrepreneurs, educators, community leaders, and organisations committed to creating lasting change. Those experiences continue to shape how I teach, speak, and support others today.
-
-</p>
-
-<p style="font-size:20px;line-height:2;">
-
-Today, I share those lessons through books, meaningful conversations, speaking, educational resources, relocation guidance, and carefully selected collaborations—helping people move forward with confidence and purpose.
-
-</p>
-
-</div>
-
-</section>
-
-<section class="quote">
-
-"Every meaningful journey begins with a conversation."
-
-</section>
-
-<section class="section" style="text-align:center;">
-
-<h2 style="font-family:'Cormorant Garamond',serif;
-font-size:56px;
-color:#4d014d;">
-
-Let's Start the Conversation
-
-</h2>
-
-<p style="max-width:850px;
-margin:30px auto;
-font-size:20px;
-line-height:2;">
-
-Whether you're exploring a move to Kenya, looking for a speaker, interested in collaborating, or simply have a question, I'd love to hear from you.
+SisterSmarts welcomes thoughtful conversations with authors, educators, researchers, entrepreneurs, survivors, spiritual leaders, and changemakers whose experiences can inspire others.
 
 </p>
 
 <a href="contact.html" class="action-btn">
-Let's Connect
+Apply to Be a Guest
 </a>
 
-</section>
-
-<footer class="footer">
-
-<p><strong>Faith Wich Walgwe</strong></p>
-
-<p>Author • Educator • Speaker | Social Impact Strategist</p>
-
-<p>© Faith By Faith</p>
-
-</footer>
-
-</body>
-</html>
+</div>
