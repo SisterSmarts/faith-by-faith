@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -45,6 +46,7 @@ box-shadow:0 2px 10px rgba(0,0,0,.05);
 
 .logo img{
 height:70px;
+width:auto;
 }
 
 .menu{
@@ -57,51 +59,49 @@ flex-wrap:wrap;
 text-decoration:none;
 color:#333;
 font-weight:500;
+transition:.3s;
+}
+
+.menu a:hover{
+color:#4d014d;
 }
 
 .hero{
 background:linear-gradient(to right,#fff,#f8f2f7);
-padding:100px 8%;
 text-align:center;
+padding:80px 8% 70px;
 }
 
 .hero h1{
 font-family:'Cormorant Garamond',serif;
 font-size:72px;
 color:#4d014d;
-margin-bottom:15px;
+margin-bottom:18px;
 }
 
 .hero h3{
-color:#4d014d;
 font-weight:500;
+color:#4d014d;
 margin-bottom:25px;
 }
 
 .hero p{
-max-width:900px;
+max-width:760px;
 margin:auto;
-font-size:22px;
-line-height:2;
+font-size:21px;
+line-height:1.9;
 }
 
 .section{
-padding:90px 8%;
+padding:50px 8% 80px;
 }
 
 .section-title{
-text-align:center;
 font-family:'Cormorant Garamond',serif;
-font-size:58px;
+font-size:56px;
 color:#4d014d;
-margin-bottom:20px;
-}
-
-.section-intro{
-max-width:850px;
-margin:0 auto 60px;
 text-align:center;
-font-size:20px;
+margin-bottom:35px;
 }
 
 .grid{
@@ -115,8 +115,8 @@ margin:auto;
 .card{
 background:white;
 padding:35px;
-border-radius:22px;
-box-shadow:0 8px 25px rgba(0,0,0,.06);
+border-radius:20px;
+box-shadow:0 6px 20px rgba(0,0,0,.06);
 display:flex;
 flex-direction:column;
 justify-content:space-between;
@@ -131,12 +131,13 @@ margin-bottom:18px;
 
 .card p{
 font-size:17px;
+line-height:1.9;
 flex-grow:1;
 }
 
 .action-btn{
 display:inline-block;
-margin-top:30px;
+margin-top:25px;
 padding:14px 28px;
 background:#4d014d;
 color:white;
@@ -148,19 +149,35 @@ text-align:center;
 }
 
 .action-btn:hover{
-background:#6d1b6d;
+background:#6b1d6b;
 transform:translateY(-2px);
+}
+
+.quote{
+background:#4d014d;
+color:white;
+text-align:center;
+padding:70px 8%;
+font-family:'Cormorant Garamond',serif;
+font-size:30px;
+}
+
+.footer{
+background:#240024;
+color:white;
+text-align:center;
+padding:45px;
 }
 
 @media(max-width:1000px){
 
-.grid{
-grid-template-columns:1fr;
-}
-
 nav{
 flex-direction:column;
 gap:20px;
+}
+
+.grid{
+grid-template-columns:1fr;
 }
 
 .hero h1{
@@ -168,7 +185,11 @@ font-size:54px;
 }
 
 .hero p{
-font-size:20px;
+font-size:19px;
+}
+
+.section-title{
+font-size:46px;
 }
 
 }
@@ -186,8 +207,7 @@ LEARN. GROW. BECOME.
 <nav>
 
 <div class="logo">
-<img src="luxury logo white.png" alt="Faith By Faith">
-
+<img src="luxury logo white.png" alt="Faith By Faith Logo">
 </div>
 
 <div class="menu">
@@ -206,13 +226,11 @@ LEARN. GROW. BECOME.
 <h1>Work With Faith</h1>
 
 <h3>
-Author • Educator • Speaker | Social Impact Strategist
+Author • Educator • Speaker • Social Impact Strategist
 </h3>
 
 <p>
-
-Helping people navigate life's biggest transitions through education, meaningful conversations, and practical guidance.
-
+Helping people navigate life's biggest transitions with practical guidance, meaningful conversations, and lifelong learning.
 </p>
 
 </section>
@@ -220,18 +238,11 @@ Helping people navigate life's biggest transitions through education, meaningful
 <section class="section">
 
 <h2 class="section-title">
-Let's Work Together
+Ways We Can Work Together
 </h2>
 
-<p class="section-intro">
-
-Whether you're exploring a move to Kenya, inviting me to speak, interested in sharing your story, or looking to collaborate, here are some of the ways we can connect.
-
-</p>
-
 <div class="grid">
-
-<div class="card">
+  <div class="card">
 
 <h2>🌍 Moving to Kenya</h2>
 
@@ -239,12 +250,18 @@ Whether you're exploring a move to Kenya, inviting me to speak, interested in sh
 
 Thinking about relocating to Kenya or East Africa?
 
-I provide practical guidance on everyday life, culture, housing, banking, healthcare, transportation, safety, and settling in—helping you make informed decisions before you move.
+I provide practical guidance based on local knowledge and lived experience to help you understand everyday life before making the move.
+
+Topics include neighbourhoods, cost of living, healthcare, banking, M-Pesa, transportation, schools, culture, safety, and settling into your new home.
+
+<em>This is educational guidance and not immigration or legal advice.</em>
 
 </p>
 
 <a href="contact.html" class="action-btn">
+
 Start Your Kenya Journey
+
 </a>
 
 </div>
@@ -255,12 +272,18 @@ Start Your Kenya Journey
 
 <p>
 
-Book Faith for conferences, churches, universities, podcasts, organisations, and community events covering leadership, resilience, faith, purpose, lifelong learning, women's empowerment, and social impact.
+Looking for a speaker who combines practical experience with meaningful storytelling?
+
+Faith speaks on leadership, resilience, faith, women's empowerment, social entrepreneurship, human trafficking prevention, identity, purpose, lifelong learning, and creating social impact.
+
+Available for conferences, churches, universities, podcasts, schools, organisations, and community events.
 
 </p>
 
 <a href="contact.html" class="action-btn">
+
 Invite Faith to Speak
+
 </a>
 
 </div>
@@ -271,12 +294,170 @@ Invite Faith to Speak
 
 <p>
 
-SisterSmarts welcomes thoughtful conversations with authors, educators, researchers, entrepreneurs, survivors, spiritual leaders, and changemakers whose experiences can inspire others.
+SisterSmarts is a podcast for thoughtful conversations that inspire learning and growth.
+
+If you're an author, educator, researcher, entrepreneur, survivor, spiritual leader, or someone with a unique story or expertise to share, I'd love to hear from you.
 
 </p>
 
 <a href="contact.html" class="action-btn">
+
 Apply to Be a Guest
+
 </a>
 
 </div>
+
+<div class="card">
+
+<h2>❤️ Community Impact</h2>
+
+<p>
+
+Creating positive change has been at the heart of my work for more than two decades.
+
+Through Kiva and future initiatives, we support women entrepreneurs, families, and communities by expanding opportunities through education, entrepreneurship, and economic empowerment.
+
+</p>
+
+<a href="https://www.kiva.org/team/sisterhood_smarts/impact"
+target="_blank"
+class="action-btn">
+
+Join Our Kiva Community
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>📚 Books & Resources</h2>
+
+<p>
+
+Explore books, practical guides, recommended reading, and educational resources designed to help you continue learning, growing, and navigating life's transitions with confidence.
+
+More resources—including relocation guides and downloadable tools—are coming soon.
+
+</p>
+
+<a href="books.html" class="action-btn">
+
+Explore Books & Resources
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h2>🤝 Collaborate With Faith</h2>
+
+<p>
+
+Interested in partnering on a project, hosting a workshop, inviting me to your podcast, developing educational content, or exploring a meaningful collaboration?
+
+Let's start a conversation and see what's possible.
+
+</p>
+
+<a href="contact.html" class="action-btn">
+
+Let's Collaborate
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+<section class="section" style="background:white;">
+
+<div style="max-width:900px;margin:auto;">
+
+<h2 class="section-title">
+
+Experience Shared With Purpose
+
+</h2>
+
+<p style="font-size:20px;line-height:2;margin-bottom:30px;">
+
+For more than two decades, I've had the privilege of working across
+<strong>Africa and Europe</strong>, supporting communities through education,
+women's empowerment, social entrepreneurship, leadership development,
+human trafficking prevention, mentoring, and community impact.
+
+</p>
+
+<p style="font-size:20px;line-height:2;margin-bottom:30px;">
+
+Today, my work has evolved into something more intentional.
+Rather than offering traditional consulting, I focus on sharing knowledge,
+creating meaningful conversations, developing practical resources, speaking,
+and helping people navigate important life transitions with greater confidence.
+
+</p>
+
+<p style="font-size:20px;line-height:2;">
+
+Whether you're considering a move to Kenya, inviting me to speak,
+looking for educational resources, or exploring a collaboration,
+my goal is simple: to help people learn, grow, and move forward with purpose.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="quote">
+
+"Learning sparks growth. Growth inspires purpose. Purpose shapes who we become."
+
+</section>
+
+<section class="section" style="text-align:center;">
+
+<h2 class="section-title">
+
+Let's Start the Conversation
+
+</h2>
+
+<p style="max-width:760px;margin:0 auto 35px;font-size:20px;line-height:2;">
+
+Whether you're planning a move to Kenya, looking for a speaker,
+interested in collaborating, applying to be a SisterSmarts podcast guest,
+or simply have a question, I'd love to hear from you.
+
+</p>
+
+<a href="contact.html" class="action-btn">
+
+Contact Faith
+
+</a>
+
+</section>
+
+<footer class="footer">
+
+<p><strong>Faith Wich Walgwe</strong></p>
+
+<p>Author • Educator • Speaker • Social Impact Strategist</p>
+
+<p style="margin-top:12px;">
+Learn. Grow. Become.
+</p>
+
+<p style="margin-top:12px;">
+© Faith By Faith
+</p>
+
+</footer>
+
+</body>
+</html>
