@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Let's Connect | Faith By Faith</title>
+
+<title>Contact Faith | Faith By Faith</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
-body{
+*{
 margin:0;
-font-family:Montserrat,sans-serif;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
 background:#faf7f5;
 color:#2b2030;
+line-height:1.8;
 }
 
 .topbar{
@@ -24,6 +32,7 @@ text-align:center;
 padding:12px;
 font-weight:600;
 letter-spacing:2px;
+font-size:14px;
 }
 
 nav{
@@ -32,114 +41,97 @@ justify-content:space-between;
 align-items:center;
 padding:20px 8%;
 background:white;
-box-shadow:0 2px 10px rgba(0,0,0,.08);
+box-shadow:0 2px 10px rgba(0,0,0,.05);
 }
 
 .logo img{
-height:90px;
+height:70px;
 width:auto;
-display:block;
+}
+
+.menu{
+display:flex;
+gap:25px;
+flex-wrap:wrap;
 }
 
 .menu a{
-margin-left:20px;
 text-decoration:none;
 color:#333;
 font-weight:500;
+transition:.3s;
+}
+
+.menu a:hover{
+color:#4d014d;
 }
 
 .hero{
-text-align:center;
-padding:100px 8%;
 background:linear-gradient(to right,#fff,#f8f2f7);
+text-align:center;
+padding:90px 8% 70px;
 }
 
 .hero h1{
 font-family:'Cormorant Garamond',serif;
 font-size:72px;
 color:#4d014d;
-margin:0;
+margin-bottom:25px;
 }
 
 .hero p{
-font-size:20px;
+max-width:850px;
+margin:auto;
+font-size:22px;
 line-height:1.9;
-max-width:800px;
-margin:25px auto;
+font-style:italic;
+color:#5d4c5d;
 }
 
-.connect{
-padding:70px 8%;
-max-width:900px;
+.hero-divider{
+width:120px;
+height:2px;
+background:#d9c8d9;
+margin:40px auto 0;
+border-radius:5px;
+}
+
+.section{
+padding:80px 8%;
+}
+
+.container{
+max-width:850px;
 margin:auto;
 }
 
-.contact-card{
-background:white;
-padding:40px;
-border-radius:20px;
-box-shadow:0 5px 20px rgba(0,0,0,.06);
-text-align:center;
-}
-
-.contact-card h2{
+.section-title{
 font-family:'Cormorant Garamond',serif;
+font-size:56px;
 color:#4d014d;
-font-size:48px;
-margin-top:0;
-}
-
-.contact-links{
-display:flex;
-justify-content:center;
-gap:25px;
-flex-wrap:wrap;
-margin-top:30px;
-}
-
-.contact-links a{
-background:#4d014d;
-color:white;
-text-decoration:none;
-padding:15px 25px;
-border-radius:40px;
-font-weight:600;
-}
-
-.quote{
-background:#4d014d;
-color:white;
 text-align:center;
-padding:70px 8%;
-font-family:'Cormorant Garamond',serif;
-font-size:30px;
-}
-
-.footer{
-background:#240024;
-color:white;
-text-align:center;
-padding:40px;
+margin-bottom:25px;
 }
 
 @media(max-width:900px){
+
+nav{
+flex-direction:column;
+gap:20px;
+}
 
 .hero h1{
 font-size:52px;
 }
 
-nav{
-flex-direction:column;
+.hero p{
+font-size:19px;
 }
 
-.menu{
-margin-top:15px;
+.section-title{
+font-size:42px;
 }
 
-.contact-links{
-flex-direction:column;
-align-items:center;
-}
 }
 
 </style>
@@ -149,81 +141,211 @@ align-items:center;
 <body>
 
 <div class="topbar">
+
 LEARN. GROW. BECOME.
+
 </div>
 
 <nav>
 
 <div class="logo">
+
 <img src="luxury logo white.png" alt="Faith By Faith Logo">
+
 </div>
 
 <div class="menu">
+
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
-<a href="books.html">Featured Books</a>
+<a href="books.html">Books & Resources</a>
+<a href="sistersmarts.html">SisterSmarts</a>
 <a href="work-with-faith.html">Work With Faith</a>
 <a href="contact.html">Contact</a>
+
 </div>
 
 </nav>
 
 <section class="hero">
 
-<h1>Let's Connect</h1>
+<h1>
+
+Let's Start the Conversation
+
+</h1>
 
 <p>
-Whether you'd like to discuss a book, collaborate on a project,
-join a conversation, or simply say hello, I'd love to hear from you.
+
+Whether you're exploring a move to Kenya, inviting me to speak, interested in collaborating, applying to be a SisterSmarts podcast guest, or simply have a question, I'd love to hear from you.
+
+</p>
+
+<div class="hero-divider"></div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Send a Message
+
+</h2>
+<p style="text-align:center;max-width:700px;margin:0 auto 50px;font-size:18px;color:#555;">
+
+Complete the form below and I'll get back to you as soon as I can.
+
+</p>
+
+<form action="https://formspree.io/f/xykqlkdo" method="POST">
+
+<label style="display:block;margin-bottom:8px;font-weight:600;">
+Full Name
+</label>
+
+<input
+type="text"
+name="name"
+required
+style="width:100%;padding:16px;margin-bottom:25px;border:1px solid #ddd;border-radius:10px;font-size:16px;font-family:Montserrat,sans-serif;">
+
+<label style="display:block;margin-bottom:8px;font-weight:600;">
+Email Address
+</label>
+
+<input
+type="email"
+name="email"
+required
+style="width:100%;padding:16px;margin-bottom:25px;border:1px solid #ddd;border-radius:10px;font-size:16px;font-family:Montserrat,sans-serif;">
+
+<label style="display:block;margin-bottom:8px;font-weight:600;">
+What are you contacting Faith about?
+</label>
+
+<select
+name="subject"
+required
+style="width:100%;padding:16px;margin-bottom:25px;border:1px solid #ddd;border-radius:10px;font-size:16px;font-family:Montserrat,sans-serif;">
+
+<option value="">Please select...</option>
+
+<option>🌍 Kenya Relocation</option>
+
+<option>🎤 Speaking Invitation</option>
+
+<option>🎙 SisterSmarts Podcast Guest</option>
+
+<option>🤝 Collaboration</option>
+
+<option>📚 Books & Resources</option>
+
+<option>❤️ Community Impact</option>
+
+<option>💬 General Enquiry</option>
+
+</select>
+
+<label style="display:block;margin-bottom:8px;font-weight:600;">
+Your Message
+</label>
+
+<textarea
+name="message"
+required
+rows="8"
+style="width:100%;padding:16px;margin-bottom:35px;border:1px solid #ddd;border-radius:10px;font-size:16px;font-family:Montserrat,sans-serif;"></textarea>
+
+<button
+type="submit"
+style="background:#4d014d;color:white;padding:16px 40px;border:none;border-radius:40px;font-size:17px;font-weight:600;cursor:pointer;transition:.3s;">
+
+Send Message
+
+</button>
+
+</form>
+</div>
+
+</section>
+
+<section style="background:#fffaf7;padding:80px 8%;text-align:center;">
+
+<h2 class="section-title">
+
+Prefer Email?
+
+</h2>
+
+<p style="font-size:20px;margin-bottom:20px;">
+
+If you'd rather send an email directly, you can reach me at:
+
+</p>
+
+<p style="font-size:24px;font-weight:600;margin-bottom:35px;">
+
+<a href="mailto:faithyshah@gmail.com"
+style="color:#4d014d;text-decoration:none;">
+
+faithyshah@gmail.com
+
+</a>
+
+</p>
+
+<p style="max-width:700px;margin:auto;font-size:18px;color:#666;line-height:1.8;">
+
+I personally read every enquiry and aim to respond within
+<strong>2–5 business days.</strong>
+
+Thank you for taking the time to reach out—I look forward to connecting with you.
+
 </p>
 
 </section>
 
-<section class="connect">
+<section style="background:#4d014d;color:white;text-align:center;padding:70px 8%;">
 
-<div class="contact-card">
+<p style="font-family:'Cormorant Garamond',serif;font-size:36px;font-style:italic;">
 
-<h2>Connect With Faith</h2>
+"Every meaningful journey begins with a conversation."
 
-<p>
-Join the conversation and stay connected through social media.
 </p>
 
-<div class="contact-links">
-
-<a href="https://www.youtube.com/@Sisterhoodsmarts" target="_blank">
-YouTube
-</a>
-
-<a href="https://www.tiktok.com/@sisterhoodsmarts" target="_blank">
-TikTok
-</a>
-
-<a href="https://x.com/HerstoryByFaith" target="_blank">
-X
-</a>
-
-</div>
-
-</div>
-
 </section>
 
-<section class="quote">
+<footer style="background:#240024;color:white;text-align:center;padding:45px;">
 
-"Learn. Grow. Become."
+<p style="font-size:22px;font-weight:600;">
 
-</section>
+Faith Wich Walgwe
 
-<div class="footer">
+</p>
 
-<p>Faith Wich Walgwe</p>
+<p style="margin-top:10px;">
 
-<p>Author • Community Builder</p>
+Author • Educator • Speaker • Social Impact Strategist
 
-<p>© Faith By Faith</p>
+</p>
 
-</div>
+<p style="margin-top:15px;letter-spacing:2px;">
+
+Learn. Grow. Become.
+
+</p>
+
+<p style="margin-top:15px;font-size:14px;opacity:.8;">
+
+© Faith By Faith
+
+</p>
+
+</footer>
 
 </body>
+
 </html>
