@@ -135,58 +135,144 @@ font-family:'Montserrat',sans-serif;
 font-weight:600;
 }
 
+/* ==========================================
+   LUXURY HERO
+========================================== */
+
+.hero{
+
+background:linear-gradient(to bottom,#fcfaf8,#f7f1f6);
+
+padding:90px 8%;
+
+}
+
 .hero-content{
-max-width:1200px;
+
+max-width:1350px;
+
 margin:auto;
+
+display:grid;
+
+grid-template-columns:320px 1fr;
+
+align-items:center;
+
+gap:45px;
+
+}
+
+.hero-logo{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
 }
 
 .podcast-logo{
-width:180px;
-max-width:90%;
-margin-bottom:20px;
-filter:drop-shadow(0 15px 30px rgba(77,1,77,.12));
+
+width:250px;
+
+height:auto;
+
+border-radius:50%;
+
+box-shadow:0 22px 55px rgba(77,1,77,.18);
+
+transition:.35s;
+
+}
+
+.podcast-logo:hover{
+
+transform:translateY(-6px);
+
+}
+
+.hero-text{
+
+text-align:left;
+
 }
 
 .hero h1{
+
 font-family:'Cormorant Garamond',serif;
-font-size:72px;
+
+font-size:88px;
+
 font-weight:600;
+
 color:#4d014d;
-margin-bottom:18px;
+
+line-height:1;
+
+margin-bottom:20px;
+
 }
 
 .gold-line{
-width:140px;
+
+width:180px;
+
 height:2px;
-margin:0 auto 25px;
-background:linear-gradient(to right,transparent,#c89f3d,transparent);
+
+background:#d8a437;
+
+margin-bottom:35px;
+
 }
 
 .tagline{
-max-width:1100px;
-margin:auto;
-font-size:23px;
+
+font-size:28px;
+
+line-height:1.8;
+
 color:#5f4f61;
-line-height:1.7;
-letter-spacing:.3px;
+
+font-weight:400;
+
+margin-bottom:40px;
+
 }
 
 .quote{
-margin-top:28px;
+
 font-family:'Cormorant Garamond',serif;
-font-size:28px;
+
+font-size:24px;
+
 font-style:italic;
-color:#7b5c72;
+
+color:#7d5f72;
+
+line-height:1.7;
+
 }
 
 .quote span{
+
 display:block;
-margin-top:8px;
+
+margin-top:18px;
+
 font-size:18px;
+
 font-style:normal;
-font-weight:600;
-letter-spacing:2px;
+
+font-weight:700;
+
+letter-spacing:3px;
+
+text-transform:uppercase;
+
 color:#4d014d;
+
 }
 
 .welcome{
@@ -493,7 +579,9 @@ LEARN. GROW. BECOME.
 
 <section class="hero">
 
-<div class="hero-left">
+<div class="hero-content">
+
+<div class="hero-logo">
 
 <img src="podcast logo.png"
 alt="SisterSmarts Logo"
@@ -501,22 +589,33 @@ class="podcast-logo">
 
 </div>
 
-<div class="hero-right">
+<div class="hero-text">
 
 <h1>SisterSmarts</h1>
 
-<div class="hero-line"></div>
+<div class="gold-line"></div>
 
 <p class="tagline">
-Real stories • Transformative ideas • Meaningful conversations
+
+Real stories.<br>
+Transformative ideas.<br>
+Meaningful conversations.
+
 </p>
 
 <div class="quote">
+
 "When you know who you are, the mission is clear."
+
 <span>— Faith</span>
+
 </div>
 
 </div>
+
+</div>
+
+</section>
 
 </section>
 
