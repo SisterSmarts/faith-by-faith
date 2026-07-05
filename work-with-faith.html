@@ -88,13 +88,35 @@ color:#5d4c5d;
 font-style:italic;
 }
 
-.hero h3{
-margin-top:35px;
-font-size:15px;
-font-weight:700;
-letter-spacing:3px;
+/* Luxury Tags */
+
+.hero-tags{
+display:flex;
+justify-content:center;
+align-items:center;
+flex-wrap:wrap;
+gap:18px;
+margin-top:40px;
+}
+
+.hero-tags span{
+background:#4d014d;
+color:white;
+padding:12px 24px;
+border-radius:50px;
+font-size:13px;
+font-weight:600;
+letter-spacing:1.5px;
 text-transform:uppercase;
-color:#4d014d;      /* Dark purple */
+box-shadow:0 8px 20px rgba(77,1,77,.18);
+transition:all .3s ease;
+}
+
+.hero-tags span:hover{
+background:#c89f3d;
+color:#4d014d;
+transform:translateY(-3px);
+box-shadow:0 12px 24px rgba(200,159,61,.25);
 }
 
 .section{
@@ -244,11 +266,17 @@ Helping people navigate life's biggest transitions with practical guidance, mean
 
 </p>
 
-<h3>
+<div class="hero-tags">
 
-Author • Educator • Speaker • Social Impact Strategist
+<span>Author</span>
 
-</h3>
+<span>Educator</span>
+
+<span>Speaker</span>
+
+<span>Social Impact Strategist</span>
+
+</div>
 
 <div class="hero-divider"></div>
 
