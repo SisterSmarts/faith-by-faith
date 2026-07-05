@@ -59,53 +59,63 @@ font-weight:500;
 }
 
 .hero{
-background:linear-gradient(to bottom,#f8f1f3,#fffaf7);
+background:linear-gradient(180deg,#fbf5f7 0%,#fffdfb 100%);
 text-align:center;
-padding:90px 8% 70px;
+padding:65px 8% 60px;
+}
+
+.hero-content{
+max-width:1200px;
+margin:auto;
 }
 
 .podcast-logo{
-width:240px;
+width:180px;
 max-width:90%;
-margin-bottom:35px;
-border-radius:50%;
-box-shadow:0 18px 45px rgba(77,1,77,.18);
-transition:.3s;
-}
-
-.podcast-logo:hover{
-transform:scale(1.03);
+margin-bottom:20px;
+filter:drop-shadow(0 15px 30px rgba(77,1,77,.12));
 }
 
 .hero h1{
 font-family:'Cormorant Garamond',serif;
-font-size:80px;
+font-size:72px;
+font-weight:600;
 color:#4d014d;
-margin-bottom:20px;
+margin-bottom:18px;
+}
+
+.gold-line{
+width:140px;
+height:2px;
+margin:0 auto 25px;
+background:linear-gradient(to right,transparent,#c89f3d,transparent);
 }
 
 .tagline{
-font-size:28px;
-max-width:850px;
-margin:0 auto 35px;
-color:#4d014d;
-line-height:1.8;
+max-width:1100px;
+margin:auto;
+font-size:23px;
+color:#5f4f61;
+line-height:1.7;
+letter-spacing:.3px;
 }
 
 .quote{
-font-size:24px;
+margin-top:28px;
+font-family:'Cormorant Garamond',serif;
+font-size:28px;
 font-style:italic;
 color:#7b5c72;
-max-width:700px;
-margin:35px auto 0;
-line-height:1.8;
 }
 
 .quote span{
 display:block;
-margin-top:10px;
+margin-top:8px;
+font-size:18px;
 font-style:normal;
 font-weight:600;
+letter-spacing:2px;
+color:#4d014d;
 }
 
 .welcome{
@@ -392,19 +402,30 @@ LEARN. GROW. BECOME.
 
 <section class="hero">
 
-<img src="podcast logo.png" alt="SisterSmarts Logo" class="podcast-logo">
+<div class="hero-content">
+
+<img src="podcast logo.png"
+alt="SisterSmarts Logo"
+class="podcast-logo">
 
 <h1>SisterSmarts</h1>
 
+<div class="gold-line"></div>
+
 <p class="tagline">
-Real stories.<br>
-Transformative ideas.<br>
-Meaningful conversations.
+
+Real stories • Transformative ideas • Meaningful conversations
+
 </p>
 
 <div class="quote">
+
 "When you know who you are, the mission is clear."
+
 <span>— Faith</span>
+
+</div>
+
 </div>
 
 </section>
