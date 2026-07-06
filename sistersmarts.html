@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>SisterSmarts | Faith By Faith</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
+
+/*========================================
+RESET
+========================================*/
 
 *{
 margin:0;
@@ -15,151 +22,255 @@ padding:0;
 box-sizing:border-box;
 }
 
-body{
-font-family:'Montserrat',sans-serif;
-background:#faf7f5;
-color:#2b2030;
-line-height:1.8;
+html{
+scroll-behavior:smooth;
 }
+
+body{
+
+font-family:'Montserrat',sans-serif;
+
+background:#faf7f5;
+
+color:#2b2030;
+
+line-height:1.8;
+
+-webkit-font-smoothing:antialiased;
+
+}
+
+/*========================================
+COLOURS
+========================================*/
+
+:root{
+
+--plum:#4d014d;
+
+--cream:#faf7f5;
+
+--white:#ffffff;
+
+--gold:#d9a631;
+
+--text:#2b2030;
+
+--soft:#6a5d68;
+
+}
+
+/*========================================
+GLOBAL
+========================================*/
+
+section{
+
+padding:110px 8%;
+
+}
+
+.container{
+
+max-width:1250px;
+
+margin:auto;
+
+}
+
+.section-title{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:64px;
+
+font-weight:600;
+
+color:var(--plum);
+
+text-align:center;
+
+margin-bottom:18px;
+
+}
+
+.section-subtitle{
+
+max-width:820px;
+
+margin:0 auto 60px;
+
+text-align:center;
+
+font-size:20px;
+
+color:var(--soft);
+
+line-height:1.9;
+
+}
+
+/*========================================
+TOP BAR
+========================================*/
 
 .topbar{
-background:#4d014d;
+
+background:var(--plum);
+
 color:white;
+
 text-align:center;
+
 padding:12px;
+
+font-size:13px;
+
 font-weight:600;
-letter-spacing:2px;
-font-size:14px;
+
+letter-spacing:3px;
+
 }
 
+/*========================================
+NAVIGATION
+========================================*/
+
 nav{
+
 display:flex;
+
 justify-content:space-between;
+
 align-items:center;
-padding:20px 8%;
+
+padding:22px 8%;
+
 background:white;
-box-shadow:0 2px 10px rgba(0,0,0,.05);
+
+box-shadow:0 3px 18px rgba(0,0,0,.05);
+
+position:sticky;
+
+top:0;
+
+z-index:999;
+
 }
 
 .logo img{
-height:60px;
-width:auto;
+
+height:72px;
+
+display:block;
+
 }
 
 .menu{
+
 display:flex;
-gap:25px;
+
+gap:28px;
+
+align-items:center;
+
 flex-wrap:wrap;
+
 }
 
 .menu a{
+
 text-decoration:none;
-color:#333;
+
+font-size:15px;
+
 font-weight:500;
-}
 
-.hero{
-background:linear-gradient(to bottom,#fdfbfd,#faf7f5);
-padding:120px 8%;
-display:grid;
-grid-template-columns:280px 1fr;
-align-items:center;
-gap:70px;
-max-width:1400px;
-margin:auto;
-min-height:620px;
-}
+color:#403845;
 
-.hero-left{
-text-align:center;
-}
-
-.podcast-logo{
-width:220px;
-height:220px;
-object-fit:cover;
-border-radius:50%;
-box-shadow:0 18px 45px rgba(77,1,77,.15);
 transition:.3s;
+
 }
 
-.podcast-logo:hover{
-transform:scale(1.03);
+.menu a:hover{
+
+color:var(--plum);
+
 }
 
-.hero-right{
-text-align:left;
-}
+/*========================================
+BUTTONS
+========================================*/
 
-.hero h1{
-font-family:'Cormorant Garamond',serif;
-font-size:88px;
-color:#4d014d;
-margin-bottom:18px;
+.btn{
+
+display:inline-block;
+
+padding:17px 36px;
+
+border-radius:50px;
+
+text-decoration:none;
+
 font-weight:600;
-line-height:1;
+
+transition:.35s;
+
+cursor:pointer;
+
 }
 
-.hero-line{
-width:90px;
-height:2px;
-background:#d9a631;
-margin:28px 0;
+.btn-primary{
+
+background:var(--plum);
+
+color:white;
+
 }
 
-.tagline{
-font-size:30px;
-line-height:1.8;
-color:#5f4f61;
-max-width:900px;
+.btn-secondary{
+
+background:white;
+
+border:2px solid var(--gold);
+
+color:var(--plum);
+
 }
 
-.quote{
-margin-top:40px;
-font-family:'Cormorant Garamond',serif;
-font-size:34px;
-font-style:italic;
-color:#7b5c72;
-line-height:1.6;
+.btn:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 12px 30px rgba(0,0,0,.10);
+
 }
 
-.quote span{
-display:block;
-margin-top:18px;
-font-size:18px;
-letter-spacing:4px;
-text-transform:uppercase;
-font-style:normal;
-color:#4d014d;
-font-family:'Montserrat',sans-serif;
-font-weight:600;
-}
-
-/* ==========================================
-   LUXURY HERO
-========================================== */
+/*========================================
+LUXURY HERO
+========================================*/
 
 .hero{
 
-background:linear-gradient(to bottom,#fcfaf8,#f7f1f6);
+background:linear-gradient(to bottom,#fdfcfc,#f7f2f5);
 
-padding:50px 8% 35px;   /* Much less top & bottom padding */
+padding:70px 8% 80px;
 
 }
 
 .hero-content{
 
-max-width:1150px;        /* Narrower overall section */
+max-width:1200px;
 
 margin:auto;
 
 display:grid;
 
-grid-template-columns:260px 1fr;   /* Brings text closer to logo */
+grid-template-columns:280px 1fr;
+
+gap:55px;
 
 align-items:center;
-
-gap:25px;                /* Smaller gap between logo and text */
 
 }
 
@@ -169,37 +280,27 @@ display:flex;
 
 justify-content:center;
 
-align-items:center;
-
 }
 
 .podcast-logo{
 
 width:250px;
 
-height:auto;
-
 border-radius:50%;
 
-box-shadow:0 22px 55px rgba(77,1,77,.18);
+box-shadow:0 20px 55px rgba(77,1,77,.15);
 
-transition:.35s;
+transition:.4s;
 
 }
 
 .podcast-logo:hover{
 
-transform:translateY(-6px);
+transform:translateY(-8px);
 
 }
 
-.hero-text{
-
-text-align:left;
-
-}
-
-.hero h1{
+.hero-text h1{
 
 font-family:'Cormorant Garamond',serif;
 
@@ -207,21 +308,21 @@ font-size:88px;
 
 font-weight:600;
 
-color:#4d014d;
+color:var(--plum);
 
 line-height:1;
 
-margin-bottom:20px;
+margin-bottom:18px;
 
 }
 
 .gold-line{
 
-width:180px;
+width:170px;
 
 height:2px;
 
-background:#d8a437;
+background:var(--gold);
 
 margin-bottom:35px;
 
@@ -229,15 +330,13 @@ margin-bottom:35px;
 
 .tagline{
 
-font-size:28px;
+font-size:30px;
 
 line-height:1.8;
 
 color:#5f4f61;
 
-font-weight:400;
-
-margin-bottom:40px;
+margin-bottom:35px;
 
 }
 
@@ -245,13 +344,15 @@ margin-bottom:40px;
 
 font-family:'Cormorant Garamond',serif;
 
-font-size:24px;
+font-size:28px;
 
 font-style:italic;
 
-color:#7d5f72;
+color:#7a6171;
 
 line-height:1.7;
+
+max-width:760px;
 
 }
 
@@ -259,11 +360,11 @@ line-height:1.7;
 
 display:block;
 
-margin-top:18px;
+margin-top:20px;
 
-font-size:18px;
+font-family:'Montserrat',sans-serif;
 
-font-style:normal;
+font-size:15px;
 
 font-weight:700;
 
@@ -271,311 +372,124 @@ letter-spacing:3px;
 
 text-transform:uppercase;
 
-color:#4d014d;
+font-style:normal;
+
+color:var(--plum);
 
 }
 
-.welcome{
-background:#fffaf7;
-padding:100px 10%;
-}
+/*========================================
+STATISTICS
+========================================*/
 
-.container{
-max-width:900px;
-margin:auto;
-}
+.stats{
 
-.welcome h2,
-.listen h2,
-.topics h2,
-.guest h2,
-.connect h2,
-.kiva h2{
-font-family:'Cormorant Garamond',serif;
-font-size:56px;
-color:#4d014d;
-text-align:center;
-margin-bottom:40px;
-}
-
-.welcome p{
-font-size:18px;
-margin-bottom:25px;
-}
-
-.listen{
-background:#4d014d;
-color:white;
-text-align:center;
-padding:100px 8%;
-}
-
-.listen h2{
-color:white;
-}
-
-.buttons{
-margin-top:40px;
-}
-
-.btn{
-display:inline-block;
-padding:16px 34px;
-margin:10px;
-border-radius:40px;
-text-decoration:none;
-font-weight:600;
-transition:.3s;
-}
-
-.btn:hover{
-transform:translateY(-3px);
-}
-
-.youtube{
 background:white;
-color:#4d014d;
+
+padding:70px 8%;
+
 }
 
-.spotify{
-background:#d9a631;
-color:black;
-}
+.stats-grid{
 
-.topics{
-background:#faf7f5;
-padding:100px 8%;
-}
-
-.topic-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
 max-width:1200px;
+
 margin:auto;
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
 }
 
-.topic{
-background:#fffaf7;
-padding:35px;
-border-radius:20px;
-box-shadow:0 5px 20px rgba(0,0,0,.05);
+.stat{
+
+text-align:center;
+
+padding:30px;
+
 }
 
-.topic h3{
-color:#4d014d;
+.stat-number{
+
 font-family:'Cormorant Garamond',serif;
-font-size:32px;
-margin-bottom:15px;
-}
 
-.guest{
-background:#f8f1f3;
-padding:100px 10%;
-text-align:center;
-}
-
-.guest p{
-max-width:700px;
-margin:0 auto 20px;
-font-size:18px;
-}
-
-.email{
-font-weight:600;
-color:#4d014d;
-font-size:20px;
-}
-
-.connect{
-background:#fffaf7;
-padding:100px 8%;
-text-align:center;
-}
-
-.social-links{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-margin-top:40px;
-}
-
-.social-links a{
-background:#4d014d;
-color:white;
-padding:14px 28px;
-border-radius:40px;
-text-decoration:none;
-font-weight:600;
-}
-
-.kiva{
-background:#fffaf7;
-padding:100px 10%;
-text-align:center;
-}
-
-.kiva p{
-max-width:850px;
-margin:0 auto 20px;
-color:#4d014d;
-font-size:18px;
-}
-
-.kiva img{
-width:100%;
-max-width:700px;
-margin-top:25px;
-border-radius:16px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-}
-
-.kiva a{
-display:inline-block;
-margin-top:30px;
-padding:14px 32px;
-background:#4d014d;
-color:white;
-border-radius:50px;
-text-decoration:none;
-font-weight:600;
-transition:0.3s;
-}
-
-.kiva a:hover{
-transform:translateY(-3px);
-}
-
-.footer{
-background:#240024;
-color:white;
-text-align:center;
-padding:50px;
-}
-
-.footer p{
-margin:10px 0;
-}
-/* ===========================
-   FEATURED PODCASTS
-=========================== */
-
-.featured{
-background:#fffaf7;
-padding:90px 8%;
-text-align:center;
-}
-
-.featured h2{
-font-family:'Cormorant Garamond',serif;
-font-size:58px;
-color:#4d014d;
-margin-bottom:18px;
-}
-
-.featured p{
-max-width:850px;
-margin:0 auto 50px;
-font-size:19px;
-color:#6c5b66;
-line-height:1.8;
-}
-
-.episode-banner{
-display:block;
-width:100%;
-max-width:1400px;
-margin:0 auto;
-border-radius:20px;
-box-shadow:0 18px 40px rgba(0,0,0,.12);
-transition:.35s;
-}
-
-.episode-banner:hover{
-transform:translateY(-6px);
-box-shadow:0 25px 55px rgba(0,0,0,.18);
-}
-@media(max-width:900px){
-
-nav{
-flex-direction:column;
-gap:20px;
-}
-
-.hero{
-grid-template-columns:1fr;
-text-align:center;
-gap:40px;
-padding:80px 8%;
-min-height:auto;
-}
-
-.hero-right{
-text-align:center;
-}
-
-.hero-line{
-margin:25px auto;
-}
-
-.hero h1{
 font-size:64px;
+
+color:var(--plum);
+
+font-weight:700;
+
+margin-bottom:10px;
+
 }
 
-.tagline{
-font-size:24px;
-}
+.stat-label{
 
-.quote{
-font-size:28px;
-}
+font-size:16px;
 
-.welcome h2,
-.listen h2,
-.topics h2,
-.guest h2,
-.connect h2,
-.kiva h2{
-font-size:42px;
-}
+color:#6d5f6a;
+
+line-height:1.7;
 
 }
 
 </style>
+
 <!-- MailerLite Universal -->
+
 <script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '2489849');
+(function(w,d,e,u,f,l,n){
+w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments);},
+l=d.createElement(e),
+l.async=1,
+l.src=u,
+n=d.getElementsByTagName(e)[0],
+n.parentNode.insertBefore(l,n);
+})(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+ml('account','2489849');
 </script>
-<!-- End MailerLite Universal -->
+
 </head>
 
 <body>
 
 <div class="topbar">
+
 LEARN. GROW. BECOME.
+
 </div>
 
 <nav>
 
 <div class="logo">
-<img src="luxury logo white.png" alt="Faith By Faith Logo">
+
+<img src="luxury logo white.png" alt="Faith By Faith">
+
 </div>
 
 <div class="menu">
+
 <a href="index.html">Home</a>
-<a href="about.html">About Faith</a>
+
+<a href="about.html">Meet Faith</a>
+
 <a href="books.html">Books &amp; Resources</a>
+
 <a href="sistersmarts.html">SisterSmarts</a>
+
 <a href="work-with-faith.html">Work With Faith</a>
+
 <a href="contact.html">Contact</a>
+
 </div>
 
 </nav>
+<!-- ======================================
+LUXURY HERO
+====================================== -->
 
 <section class="hero">
 
@@ -584,8 +498,8 @@ LEARN. GROW. BECOME.
 <div class="hero-logo">
 
 <img src="podcast logo.png"
-alt="SisterSmarts Logo"
-class="podcast-logo">
+class="podcast-logo"
+alt="SisterSmarts Logo">
 
 </div>
 
@@ -605,9 +519,109 @@ Meaningful conversations.
 
 <div class="quote">
 
-"When you know who you are, the mission is clear."
+"Every meaningful conversation begins with curiosity.
+The right question has the power to change the way we see ourselves,
+our communities, and the world."
 
-<span>— Faith</span>
+<span>— Faith Wich</span>
+
+</div>
+
+<br><br>
+
+<a href="https://www.youtube.com/@Sisterhoodsmarts"
+target="_blank"
+class="btn btn-primary">
+
+Watch the Conversation Series
+
+</a>
+
+<a href="https://open.spotify.com/show/2eVqtqjsa0Pk2dtmMk3NB4"
+target="_blank"
+class="btn btn-secondary">
+
+Listen on Spotify
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ======================================
+BY THE NUMBERS
+====================================== -->
+
+<section class="stats">
+
+<div class="stats-grid">
+
+<div class="stat">
+
+<div class="stat-number">
+
+2,000+
+
+</div>
+
+<div class="stat-label">
+
+YouTube<br>
+Subscribers
+
+</div>
+
+</div>
+
+<div class="stat">
+
+<div class="stat-number">
+
+100+
+
+</div>
+
+<div class="stat-label">
+
+Meaningful<br>
+Conversations
+
+</div>
+
+</div>
+
+<div class="stat">
+
+<div class="stat-number">
+
+Global
+
+</div>
+
+<div class="stat-label">
+
+Guests & Perspectives<br>
+From Around the World
+
+</div>
+
+</div>
+
+<div class="stat">
+
+<div class="stat-number">
+
+2016
+
+</div>
+
+<div class="stat-label">
+
+Growing & Learning<br>
+Since 2016
 
 </div>
 
@@ -617,170 +631,664 @@ Meaningful conversations.
 
 </section>
 
-</section>
+<!-- ======================================
+FEATURED CONVERSATIONS
+====================================== -->
 
-</div>
+<section style="background:#fffaf7;padding:110px 8%;">
 
-</section>
-<section class="featured">
+<h2 class="section-title">
 
-<h2>Featured Conversations</h2>
+Featured Conversations
 
-<p>
-Explore inspiring conversations with researchers, authors, survivors,
-educators, and spiritual leaders from around the world.
+</h2>
+
+<p class="section-subtitle">
+
+Explore conversations with authors, educators,
+researchers, entrepreneurs, advocates,
+and remarkable people whose stories inspire lifelong learning.
+
 </p>
 
-<a href="https://www.youtube.com/@Sisterhoodsmarts" target="_blank">
-<img src="podcasts-row1.jpg.png" alt="Latest SisterSmarts Episodes" class="episode-banner">
+<a href="https://www.youtube.com/@Sisterhoodsmarts"
+target="_blank">
+
+<img src="podcasts-row1.jpg.png"
+
+alt="Featured Conversations"
+
+style="
+display:block;
+width:100%;
+max-width:1400px;
+margin:auto;
+border-radius:24px;
+box-shadow:0 20px 50px rgba(0,0,0,.12);
+transition:.35s;">
+
 </a>
 
 <br><br><br>
 
-<a href="https://www.youtube.com/@Sisterhoodsmarts" target="_blank">
-<img src="podcasts-row2.jpg.png" alt="More SisterSmarts Episodes" class="episode-banner">
+<a href="https://www.youtube.com/@Sisterhoodsmarts"
+target="_blank">
+
+<img src="podcasts-row2.jpg.png"
+
+alt="More Conversations"
+
+style="
+display:block;
+width:100%;
+max-width:1400px;
+margin:auto;
+border-radius:24px;
+box-shadow:0 20px 50px rgba(0,0,0,.12);
+transition:.35s;">
+
 </a>
 
 </section>
-<section class="welcome">
+<!-- ======================================
+WHY SISTERSMARTS EXISTS
+====================================== -->
+
+<section style="background:#faf7f5;padding:120px 8%;">
+
+<div class="container" style="max-width:900px;text-align:center;">
+
+<h2 class="section-title">
+
+Why SisterSmarts Exists
+
+</h2>
+
+<div style="
+width:120px;
+height:2px;
+background:#d9a631;
+margin:35px auto 45px;">
+
+</div>
+
+<p style="
+font-size:23px;
+line-height:2;
+color:#5c5060;
+margin-bottom:35px;">
+
+<strong>Every meaningful conversation has the power to change a life.</strong>
+
+</p>
+
+<p style="
+font-size:19px;
+line-height:2;
+color:#675a67;
+margin-bottom:30px;">
+
+SisterSmarts was created as a space where thoughtful conversations inspire lifelong learning, personal growth, and meaningful action.
+
+</p>
+
+<p style="
+font-size:19px;
+line-height:2;
+color:#675a67;
+margin-bottom:30px;">
+
+Through conversations with authors, educators, researchers, entrepreneurs, nonprofit leaders, and changemakers, we explore the ideas that shape who we are and who we are becoming.
+
+</p>
+
+<p style="
+font-size:19px;
+line-height:2;
+color:#675a67;">
+
+Our hope is simple: that every conversation leaves you wiser, more curious, and encouraged to continue learning long after the episode ends.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ======================================
+FAITH NOTES
+====================================== -->
+
+<section style="
+background:white;
+padding:120px 8%;
+text-align:center;">
+
+<h2 class="section-title">
+
+Faith Notes
+
+</h2>
+
+<p class="section-subtitle">
+
+Thoughtful reflections for lifelong learners.
+
+Receive occasional reflections, new conversations,
+book recommendations, practical resources,
+and meaningful ideas delivered directly to your inbox.
+
+</p>
+
+<div style="max-width:650px;margin:auto;">
+
+<div class="ml-embedded" data-form="0Qde1d"></div>
+
+</div>
+
+</section>
+
+
+<!-- ======================================
+WATCH & LISTEN
+====================================== -->
+
+<section style="
+background:#4d014d;
+color:white;
+padding:110px 8%;
+text-align:center;">
+
+<h2 style="
+font-family:'Cormorant Garamond',serif;
+font-size:58px;
+margin-bottom:25px;">
+
+Watch & Listen
+
+</h2>
+
+<p style="
+max-width:760px;
+margin:auto;
+font-size:20px;
+line-height:1.9;
+margin-bottom:45px;">
+
+Join thousands of lifelong learners exploring conversations that challenge ideas, inspire growth, and encourage thoughtful living.
+
+</p>
+
+<a href="https://www.youtube.com/@Sisterhoodsmarts"
+target="_blank"
+class="btn"
+style="
+background:white;
+color:#4d014d;
+margin-right:15px;">
+
+▶ Watch on YouTube
+
+</a>
+
+<a href="https://open.spotify.com/show/2eVqtqjsa0Pk2dtmMk3NB4"
+target="_blank"
+class="btn"
+style="
+background:#d9a631;
+color:#2b2030;">
+
+🎧 Listen on Spotify
+
+</a>
+
+</section>
+
+
+<!-- ======================================
+WHAT WE EXPLORE
+====================================== -->
+
+<section style="
+background:#faf7f5;
+padding:120px 8%;">
+
+<h2 class="section-title">
+
+What We Explore
+
+</h2>
+
+<p class="section-subtitle">
+
+Every conversation is designed to help us think more deeply, live more intentionally, and continue growing.
+
+</p>
+
+<div style="
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+max-width:1200px;
+margin:auto;">
+
+<div style="background:white;padding:40px;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.05);">
+
+<h3 style="font-family:'Cormorant Garamond',serif;font-size:34px;color:#4d014d;margin-bottom:20px;">
+
+Lifelong Learning
+
+</h3>
+
+<p>
+
+Books, ideas, education, curiosity, and the habits that help us keep growing throughout life.
+
+</p>
+
+</div>
+
+<div style="background:white;padding:40px;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.05);">
+
+<h3 style="font-family:'Cormorant Garamond',serif;font-size:34px;color:#4d014d;margin-bottom:20px;">
+
+Faith & Purpose
+
+</h3>
+
+<p>
+
+Conversations about spiritual growth, meaningful work, and living with intention.
+
+</p>
+
+</div>
+
+<div style="background:white;padding:40px;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.05);">
+
+<h3 style="font-family:'Cormorant Garamond',serif;font-size:34px;color:#4d014d;margin-bottom:20px;">
+
+Identity
+
+</h3>
+
+<p>
+
+Understanding who we are, how we grow, and becoming the people we were created to be.
+
+</p>
+
+</div>
+
+<div style="background:white;padding:40px;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.05);">
+
+<h3 style="font-family:'Cormorant Garamond',serif;font-size:34px;color:#4d014d;margin-bottom:20px;">
+
+Leadership
+
+</h3>
+
+<p>
+
+Learning from people who lead with wisdom, integrity, courage, and compassion.
+
+</p>
+
+</div>
+
+<div style="background:white;padding:40px;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.05);">
+
+<h3 style="font-family:'Cormorant Garamond',serif;font-size:34px;color:#4d014d;margin-bottom:20px;">
+
+Books & Ideas
+
+</h3>
+
+<p>
+
+Exploring powerful books, research, and ideas that challenge the way we think.
+
+</p>
+
+</div>
+
+<div style="background:white;padding:40px;border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.05);">
+
+<h3 style="font-family:'Cormorant Garamond',serif;font-size:34px;color:#4d014d;margin-bottom:20px;">
+
+Global Conversations
+
+</h3>
+
+<p>
+
+Stories and perspectives from remarkable people across cultures, communities, and professions.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- ======================================
+BECOME A GUEST
+====================================== -->
+
+<section style="
+background:white;
+padding:120px 8%;">
+
+<div style="
+max-width:900px;
+margin:auto;
+text-align:center;">
+
+<h2 class="section-title">
+
+Become a Guest
+
+</h2>
+
+<p class="section-subtitle">
+
+We welcome thoughtful conversations with authors, educators,
+researchers, entrepreneurs, nonprofit leaders, creatives,
+and changemakers whose stories help others learn and grow.
+
+</p>
+
+<a href="mailto:hello@faithbyfaith.com"
+
+class="btn btn-primary">
+
+Apply to Join the Conversation
+
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- ======================================
+KIVA IMPACT
+====================================== -->
+
+<section style="
+background:#faf7f5;
+padding:120px 8%;">
 
 <div class="container">
 
-<h2>Welcome</h2>
+<h2 class="section-title">
 
-<p>
-Welcome to our corner of the internet, where meaningful conversations, shared wisdom, and lifelong learning take center stage.
+Kiva Impact
+
+</h2>
+
+<p class="section-subtitle">
+
+Learning is powerful.
+Opportunity changes lives.
+
+Through our Kiva lending community,
+we support women around the world
+who are building businesses,
+strengthening families,
+and creating brighter futures.
+
 </p>
 
-<p>
-SisterSmarts is a space for women, men, and anyone passionate about learning, unlearning, and relearning.
-</p>
+<img src="KIVA IMAGE LENDING TEAM.png"
 
-<p>
-Through thoughtful dialogue, diverse perspectives, and authentic stories, we explore identity, purpose, change, and growth.
-</p>
+alt="Kiva Impact"
 
-</div>
+style="
+display:block;
+width:100%;
+max-width:900px;
+margin:50px auto;
+border-radius:24px;
+box-shadow:0 20px 45px rgba(0,0,0,.12);">
 
-</section>
+<div style="text-align:center;">
 
-<section class="listen">
+<a href="https://www.kiva.org/team/sisterhood_smarts/impact"
 
-<h2>Watch & Listen</h2>
+target="_blank"
 
-<div class="buttons">
+class="btn btn-primary">
 
-<a href="https://www.youtube.com/@Sisterhoodsmarts" target="_blank" class="btn youtube">
-Watch on YouTube
+Explore Our Impact
+
 </a>
 
-<a href="https://open.spotify.com/show/2eVqtqjsa0Pk2dtmMk3NB4" target="_blank" class="btn spotify">
-Listen on Spotify
-</a>
-
-</div>
-
-</section>
-
-<section class="topics">
-
-<h2>What We Explore</h2>
-
-<div class="topic-grid">
-
-<div class="topic">
-<h3>Learning & Growth</h3>
-<p>Exploring ideas that shape how we see ourselves.</p>
-</div>
-
-<div class="topic">
-<h3>Identity</h3>
-<p>Understanding who we are becoming.</p>
-</div>
-
-<div class="topic">
-<h3>Purpose</h3>
-<p>Finding meaning and direction in life.</p>
 </div>
 
 </div>
 
 </section>
 
-<section class="guest">
 
-<h2>Be a Guest</h2>
 
-<p>We welcome thoughtful voices from all backgrounds.</p>
+<!-- ======================================
+FINAL QUOTE
+====================================== -->
 
-<p class="email">faithyshah@gmail.com</p>
+<section style="
+background:#4d014d;
+color:white;
+padding:140px 8%;
+text-align:center;">
 
-</section>
+<div style="
+max-width:900px;
+margin:auto;">
 
-<section class="connect">
+<p style="
+font-family:'Cormorant Garamond',serif;
+font-size:54px;
+line-height:1.5;
+font-style:italic;">
 
-<h2>Connect</h2>
+"The best conversations
+don't simply give us answers.
 
-<div class="social-links">
+They teach us
+how to ask better questions."
 
-<a href="https://www.youtube.com/@Sisterhoodsmarts">YouTube</a>
-<a href="https://open.spotify.com/show/2eVqtqjsa0Pk2dtmMk3NB4">Spotify</a>
-<a href="https://www.tiktok.com/@sisterhoodsmarts">TikTok</a>
-<a href="mailto:faithyshah@gmail.com">Email</a>
-
-</div>
-
-</section>
-
-<!-- ✅ KIVA SECTION ADDED -->
-<section class="kiva">
-
-<h2>Kiva Impact</h2>
-
-<p>
-<strong>Empowering Women. Strengthening Families.</strong><br><br>
-
-Through our Kiva community, we’ve helped fund nearly 300 loans across 33 countries, supporting women who are building farms, shops, and small businesses to support their families.
 </p>
 
-<p>
-These loans provide access to inventory, equipment, education, and working capital—helping women create stability and opportunity in their lives.
+<p style="
+margin-top:40px;
+letter-spacing:4px;
+text-transform:uppercase;
+font-size:14px;
+font-weight:600;">
+
+Faith Wich
+
 </p>
 
-<img src="KIVA IMAGE LENDING TEAM.png" alt="Kiva Lending Team">
-
-<br>
-
-<a href="https://www.kiva.org/team/sisterhood_smarts/impact" target="_blank" class="btn primary">
-Join The Community
-</a>
+</div>
 
 </section>
+
+
+
+<!-- ======================================
+FOOTER
+====================================== -->
 
 <footer class="footer">
 
-<footer class="footer">
+<p style="font-size:24px;">
 
-<p><strong>Faith Wich</strong></p>
+<strong>Faith Wich</strong>
 
-<p>Author • Educator • Speaker • Social Impact Strategist</p>
+</p>
 
-<p style="margin-top:12px;">
+<p>
+
+Author • Educator • Speaker
+
+</p>
+
+<p style="margin-top:18px;">
+
 Learn. Grow. Become.
+
 </p>
 
-<p style="margin-top:12px;">
-<a href="mailto:hello@faithbyfaith.com" style="color:white;text-decoration:none;">
+<p style="margin-top:18px;">
+
+<a href="mailto:hello@faithbyfaith.com"
+
+style="color:white;text-decoration:none;">
+
 hello@faithbyfaith.com
+
 </a>
+
 </p>
 
-<p style="margin-top:12px;">
+<p style="margin-top:18px;">
+
 © 2026 Faith By Faith
+
 </p>
 
 </footer>
-</footer>
+
+
+
+<!-- ======================================
+RESPONSIVE
+====================================== -->
+
+<style>
+
+@media(max-width:900px){
+
+.hero-content{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.hero-text{
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:58px;
+
+}
+
+.tagline{
+
+font-size:24px;
+
+}
+
+.gold-line{
+
+margin:0 auto 35px;
+
+}
+
+.stats-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.section-title{
+
+font-size:44px;
+
+}
+
+.section-subtitle{
+
+font-size:18px;
+
+}
+
+.menu{
+
+justify-content:center;
+
+gap:18px;
+
+}
+
+nav{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.stats-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.hero{
+
+padding:60px 8%;
+
+}
+
+.hero h1{
+
+font-size:46px;
+
+}
+
+.tagline{
+
+font-size:21px;
+
+}
+
+.quote{
+
+font-size:22px;
+
+}
+
+.btn{
+
+display:block;
+
+margin:15px auto;
+
+width:280px;
+
+text-align:center;
+
+}
+
+}
+
+</style>
 
 </body>
+
 </html>
