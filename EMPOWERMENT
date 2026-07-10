@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Empowerment | Faith By Faith</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Montserrat',sans-serif;
+background:#faf7f5;
+color:#2b2030;
+line-height:1.7;
+}
+
+.topbar{
+background:#4d014d;
+color:white;
+text-align:center;
+padding:12px;
+font-size:14px;
+font-weight:600;
+letter-spacing:3px;
+}
+
+nav{
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 7%;
+box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+
+.logo img{
+height:170px;
+width:auto;
+display:block;
+}
+
+.menu{
+display:flex;
+align-items:center;
+gap:32px;
+}
+
+.menu a{
+text-decoration:none;
+color:#4d014d;
+font-size:15px;
+font-weight:600;
+letter-spacing:1px;
+transition:.3s;
+}
+
+.menu a:hover{
+color:#c89f3d;
+}
+
+.hero{
+background:linear-gradient(180deg,#ffffff,#f7eff5);
+padding:100px 8%;
+text-align:center;
+}
+
+.hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:76px;
+font-weight:600;
+color:#4d014d;
+margin-bottom:20px;
+}
+
+.gold-line{
+width:120px;
+height:3px;
+background:#c89f3d;
+margin:25px auto;
+}
+
+.hero p{
+max-width:760px;
+margin:auto;
+font-size:20px;
+color:#5f4f61;
+line-height:1.9;
+}
+
+@media(max-width:900px){
+
+nav{
+flex-direction:column;
+}
+
+.logo img{
+height:120px;
+}
+
+.menu{
+margin-top:20px;
+flex-wrap:wrap;
+justify-content:center;
+gap:18px;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="topbar">
+LEARN. GROW. BECOME.
+</div>
+
+<nav>
+
+<div class="logo">
+<a href="index.html">
+<img src="luxury logo white.png" alt="Faith By Faith Logo">
+</a>
+</div>
+
+<div class="menu">
+<a href="index.html">HOME</a>
+<a href="about.html">ABOUT</a>
+<a href="Empowerment.html">EMPOWERMENT</a>
+<a href="Sistersmarts.html">SISTERSMARTS</a>
+<a href="work-with-faith.html">WORK WITH FAITH</a>
+<a href="contact.html">BOOK INQUIRIES</a>
+</div>
+
+</nav>
+
+<section class="hero">
+
+<h1>Empowerment</h1>
+
+<div class="gold-line"></div>
+
+<p>
+Helping women discover purpose, build confidence, embrace leadership, and create meaningful impact through education, mentorship, and faith.
+</p>
+
+</section>
+<section style="padding:90px 8%; background:#ffffff;">
+
+<div style="max-width:1200px; margin:auto; display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;">
+
+<div>
+
+<h2 style="font-family:'Cormorant Garamond',serif; font-size:54px; color:#4d014d; margin-bottom:25px;">
+
+Empowering Women to Lead with Confidence
+
+</h2>
+
+<p style="font-size:18px; line-height:1.9; color:#555;">
+
+At Faith By Faith, empowerment is about helping women discover who they are, embrace their purpose, and confidently step into every opportunity placed before them.
+
+Through education, leadership development, mentoring, and transformational learning experiences, women are equipped with practical tools that inspire lasting personal and professional growth.
+
+</p>
+
+<a href="work-with-faith.html" style="display:inline-block; margin-top:35px; background:#4d014d; color:white; padding:16px 36px; border-radius:40px; text-decoration:none; font-weight:600;">
+
+WORK WITH FAITH
+
+</a>
+
+</div>
+
+<div>
+
+<img src="empowerment.jpg"
+alt="Faith By Faith Empowerment"
+style="width:100%; border-radius:20px; box-shadow:0 15px 35px rgba(0,0,0,.15);">
+
+</div>
+
+</div>
+
+</section>
+
+
+<section style="padding:90px 8%; background:#f6f1f5;">
+
+<h2 style="font-family:'Cormorant Garamond',serif; text-align:center; font-size:58px; color:#4d014d;">
+
+How We Empower
+
+</h2>
+
+<div style="width:120px; height:3px; background:#c89f3d; margin:25px auto 55px;"></div>
+
+<div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:35px; max-width:1200px; margin:auto;">
+
+<div style="background:white; padding:35px; border-radius:18px; box-shadow:0 10px 25px rgba(0,0,0,.08);">
+
+<h3 style="color:#4d014d; margin-bottom:15px;">Leadership</h3>
+
+<p>
+Develop the confidence and leadership skills needed to influence, inspire, and create lasting impact.
+</p>
+
+</div>
+
+<div style="background:white; padding:35px; border-radius:18px; box-shadow:0 10px 25px rgba(0,0,0,.08);">
+
+<h3 style="color:#4d014d; margin-bottom:15px;">Education</h3>
+
+<p>
+Access workshops, resources, and learning opportunities designed to strengthen both knowledge and purpose.
+</p>
+
+</div>
+
+<div style="background:white; padding:35px; border-radius:18px; box-shadow:0 10px 25px rgba(0,0,0,.08);">
+
+<h3 style="color:#4d014d; margin-bottom:15px;">Community</h3>
+
+<p>
+Connect with women who encourage growth, collaboration, support, and lifelong transformation.
+</p>
+
+</div>
+
+</div>
+
+</section>
+<section style="padding:100px 8%; background:white; text-align:center;">
+
+<h2 style="font-family:'Cormorant Garamond',serif; font-size:60px; color:#4d014d; margin-bottom:20px;">
+
+Ready to Be Empowered?
+
+</h2>
+
+<div style="width:120px;height:3px;background:#c89f3d;margin:0 auto 35px;"></div>
+
+<p style="max-width:750px; margin:auto; font-size:20px; line-height:1.9; color:#555;">
+
+Whether you're looking for a keynote speaker, leadership development, educational workshops, or transformational coaching, Faith By Faith is committed to helping you learn, grow, and become.
+
+</p>
+
+<a href="contact.html" style="display:inline-block; margin-top:45px; background:#c89f3d; color:#2b2030; padding:18px 42px; border-radius:40px; text-decoration:none; font-weight:600;">
+
+BOOK AN INQUIRY
+
+</a>
+
+</section>
+
+
+<footer style="background:#240024; color:white; text-align:center; padding:60px 20px;">
+
+<h2 style="font-family:'Cormorant Garamond',serif; font-size:42px; margin-bottom:10px;">
+
+Faith By Faith
+
+</h2>
+
+<p style="margin-bottom:10px;">
+Author • Educator • Speaker • Social Impact Strategist
+</p>
+
+<p style="letter-spacing:2px;">
+LEARN. GROW. BECOME.
+</p>
+
+<p style="margin-top:20px;">
+<a href="mailto:hello@faithbyfaith.com" style="color:white; text-decoration:none;">
+hello@faithbyfaith.com
+</a>
+</p>
+
+<p style="margin-top:25px; font-size:14px;">
+© 2026 Faith By Faith. All Rights Reserved.
+</p>
+<section style="padding:90px 8%; background:#f8f1f6;">
+
+<h2 style="font-family:'Cormorant Garamond',serif; font-size:58px; color:#4d014d; text-align:center; margin-bottom:20px;">
+Words of Encouragement
+</h2>
+
+<div style="width:120px;height:3px;background:#c89f3d;margin:0 auto 50px;"></div>
+
+<div style="max-width:1100px; margin:auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:35px;">
+
+<div style="background:white; padding:35px; border-radius:18px; box-shadow:0 10px 25px rgba(0,0,0,.08);">
+<p style="font-style:italic; line-height:1.9;">
+"Faith's message challenged me to believe in myself again. I left feeling inspired, equipped, and ready to lead."
+</p>
+<p style="margin-top:20px; font-weight:600; color:#4d014d;">
+— Workshop Participant
+</p>
+</div>
+
+<div style="background:white; padding:35px; border-radius:18px; box-shadow:0 10px 25px rgba(0,0,0,.08);">
+<p style="font-style:italic; line-height:1.9;">
+"The practical tools and encouragement I received helped me grow personally and professionally."
+</p>
+<p style="margin-top:20px; font-weight:600; color:#4d014d;">
+— Leadership Program Attendee
+</p>
+</div>
+
+<div style="background:white; padding:35px; border-radius:18px; box-shadow:0 10px 25px rgba(0,0,0,.08);">
+<p style="font-style:italic; line-height:1.9;">
+"Every session left me with greater confidence, clarity, and a renewed sense of purpose."
+</p>
+<p style="margin-top:20px; font-weight:600; color:#4d014d;">
+— Conference Guest
+</p>
+</div>
+
+</div>
+
+<div style="text-align:center; margin-top:60px;">
+
+<h3 style="font-family:'Cormorant Garamond',serif; font-size:42px; color:#4d014d;">
+Let's Grow Together
+</h3>
+
+<p style="max-width:700px; margin:20px auto 35px; font-size:19px; color:#555; line-height:1.9;">
+Whether you're planning a conference, workshop, leadership retreat, or community event, Faith By Faith is ready to help inspire meaningful transformation.
+</p>
+
+<a href="contact.html" style="display:inline-block; background:#4d014d; color:white; text-decoration:none; padding:18px 42px; border-radius:40px; font-weight:600;">
+CONTACT FAITH
+</a>
+
+</div>
+
+</section>
+</footer>
+
+</body>
+</html>
