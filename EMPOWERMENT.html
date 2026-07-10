@@ -1,178 +1,127 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Featured Books | Faith By Faith</title>
+
+<title>Empowerment | Faith By Faith</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-margin:0;
-font-family:Montserrat,sans-serif;
-background:#faf7f5;
-color:#2b2030;
+    font-family:'Montserrat',sans-serif;
+    background:#faf7f5;
+    color:#2b2030;
+    line-height:1.7;
 }
 
 .topbar{
-background:#4d014d;
-color:white;
-text-align:center;
-padding:12px;
-font-weight:600;
-letter-spacing:2px;
+    background:#4d014d;
+    color:#fff;
+    text-align:center;
+    padding:12px;
+    font-weight:600;
+    letter-spacing:3px;
+    font-size:14px;
 }
 
 nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-background:white;
-box-shadow:0 2px 10px rgba(0,0,0,.08);
+    background:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
 }
 
 .logo img{
-height:60px;
-width:auto;
-display:block;
+    height:150px;
+    width:auto;
+    display:block;
+}
+
+.menu{
+    display:flex;
+    align-items:center;
+    gap:35px;
 }
 
 .menu a{
-margin-left:20px;
-text-decoration:none;
-color:#333;
-font-weight:500;
+    text-decoration:none;
+    color:#4d014d;
+    font-size:15px;
+    font-weight:600;
+    letter-spacing:1px;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#c89f3d;
 }
 
 .hero{
-background:linear-gradient(180deg,#fffdfb 0%,#f8f1f6 100%);
-padding:100px 8% 80px;
-text-align:center;
-}
-
-.hero-content{
-max-width:900px;
-margin:auto;
-}
-
-.hero-subtitle{
-letter-spacing:4px;
-text-transform:uppercase;
-font-size:15px;
-font-weight:600;
-color:#c89f3d;
-margin-bottom:15px;
+    background:linear-gradient(180deg,#fff,#f7f0f5);
+    text-align:center;
+    padding:100px 8%;
 }
 
 .hero h1{
-font-family:'Cormorant Garamond',serif;
-font-size:78px;
-font-weight:600;
-color:#4d014d;
-margin:0;
+    font-family:'Cormorant Garamond',serif;
+    font-size:72px;
+    color:#4d014d;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:800px;
+    margin:auto;
+    font-size:20px;
+    color:#5f4f61;
+    line-height:1.9;
 }
 
 .gold-divider{
-width:120px;
-height:3px;
-margin:28px auto;
-background:linear-gradient(to right,transparent,#c89f3d,transparent);
-border-radius:30px;
-}
-
-.hero-text{
-font-size:21px;
-line-height:1.9;
-color:#5f4f61;
-max-width:760px;
-margin:auto;
-}
-
-.book-section{
-display:grid;
-grid-template-columns:320px 1fr;
-gap:50px;
-align-items:center;
-padding:80px 8%;
-background:white;
-margin-bottom:20px;
-}
-
-.book-section:nth-of-type(even){
-background:#f6f1f5;
-}
-
-.book-section img{
-width:100%;
-border-radius:18px;
-box-shadow:0 10px 30px rgba(0,0,0,.12);
-}
-
-.book-section h2{
-font-family:'Cormorant Garamond',serif;
-font-size:52px;
-color:#4d014d;
-margin-top:0;
-}
-
-.book-section p{
-line-height:1.9;
-font-size:18px;
-}
-
-.btn{
-display:inline-block;
-padding:15px 30px;
-border-radius:40px;
-text-decoration:none;
-font-weight:600;
-margin-top:20px;
-}
-
-.amazon{
-background:#d9a631;
-color:black;
-}
-
-.coming-soon{
-background:#4d014d;
-color:white;
-}
-
-.footer{
-background:#240024;
-color:white;
-text-align:center;
-padding:40px;
-margin-top:40px;
+    width:120px;
+    height:3px;
+    background:#c89f3d;
+    margin:30px auto;
 }
 
 @media(max-width:900px){
 
-.book-section{
-grid-template-columns:1fr;
-text-align:center;
+nav{
+    flex-direction:column;
+}
+
+.menu{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:18px;
+    margin-top:20px;
+}
+
+.logo img{
+    height:110px;
 }
 
 .hero h1{
-font-size:50px;
+    font-size:48px;
 }
+
 }
 
 </style>
-<!-- MailerLite Universal -->
-<script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '2489849');
-</script>
-<!-- End MailerLite Universal -->
+
 </head>
 
 <body>
@@ -184,7 +133,9 @@ LEARN. GROW. BECOME.
 <nav>
 
 <div class="logo">
+<a href="index.html">
 <img src="luxury logo white.png" alt="Faith By Faith Logo">
+</a>
 </div>
 
 <div class="menu">
@@ -200,108 +151,188 @@ LEARN. GROW. BECOME.
 
 <section class="hero">
 
-<div class="hero-content">
-
-<p class="hero-subtitle">
-
-Faith By Faith Collection
-
-</p>
-
-<h1>
-
-Books &amp; Resources
-
-</h1>
+<h1>Empowerment</h1>
 
 <div class="gold-divider"></div>
 
-<p class="hero-text">
+<p>
+Helping women discover purpose, build confidence, embrace leadership, and create meaningful impact through education, mentorship, and faith.
+</p>
 
-Beautifully written books, practical resources, and thoughtfully curated guides created to inspire confidence, deepen wisdom, and support every season of your journey.
+</section>
+<section style="padding:90px 8%; background:#ffffff;">
 
-<br><br>
+<div style="max-width:1100px; margin:auto; display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center;">
 
-Whether you're seeking personal growth, deeper understanding, or practical tools for life's transitions, you'll find resources designed to help you <strong>learn, grow, and become.</strong>
+<div>
+
+<h2 style="font-family:'Cormorant Garamond',serif; font-size:52px; color:#4d014d; margin-bottom:25px;">
+
+Empowering Women to Thrive
+
+</h2>
+
+<p style="font-size:18px; line-height:1.9; color:#555;">
+
+Faith By Faith exists to equip women with the confidence, knowledge, and practical tools they need to grow personally, professionally, and spiritually.
+
+Every program, workshop, and resource is designed to help women discover purpose, strengthen leadership, and create lasting impact within their families, workplaces, and communities.
 
 </p>
 
 </div>
 
-</section>
-
-</section>
-
-<section class="book-section">
-
 <div>
-<img src="becoming confidently you code new cover.png" alt="Becoming Confidently You">
+
+<img src="empowerment.jpg" alt="Women's Empowerment" style="width:100%; border-radius:18px; box-shadow:0 15px 35px rgba(0,0,0,.15);">
+
 </div>
 
-<div>
+</div>
 
-<h2>Becoming Confidently You</h2>
+</section>
+
+
+<section style="padding:90px 8%; background:#f6f1f5;">
+
+<h2 style="font-family:'Cormorant Garamond',serif; text-align:center; font-size:58px; color:#4d014d; margin-bottom:60px;">
+
+How We Empower
+
+</h2>
+
+<div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:35px; max-width:1200px; margin:auto;">
+
+<div style="background:white; padding:35px; border-radius:20px; box-shadow:0 10px 25px rgba(0,0,0,.08);">
+
+<h3 style="color:#4d014d; margin-bottom:15px;">Leadership</h3>
 
 <p>
-A transformational guide helping women embrace purpose,
-overcome self-doubt, and walk boldly in confidence.
+Develop confidence, resilience, and leadership skills to make a meaningful impact.
 </p>
 
-<a class="btn amazon"
-href="https://www.amazon.com/BECOMING-CONFIDENTLY-YOU-LIVE-CONFIDENCE/dp/B0CD91X4SG"
-target="_blank">
-Available on Amazon </a>
+</div>
+
+<div style="background:white; padding:35px; border-radius:20px; box-shadow:0 10px 25px rgba(0,0,0,.08);">
+
+<h3 style="color:#4d014d; margin-bottom:15px;">Education</h3>
+
+<p>
+Gain practical knowledge through workshops, coaching, books, and transformational learning.
+</p>
+
+</div>
+
+<div style="background:white; padding:35px; border-radius:20px; box-shadow:0 10px 25px rgba(0,0,0,.08);">
+
+<h3 style="color:#4d014d; margin-bottom:15px;">Community</h3>
+
+<p>
+Build authentic relationships that encourage growth, accountability, and lifelong success.
+</p>
+
+</div>
 
 </div>
 
 </section>
 
-<section class="book-section">
 
-<div>
-<img src="KNWOLEDGE KEY FRONT COVER.png" alt="The Knowledge Key">
-</div>
+<section style="padding:100px 8%; text-align:center; background:white;">
 
-<div>
+<h2 style="font-family:'Cormorant Garamond',serif; font-size:58px; color:#4d014d; margin-bottom:25px;">
 
-<h2>The Knowledge Key</h2>
+Ready to Begin?
 
-<p>
-A journey into hidden truths, spiritual understanding,
-and deeper knowledge waiting to be uncovered.
+</h2>
+
+<p style="max-width:700px; margin:auto; font-size:20px; color:#555; line-height:1.9;">
+
+Whether you're seeking personal growth, leadership development, or transformational learning, Faith By Faith is here to help you learn, grow, and become.
+
 </p>
 
-<a class="btn coming-soon">
-Coming Soon
+<a href="contact.html" style="display:inline-block; margin-top:40px; background:#c89f3d; color:#222; text-decoration:none; padding:18px 42px; border-radius:40px; font-weight:600;">
+
+BOOK AN INQUIRY
+
 </a>
 
-</div>
-
 </section>
 
-<footer class="footer">
 
-<p><strong>Faith Wich</strong></p>
+<footer style="background:#240024; color:white; text-align:center; padding:50px 20px;">
+
+<h3 style="font-family:'Cormorant Garamond',serif; font-size:36px; margin-bottom:10px;">
+
+Faith By Faith
+
+</h3>
 
 <p>Author • Educator • Speaker • Social Impact Strategist</p>
 
-<p style="margin-top:12px;">
-Learn. Grow. Become.
+<p style="margin-top:15px;">
+LEARN. GROW. BECOME.
 </p>
 
-<p style="margin-top:12px;">
-<a href="mailto:hello@faithbyfaith.com" style="color:white;text-decoration:none;">
+<p style="margin-top:15px;">
+<a href="mailto:hello@faithbyfaith.com" style="color:white; text-decoration:none;">
 hello@faithbyfaith.com
 </a>
 </p>
 
-<p style="margin-top:12px;">
-© 2026 Faith By Faith
+<p style="margin-top:25px;">
+© 2026 Faith By Faith. All Rights Reserved.
 </p>
 
 </footer>
 
+</body>
+
+</html>
+<section style="padding:90px 8%; background:#faf7f5;">
+
+<h2 style="font-family:'Cormorant Garamond',serif; font-size:56px; color:#4d014d; text-align:center; margin-bottom:20px;">
+Programs & Services
+</h2>
+
+<div style="width:120px;height:3px;background:#c89f3d;margin:0 auto 50px;"></div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:35px;max-width:1200px;margin:auto;">
+
+<div style="background:white;padding:35px;border-radius:20px;box-shadow:0 8px 25px rgba(0,0,0,.08);">
+<h3 style="color:#4d014d;font-size:28px;margin-bottom:15px;">Speaking</h3>
+<p>
+Inspirational keynote presentations, conferences, women's events, and leadership sessions that motivate audiences to grow with confidence and purpose.
+</p>
 </div>
 
-</body>
-</html>
+<div style="background:white;padding:35px;border-radius:20px;box-shadow:0 8px 25px rgba(0,0,0,.08);">
+<h3 style="color:#4d014d;font-size:28px;margin-bottom:15px;">Coaching</h3>
+<p>
+Personalized coaching designed to help women strengthen confidence, discover purpose, and achieve meaningful personal and professional goals.
+</p>
+</div>
+
+<div style="background:white;padding:35px;border-radius:20px;box-shadow:0 8px 25px rgba(0,0,0,.08);">
+<h3 style="color:#4d014d;font-size:28px;margin-bottom:15px;">Workshops</h3>
+<p>
+Interactive learning experiences focused on leadership, education, empowerment, communication, and personal growth.
+</p>
+</div>
+
+</div>
+
+<div style="text-align:center;margin-top:60px;">
+
+<a href="work-with-faith.html" style="display:inline-block;background:#4d014d;color:white;padding:18px 40px;border-radius:40px;text-decoration:none;font-weight:600;margin-right:15px;">
+WORK WITH FAITH
+</a>
+
+<a href="contact.html" style="display:inline-block;background:#c89f3d;color:#222;padding:18px 40px;border-radius:40px;text-decoration:none;font-weight:600;">
+BOOK AN INQUIRY
+</a>
+
+</div>
+
+</section>
