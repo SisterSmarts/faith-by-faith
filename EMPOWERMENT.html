@@ -2235,3 +2235,1874 @@ submitButton.textContent =
 </body>
 
 </html>
+/* LIBRARY */
+
+.library{
+
+padding:100px 7%;
+
+background:
+
+linear-gradient(
+rgba(255,250,246,.95),
+rgba(255,250,246,.95)
+),
+
+radial-gradient(
+circle at 10% 15%,
+rgba(208,177,213,.40),
+transparent 28%
+),
+
+radial-gradient(
+circle at 92% 85%,
+rgba(239,202,216,.40),
+transparent 28%
+);
+
+}
+
+.section-heading{
+
+max-width:850px;
+margin:auto;
+text-align:center;
+margin-bottom:60px;
+
+}
+
+.section-heading .small-title{
+
+color:var(--gold);
+font-size:12px;
+font-weight:600;
+letter-spacing:3px;
+text-transform:uppercase;
+
+}
+
+.section-heading h2{
+
+font-family:'Cormorant Garamond',serif;
+font-size:58px;
+color:var(--purple);
+margin:15px 0;
+
+}
+
+.section-heading p{
+
+font-size:18px;
+color:#6a5b6c;
+line-height:1.8;
+
+}
+
+.library-grid{
+
+max-width:1450px;
+margin:auto;
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+}
+
+.journal-card{
+
+background:white;
+
+border:1px solid rgba(188,146,56,.22);
+
+box-shadow:var(--shadow);
+
+overflow:hidden;
+
+transition:.3s;
+
+display:flex;
+flex-direction:column;
+
+}
+
+.journal-card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:0 28px 60px rgba(40,10,45,.18);
+
+}
+
+.card-image{
+
+position:relative;
+
+aspect-ratio:4/5;
+
+overflow:hidden;
+
+}
+
+.card-image img{
+
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+transition:.5s;
+
+}
+
+.journal-card:hover img{
+
+transform:scale(1.03);
+
+}
+
+.volume-label{
+
+position:absolute;
+
+top:18px;
+left:18px;
+
+padding:8px 14px;
+
+background:rgba(255,255,255,.92);
+
+border:1px solid rgba(188,146,56,.35);
+
+font-size:10px;
+letter-spacing:2px;
+text-transform:uppercase;
+font-weight:600;
+
+color:var(--purple);
+
+}
+
+.card-content{
+
+padding:28px;
+
+display:flex;
+flex-direction:column;
+flex:1;
+
+text-align:center;
+
+}
+
+.card-content h3{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:40px;
+
+color:var(--purple);
+
+margin-bottom:10px;
+
+}
+
+.card-theme{
+
+font-size:11px;
+
+text-transform:uppercase;
+
+letter-spacing:1.5px;
+
+color:var(--gold);
+
+font-weight:600;
+
+}
+
+.card-divider{
+
+width:60px;
+height:1px;
+
+background:var(--gold);
+
+margin:20px auto;
+
+}
+
+.card-description{
+
+font-size:15px;
+
+line-height:1.8;
+
+color:#655668;
+
+margin-bottom:22px;
+
+}
+
+.card-quote{
+
+font-family:'Cormorant Garamond',serif;
+
+font-style:italic;
+
+font-size:19px;
+
+color:var(--purple);
+
+margin-bottom:28px;
+
+}
+
+.card-button{
+
+margin-top:auto;
+
+display:inline-block;
+
+padding-bottom:5px;
+
+background:none;
+
+border:none;
+
+border-bottom:1px solid rgba(77,1,77,.25);
+
+color:var(--purple);
+
+font-size:12px;
+
+font-weight:600;
+
+letter-spacing:1px;
+
+text-transform:uppercase;
+
+cursor:pointer;
+
+transition:.25s;
+
+}
+
+.card-button:hover{
+
+color:var(--gold);
+
+border-color:var(--gold);
+
+}
+
+/* MOBILE */
+
+@media(max-width:1150px){
+
+.library-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:900px){
+
+nav{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.hero h1{
+
+font-size:56px;
+
+}
+
+.hero-description{
+
+font-size:21px;
+
+}
+
+.introduction-inner{
+
+grid-template-columns:1fr;
+
+gap:40px;
+
+}
+
+}
+
+@media(max-width:650px){
+
+.library-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.hero{
+
+padding:90px 7%;
+
+}
+
+.hero h1{
+
+font-size:46px;
+
+}
+
+.section-heading h2{
+
+font-size:44px;
+
+}
+
+.introduction-panel h2{
+
+font-size:42px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="topbar">
+
+LEARN. GROW. BECOME.
+
+</div>
+
+<nav>
+
+<div class="logo">
+
+<a href="index.html">
+
+<img
+src="luxury logo white.png"
+alt="Faith By Faith">
+
+</a>
+
+</div>
+
+<div class="menu">
+
+<a href="index.html">Home</a>
+
+<a href="Meet Faith.html">Meet Faith</a>
+
+<a href="books.html">Books & Resources</a>
+
+<a class="active" href="EMPOWERMENT.html">Empowerment</a>
+
+<a href="sistersmarts.html">SisterSmarts</a>
+
+<a href="work-with-faith.html">Work With Faith</a>
+
+<a href="contact.html">Contact</a>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<p class="eyebrow">
+
+Faith By Faith Presents
+
+</p>
+
+<h1>
+
+The Becoming
+
+<span>Library</span>
+
+</h1>
+
+<div class="gold-line"></div>
+
+<p class="hero-description">
+
+A beautiful collection of guided companions created to help women rediscover who they are, deepen their faith, find healing, embrace courage and live with confidence and purpose.
+
+</p>
+
+<p class="hero-quote">
+
+“She didn't become her all at once. She became her one brave choice at a time.”
+
+</p>
+
+<div class="hero-actions">
+
+<a
+class="button"
+href="#library">
+
+Explore the Collection
+
+</a>
+
+<a
+class="button secondary"
+href="https://www.amazon.com/BECOMING-CONFIDENTLY-YOU-LIVE-CONFIDENCE/dp/B0CD91X4SG"
+target="_blank"
+rel="noopener">
+
+Read <em>Becoming Confidently You</em>
+
+</a>
+
+</div>
+
+</section>
+<section class="introduction">
+
+<div class="introduction-inner">
+
+<div class="introduction-panel">
+
+<h2>
+More than pages to complete.
+</h2>
+
+<p>
+A quiet place to pause, reflect, pray and keep becoming.
+</p>
+
+</div>
+
+<div class="introduction-copy">
+
+<p>
+
+Every woman carries a story. Some chapters are filled with joy. Others ask for healing, courage, patience and faith.
+
+</p>
+
+<p>
+
+<strong>The Becoming Library</strong> was created to meet women within those chapters—not with pressure to have everything figured out, but with compassionate guidance, honest reflection and room to listen to their hearts.
+
+</p>
+
+<p>
+
+Each volume feels like sitting down with someone who believes in you. Through heartfelt letters, thoughtful questions, gentle prayers and practical moments of reflection, the collection walks beside you from identity and confidence to healing, freedom, faith, purpose and empowerment.
+
+</p>
+
+<div style="margin-top:35px;">
+
+<a
+class="button secondary"
+href="https://www.amazon.com/BECOMING-CONFIDENTLY-YOU-LIVE-CONFIDENCE/dp/B0CD91X4SG"
+target="_blank"
+rel="noopener"
+>
+
+Continue with <em>Becoming Confidently You</em>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section
+class="library"
+id="library"
+>
+
+<div class="section-heading">
+
+<p class="small-title">
+Series One · Becoming
+</p>
+
+<h2>
+Eight volumes. One intentional journey.
+</h2>
+
+<p>
+
+Explore each guided companion and choose the one that speaks most clearly to the season you are in today.
+
+</p>
+
+</div>
+
+
+<div class="library-grid">
+
+
+<!-- VOLUME ONE -->
+
+<article class="journal-card">
+
+<div class="card-image">
+
+<span class="volume-label">
+Volume One
+</span>
+
+<img
+src="Volume 1.jpg"
+alt="Preview of Becoming Her guided companion"
+>
+
+</div>
+
+<div class="card-content">
+
+<h3>
+Becoming Her
+</h3>
+
+<p class="card-theme">
+Confidence, Identity &amp; Purpose
+</p>
+
+<div class="card-divider"></div>
+
+<p class="card-description">
+
+Pause beneath the expectations and reconnect with the woman you have always been. Name what matters, imagine what is possible and recognise the purpose already growing within you.
+
+</p>
+
+<p class="card-quote">
+
+“The woman you are becoming is already within you.”
+
+</p>
+
+<button
+class="card-button open-access"
+type="button"
+data-volume="Becoming Her"
+>
+
+Request the complete volume →
+
+</button>
+
+</div>
+
+</article>
+
+
+<!-- VOLUME TWO -->
+
+<article class="journal-card">
+
+<div class="card-image">
+
+<span class="volume-label">
+Volume Two
+</span>
+
+<img
+src="Volume 2.jpg"
+alt="Preview of Becoming Confident guided companion"
+>
+
+</div>
+
+<div class="card-content">
+
+<h3>
+Becoming Confident
+</h3>
+
+<p class="card-theme">
+Quiet Confidence
+</p>
+
+<div class="card-divider"></div>
+
+<p class="card-description">
+
+Quiet the voice that keeps questioning your worth. Replace comparison and self-doubt with truth, presence and a confidence that does not need to compete or prove itself.
+
+</p>
+
+<p class="card-quote">
+
+“Confidence does not shout. It quietly knows: I belong here.”
+
+</p>
+
+<button
+class="card-button open-access"
+type="button"
+data-volume="Becoming Confident"
+>
+
+Request the complete volume →
+
+</button>
+
+</div>
+
+</article>
+
+
+<!-- VOLUME THREE -->
+
+<article class="journal-card">
+
+<div class="card-image">
+
+<span class="volume-label">
+Volume Three
+</span>
+
+<img
+src="Volume 3.jpg"
+alt="Preview of Becoming Whole guided companion"
+>
+
+</div>
+
+<div class="card-content">
+
+<h3>
+Becoming Whole
+</h3>
+
+<p class="card-theme">
+Healing, Grace &amp; Restoration
+</p>
+
+<div class="card-divider"></div>
+
+<p class="card-description">
+
+Make space for the parts of your story that still feel tender. Name what hurt, offer yourself grace and begin releasing what you were never meant to carry forward.
+
+</p>
+
+<p class="card-quote">
+
+“Broken things can bloom again.”
+
+</p>
+
+<button
+class="card-button open-access"
+type="button"
+data-volume="Becoming Whole"
+>
+
+Request the complete volume →
+
+</button>
+
+</div>
+
+</article>
+
+
+<!-- VOLUME FOUR -->
+
+<article class="journal-card">
+
+<div class="card-image">
+
+<span class="volume-label">
+Volume Four
+</span>
+
+<img
+src="Volume 4.jpg"
+alt="Preview of Becoming Brave guided companion"
+>
+
+</div>
+
+<div class="card-content">
+
+<h3>
+Becoming Brave
+</h3>
+
+<p class="card-theme">
+Choosing Courage Over Fear
+</p>
+
+<div class="card-divider"></div>
+
+<p class="card-description">
+
+Meet the fears that have kept you small and discover the strength to take your next right step. Courage begins before every answer is clear.
+
+</p>
+
+<p class="card-quote">
+
+“Courage is choosing to move while fear is still speaking.”
+
+</p>
+
+<button
+class="card-button open-access"
+type="button"
+data-volume="Becoming Brave"
+>
+
+Request the complete volume →
+
+</button>
+
+</div>
+
+</article>
+<!-- VOLUME FIVE -->
+
+<article class="journal-card">
+
+<div class="card-image">
+
+<span class="volume-label">
+Volume Five
+</span>
+
+<img
+src="Volume 5.jpg"
+alt="Preview of Becoming Free guided companion"
+>
+
+</div>
+
+<div class="card-content">
+
+<h3>
+Becoming Free
+</h3>
+
+<p class="card-theme">
+Freedom, Peace &amp; Release
+</p>
+
+<div class="card-divider"></div>
+
+<p class="card-description">
+
+Lay down the guilt, perfectionism, expectations and emotional weight you were never meant to keep. Open your hands to peace, healthier boundaries and a lighter way of living.
+
+</p>
+
+<p class="card-quote">
+
+“You were never meant to carry what was never yours.”
+
+</p>
+
+<button
+class="card-button open-access"
+type="button"
+data-volume="Becoming Free"
+>
+
+Request the complete volume →
+
+</button>
+
+</div>
+
+</article>
+
+
+<!-- VOLUME SIX -->
+
+<article class="journal-card">
+
+<div class="card-image">
+
+<span class="volume-label">
+Volume Six
+</span>
+
+<img
+src="Volume 6.jpg"
+alt="Preview of Becoming Rooted guided companion"
+>
+
+</div>
+
+<div class="card-content">
+
+<h3>
+Becoming Rooted
+</h3>
+
+<p class="card-theme">
+Faith, Growth &amp; Lasting Strength
+</p>
+
+<div class="card-divider"></div>
+
+<p class="card-description">
+
+Grow deeper in faith so changing seasons do not pull you away from who you are. Cultivate prayer, trust and the hidden roots that allow a meaningful life to bear fruit.
+
+</p>
+
+<p class="card-quote">
+
+“Roots grow in hidden places before anyone sees the fruit.”
+
+</p>
+
+<button
+class="card-button open-access"
+type="button"
+data-volume="Becoming Rooted"
+>
+
+Request the complete volume →
+
+</button>
+
+</div>
+
+</article>
+
+
+<!-- VOLUME SEVEN -->
+
+<article class="journal-card">
+
+<div class="card-image">
+
+<span class="volume-label">
+Volume Seven
+</span>
+
+<img
+src="Volume 7.jpg"
+alt="Preview of Becoming Unstoppable guided companion"
+>
+
+</div>
+
+<div class="card-content">
+
+<h3>
+Becoming Unstoppable
+</h3>
+
+<p class="card-theme">
+Purpose, Leadership &amp; Legacy
+</p>
+
+<div class="card-divider"></div>
+
+<p class="card-description">
+
+Remember your identity, reclaim the dreams you buried and step boldly into your calling. Your gifts were placed within you to encourage, lead and leave a legacy.
+
+</p>
+
+<p class="card-quote">
+
+“You were created to shine, lead, build and leave a legacy.”
+
+</p>
+
+<button
+class="card-button open-access"
+type="button"
+data-volume="Becoming Unstoppable"
+>
+
+Request the complete volume →
+
+</button>
+
+</div>
+
+</article>
+
+
+<!-- VOLUME EIGHT -->
+
+<article class="journal-card">
+
+<div class="card-image">
+
+<span class="volume-label">
+Volume Eight
+</span>
+
+<img
+src="Volume 8.jpg"
+alt="Preview of Becoming Empowered guided companion"
+>
+
+</div>
+
+<div class="card-content">
+
+<h3>
+Becoming Empowered
+</h3>
+
+<p class="card-theme">
+Purpose, Confidence &amp; Meaningful Impact
+</p>
+
+<div class="card-divider"></div>
+
+<p class="card-description">
+
+Bring the full journey together. Carry forward the confidence, healing, freedom, faith and purpose you have cultivated—and use them to live intentionally and create meaningful impact.
+
+</p>
+
+<p class="card-quote">
+
+“This is not the end of your story. It is the beginning of your legacy.”
+
+</p>
+
+<button
+class="card-button open-access"
+type="button"
+data-volume="Becoming Empowered"
+>
+
+Request the complete volume →
+
+</button>
+
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+
+<section class="access">
+
+<div class="access-inner">
+
+<p class="eyebrow">
+Choose What You Need Today
+</p>
+
+<h2>
+Which volume would support you most right now?
+</h2>
+
+<p>
+
+Take a moment to choose the companion that speaks most clearly to your current season. Share your name and email, and Faith By Faith will send the complete volume directly to you.
+
+</p>
+
+<button
+class="button open-access"
+type="button"
+data-volume=""
+>
+
+Choose Your Volume
+
+</button>
+
+<p class="access-note">
+
+Your details will be treated with care. You will receive only the volume you choose.
+
+</p>
+
+</div>
+
+</section>
+
+
+<section class="experience">
+
+<div class="experience-inner">
+
+<div class="experience-copy">
+
+<p class="eyebrow">
+The Signature Experience
+</p>
+
+<h2>
+A familiar place to return to in every season.
+</h2>
+
+<p>
+
+Each guided companion has its own focus while preserving the same warm Faith By Faith experience.
+
+</p>
+
+<p>
+
+This is not about rushing through another workbook. It is an invitation into a thoughtful conversation—one that makes room for truth, prayer, courage, reflection and meaningful action.
+
+</p>
+
+</div>
+
+<div class="experience-list">
+
+<ul>
+
+<li>A heartfelt Letter from Faith</li>
+
+<li>Five guided Moments of growth</li>
+
+<li>Gentle reflection and writing space</li>
+
+<li>Pause &amp; Pray sections</li>
+
+<li>Memorable truths and declarations</li>
+
+<li>Practical invitations to take the next step</li>
+
+<li>A closing blessing for the journey ahead</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+<style>
+
+/* ACCESS SECTION */
+
+.access{
+position:relative;
+overflow:hidden;
+padding:105px 8%;
+background:var(--purple);
+color:white;
+text-align:center;
+}
+
+.access::before,
+.access::after{
+content:"";
+position:absolute;
+width:300px;
+height:300px;
+border-radius:50%;
+opacity:.18;
+pointer-events:none;
+}
+
+.access::before{
+top:-120px;
+left:-110px;
+background:
+radial-gradient(circle at 40% 40%,#f0cfe0 0 14%,transparent 15%),
+radial-gradient(circle at 66% 44%,#c899c9 0 18%,transparent 19%),
+radial-gradient(circle at 45% 69%,#eabecf 0 19%,transparent 20%);
+}
+
+.access::after{
+right:-110px;
+bottom:-125px;
+background:
+radial-gradient(circle at 40% 40%,#e5c76e 0 14%,transparent 15%),
+radial-gradient(circle at 66% 44%,#ba83ba 0 18%,transparent 19%),
+radial-gradient(circle at 45% 69%,#efc4d3 0 19%,transparent 20%);
+}
+
+.access-inner{
+position:relative;
+z-index:2;
+max-width:850px;
+margin:auto;
+}
+
+.access h2{
+font-family:'Cormorant Garamond',serif;
+font-size:58px;
+line-height:1.08;
+margin-bottom:20px;
+}
+
+.access p{
+max-width:700px;
+margin:auto;
+color:#eaddea;
+font-size:16px;
+}
+
+.access .button{
+margin-top:30px;
+background:var(--gold);
+border-color:var(--gold);
+color:#2d1730;
+}
+
+.access .button:hover{
+background:#dfc474;
+border-color:#dfc474;
+}
+
+.access-note{
+margin-top:15px !important;
+font-size:12px !important;
+color:#cfb9d1 !important;
+}
+
+/* SIGNATURE EXPERIENCE */
+
+.experience{
+padding:95px 8%;
+background:white;
+}
+
+.experience-inner{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:55px;
+align-items:center;
+}
+
+.experience-copy h2{
+font-family:'Cormorant Garamond',serif;
+font-size:53px;
+line-height:1.08;
+color:var(--purple);
+margin-bottom:20px;
+}
+
+.experience-copy p{
+color:#5e5061;
+margin-bottom:17px;
+}
+
+.experience-list{
+padding:39px;
+background:
+radial-gradient(
+circle at 94% 8%,
+rgba(210,178,215,.35),
+transparent 30%
+),
+var(--cream);
+border:1px solid var(--border);
+box-shadow:var(--shadow);
+}
+
+.experience-list ul{
+list-style:none;
+}
+
+.experience-list li{
+position:relative;
+padding:11px 0 11px 30px;
+border-bottom:1px solid rgba(77,1,77,.08);
+color:#514353;
+}
+
+.experience-list li:last-child{
+border-bottom:0;
+}
+
+.experience-list li::before{
+content:"♡";
+position:absolute;
+left:0;
+top:9px;
+color:var(--gold);
+font-size:18px;
+}
+
+/* FOOTER */
+
+footer{
+background:#270029;
+color:white;
+text-align:center;
+padding:48px 8%;
+}
+
+footer .footer-name{
+font-size:22px;
+font-weight:600;
+}
+
+footer p{
+margin-top:10px;
+}
+
+footer .footer-motto{
+margin-top:16px;
+letter-spacing:2px;
+}
+
+footer .copyright{
+font-size:13px;
+opacity:.75;
+}
+
+/* REQUEST WINDOW */
+
+.modal{
+display:none;
+position:fixed;
+inset:0;
+z-index:1000;
+align-items:center;
+justify-content:center;
+padding:20px;
+background:rgba(31,10,34,.78);
+backdrop-filter:blur(5px);
+}
+
+.modal.open{
+display:flex;
+}
+
+.modal-dialog{
+position:relative;
+width:min(620px,100%);
+max-height:92vh;
+overflow:auto;
+padding:55px 48px 45px;
+text-align:center;
+background:
+radial-gradient(
+circle at 7% 7%,
+rgba(201,161,207,.43),
+transparent 31%
+),
+radial-gradient(
+circle at 95% 94%,
+rgba(240,199,213,.48),
+transparent 31%
+),
+var(--cream);
+border:1px solid rgba(223,199,121,.55);
+box-shadow:0 30px 90px rgba(0,0,0,.32);
+}
+
+.modal-close{
+position:absolute;
+top:14px;
+right:17px;
+width:40px;
+height:40px;
+border:0;
+background:transparent;
+color:var(--purple);
+font-size:29px;
+cursor:pointer;
+}
+
+.modal-label{
+color:var(--gold);
+font-size:11px;
+font-weight:600;
+letter-spacing:2.5px;
+text-transform:uppercase;
+}
+
+.modal h2{
+font-family:'Cormorant Garamond',serif;
+font-size:48px;
+line-height:1.05;
+color:var(--purple);
+margin:9px 0 16px;
+}
+
+.modal-description{
+color:#655568;
+}
+
+.access-form{
+margin-top:28px;
+}
+
+.access-form input,
+.access-form select{
+width:100%;
+height:55px;
+margin-bottom:13px;
+padding:0 17px;
+border:1px solid rgba(77,1,77,.20);
+background:white;
+color:var(--text);
+outline:none;
+}
+
+.access-form input:focus,
+.access-form select:focus{
+border-color:var(--gold);
+box-shadow:0 0 0 3px rgba(188,146,56,.12);
+}
+
+.access-form label{
+display:block;
+text-align:left;
+margin:5px 0 8px;
+color:var(--purple);
+font-size:12px;
+font-weight:600;
+letter-spacing:.5px;
+}
+
+.access-form .button{
+width:100%;
+border-radius:0;
+}
+
+.form-note{
+margin-top:13px;
+font-size:11px;
+color:#7a697c;
+}
+
+.form-message{
+display:none;
+margin-top:14px;
+font-size:13px;
+line-height:1.5;
+}
+
+.form-message.visible{
+display:block;
+}
+
+.form-message.error{
+color:#973f51;
+}
+
+.confirmation-panel{
+display:none;
+margin-top:28px;
+}
+
+.confirmation-panel.visible{
+display:block;
+}
+
+.confirmation-panel h3{
+font-family:'Cormorant Garamond',serif;
+font-size:33px;
+color:var(--purple);
+margin-bottom:10px;
+}
+
+.confirmation-panel p{
+font-size:14px;
+color:#655568;
+margin-bottom:22px;
+}
+
+@media(max-width:900px){
+
+.experience-inner{
+grid-template-columns:1fr;
+gap:36px;
+}
+
+}
+
+@media(max-width:650px){
+
+.access,
+.experience{
+padding-left:6%;
+padding-right:6%;
+}
+
+.access h2,
+.experience-copy h2{
+font-size:42px;
+}
+
+.modal-dialog{
+padding:48px 23px 33px;
+}
+
+.modal h2{
+font-size:39px;
+}
+
+}
+
+</style>
+
+
+<footer>
+
+<p class="footer-name">
+Faith Wich
+</p>
+
+<p>
+Author • Educator • Speaker • Social Impact Strategist
+</p>
+
+<p class="footer-motto">
+Learn. Grow. Become.
+</p>
+
+<p class="copyright">
+© Faith By Faith
+</p>
+
+</footer>
+
+
+<!-- COMPLETE VOLUME REQUEST WINDOW -->
+
+<div
+class="modal"
+id="accessModal"
+role="dialog"
+aria-modal="true"
+aria-labelledby="accessTitle"
+aria-hidden="true"
+>
+
+<div class="modal-dialog">
+
+<button
+class="modal-close"
+id="closeModal"
+type="button"
+aria-label="Close"
+>
+×
+</button>
+
+<p class="modal-label">
+The Becoming Library
+</p>
+
+<h2 id="accessTitle">
+Choose what you need today.
+</h2>
+
+<p class="modal-description">
+
+Share your name and email, then choose the guided volume that would support you most in this season. Faith By Faith will send your selected volume directly to you.
+
+</p>
+
+<form
+class="access-form"
+id="volumeRequestForm"
+action="https://formspree.io/f/xykqlkdo"
+method="POST"
+>
+
+<input
+type="hidden"
+name="subject"
+value="Request for a Becoming Library Volume"
+>
+
+<input
+type="text"
+name="name"
+id="firstName"
+placeholder="First name"
+autocomplete="given-name"
+required
+>
+
+<input
+type="email"
+name="email"
+id="emailAddress"
+placeholder="Email address"
+autocomplete="email"
+required
+>
+
+<label for="volumeChoice">
+
+Which volume would support you most right now?
+
+</label>
+
+<select
+name="selected_volume"
+id="volumeChoice"
+required
+>
+
+<option value="">
+Please choose one volume
+</option>
+
+<option value="Becoming Her">
+Volume 1 · Becoming Her
+</option>
+
+<option value="Becoming Confident">
+Volume 2 · Becoming Confident
+</option>
+
+<option value="Becoming Whole">
+Volume 3 · Becoming Whole
+</option>
+
+<option value="Becoming Brave">
+Volume 4 · Becoming Brave
+</option>
+
+<option value="Becoming Free">
+Volume 5 · Becoming Free
+</option>
+
+<option value="Becoming Rooted">
+Volume 6 · Becoming Rooted
+</option>
+
+<option value="Becoming Unstoppable">
+Volume 7 · Becoming Unstoppable
+</option>
+
+<option value="Becoming Empowered">
+Volume 8 · Becoming Empowered
+</option>
+
+</select>
+
+<button
+class="button"
+id="submitButton"
+type="submit"
+>
+Request My Chosen Volume
+</button>
+
+<p class="form-note">
+
+Your request will be sent privately to Faith By Faith. You will receive only the volume you selected.
+
+</p>
+
+<p
+class="form-message"
+id="formMessage"
+aria-live="polite"
+>
+</p>
+
+</form>
+
+
+<div
+class="confirmation-panel"
+id="confirmationPanel"
+>
+
+<h3>
+Your request has been received.
+</h3>
+
+<p>
+
+Thank you for choosing the volume that meets you in this season. Faith By Faith will send it to the email address you provided.
+
+</p>
+
+<button
+class="button"
+id="finishButton"
+type="button"
+>
+Return to the Collection
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<script>
+
+const modal =
+document.getElementById("accessModal");
+
+const openButtons =
+document.querySelectorAll(".open-access");
+
+const closeButton =
+document.getElementById("closeModal");
+
+const requestForm =
+document.getElementById("volumeRequestForm");
+
+const confirmationPanel =
+document.getElementById("confirmationPanel");
+
+const formMessage =
+document.getElementById("formMessage");
+
+const submitButton =
+document.getElementById("submitButton");
+
+const finishButton =
+document.getElementById("finishButton");
+
+const firstName =
+document.getElementById("firstName");
+
+const volumeChoice =
+document.getElementById("volumeChoice");
+
+
+function openModal(event){
+
+const chosenVolume =
+event.currentTarget.getAttribute("data-volume");
+
+requestForm.style.display =
+"block";
+
+confirmationPanel.classList.remove(
+"visible"
+);
+
+formMessage.className =
+"form-message";
+
+formMessage.textContent =
+"";
+
+submitButton.disabled =
+false;
+
+submitButton.textContent =
+"Request My Chosen Volume";
+
+if(chosenVolume){
+
+volumeChoice.value =
+chosenVolume;
+
+}else{
+
+volumeChoice.value =
+"";
+
+}
+
+modal.classList.add(
+"open"
+);
+
+modal.setAttribute(
+"aria-hidden",
+"false"
+);
+
+document.body.classList.add(
+"modal-open"
+);
+
+setTimeout(function(){
+
+firstName.focus();
+
+},100);
+
+}
+
+
+function closeModal(){
+
+modal.classList.remove(
+"open"
+);
+
+modal.setAttribute(
+"aria-hidden",
+"true"
+);
+
+document.body.classList.remove(
+"modal-open"
+);
+
+}
+
+
+openButtons.forEach(function(button){
+
+button.addEventListener(
+"click",
+openModal
+);
+
+});
+
+
+closeButton.addEventListener(
+"click",
+closeModal
+);
+
+
+finishButton.addEventListener(
+"click",
+closeModal
+);
+
+
+modal.addEventListener(
+"click",
+function(event){
+
+if(event.target === modal){
+
+closeModal();
+
+}
+
+}
+);
+
+
+document.addEventListener(
+"keydown",
+function(event){
+
+if(
+event.key === "Escape" &&
+modal.classList.contains("open")
+){
+
+closeModal();
+
+}
+
+}
+);
+
+
+requestForm.addEventListener(
+"submit",
+async function(event){
+
+event.preventDefault();
+
+formMessage.className =
+"form-message";
+
+formMessage.textContent =
+"";
+
+if(!requestForm.checkValidity()){
+
+requestForm.reportValidity();
+return;
+
+}
+
+submitButton.disabled =
+true;
+
+submitButton.textContent =
+"Sending Your Request...";
+
+const formData =
+new FormData(requestForm);
+
+try{
+
+const response =
+await fetch(
+requestForm.action,
+{
+method:"POST",
+body:formData,
+headers:{
+Accept:"application/json"
+}
+}
+);
+
+if(!response.ok){
+
+throw new Error(
+"Submission failed"
+);
+
+}
+
+requestForm.style.display =
+"none";
+
+confirmationPanel.classList.add(
+"visible"
+);
+
+}
+
+catch(error){
+
+formMessage.textContent =
+"We could not send your request just now. Please check your connection and try again.";
+
+formMessage.classList.add(
+"visible",
+"error"
+);
+
+submitButton.disabled =
+false;
+
+submitButton.textContent =
+"Request My Chosen Volume";
+
+}
+
+}
+);
+
+</script>
+
+</body>
+
+</html>
