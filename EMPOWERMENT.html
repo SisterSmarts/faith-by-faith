@@ -89,6 +89,490 @@ font-weight:600;
 letter-spacing:2.5px;
 }
 
+
+
+/* NAVIGATION */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:white;
+border-bottom:1px solid #eee6ee;
+box-shadow:0 3px 15px rgba(45,10,50,.04);
+position:relative;
+z-index:20;
+}
+
+.logo img{
+height:80px;
+width:auto;
+}
+
+.menu{
+display:flex;
+align-items:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
+.menu a{
+text-decoration:none;
+color:#383038;
+font-size:14px;
+font-weight:500;
+transition:.25s;
+}
+
+.menu a:hover,
+.menu a.active{
+color:var(--purple);
+}
+
+/* HERO */
+
+.hero{
+position:relative;
+overflow:hidden;
+padding:115px 8% 125px;
+text-align:center;
+background:
+radial-gradient(circle at 8% 12%,rgba(189,139,190,.35),transparent 27%),
+radial-gradient(circle at 92% 15%,rgba(239,196,214,.40),transparent 28%),
+radial-gradient(circle at 10% 92%,rgba(221,192,225,.45),transparent 28%),
+radial-gradient(circle at 92% 90%,rgba(216,181,219,.38),transparent 28%),
+linear-gradient(135deg,#fffaf4 0%,#f7edf7 50%,#fffaf5 100%);
+}
+
+.hero::before{
+content:"";
+position:absolute;
+top:-95px;
+left:-85px;
+width:270px;
+height:270px;
+border-radius:50%;
+opacity:.48;
+background:
+radial-gradient(circle at 42% 42%,#59205e 0 10%,transparent 11%),
+radial-gradient(circle at 65% 44%,#aa72a8 0 15%,transparent 16%),
+radial-gradient(circle at 45% 67%,#edc6d4 0 17%,transparent 18%),
+radial-gradient(circle at 67% 69%,#6f3175 0 11%,transparent 12%);
+}
+
+.hero::after{
+content:"";
+position:absolute;
+right:-85px;
+bottom:-95px;
+width:270px;
+height:270px;
+border-radius:50%;
+opacity:.48;
+background:
+radial-gradient(circle at 42% 42%,#4d014d 0 11%,transparent 12%),
+radial-gradient(circle at 65% 44%,#c38fbd 0 16%,transparent 17%),
+radial-gradient(circle at 45% 68%,#f1c9d2 0 17%,transparent 18%),
+radial-gradient(circle at 68% 70%,#7e3d83 0 11%,transparent 12%);
+}
+
+.eyebrow{
+position:relative;
+z-index:2;
+color:var(--gold);
+font-size:12px;
+font-weight:600;
+letter-spacing:3px;
+text-transform:uppercase;
+margin-bottom:17px;
+}
+
+.hero h1{
+position:relative;
+z-index:2;
+max-width:950px;
+margin:auto;
+font-family:'Cormorant Garamond',serif;
+font-size:78px;
+font-weight:600;
+line-height:1;
+color:var(--purple);
+}
+
+.hero h1 span{
+display:block;
+font-style:italic;
+font-weight:500;
+color:var(--gold);
+}
+
+.gold-line{
+position:relative;
+z-index:2;
+width:120px;
+height:2px;
+margin:29px auto;
+background:linear-gradient(to right,transparent,var(--gold),transparent);
+}
+
+.hero-description{
+position:relative;
+z-index:2;
+max-width:840px;
+margin:auto;
+font-family:'Cormorant Garamond',serif;
+font-size:25px;
+line-height:1.6;
+color:#5d4c60;
+}
+
+.hero-quote{
+position:relative;
+z-index:2;
+max-width:720px;
+margin:29px auto 0;
+font-family:'Cormorant Garamond',serif;
+font-size:21px;
+font-style:italic;
+color:var(--purple);
+}
+
+.hero-actions{
+position:relative;
+z-index:2;
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-top:38px;
+}
+
+/* BUTTONS */
+
+.button{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+min-height:52px;
+padding:13px 29px;
+border:1px solid var(--purple);
+border-radius:40px;
+background:var(--purple);
+color:white;
+text-decoration:none;
+font-size:13px;
+font-weight:600;
+letter-spacing:.6px;
+cursor:pointer;
+transition:.25s;
+}
+
+.button:hover{
+background:var(--deep-purple);
+border-color:var(--deep-purple);
+transform:translateY(-2px);
+}
+
+.button:disabled{
+opacity:.65;
+cursor:not-allowed;
+transform:none;
+}
+
+.button.secondary{
+background:rgba(255,255,255,.76);
+color:var(--purple);
+border-color:rgba(77,1,77,.28);
+}
+
+.button.secondary:hover{
+background:white;
+}
+
+/* INTRODUCTION */
+
+.introduction{
+padding:95px 8%;
+background:white;
+}
+
+.introduction-inner{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:.9fr 1.1fr;
+gap:70px;
+align-items:center;
+}
+
+.introduction-panel{
+position:relative;
+padding:48px;
+overflow:hidden;
+border:1px solid var(--border);
+background:
+radial-gradient(circle at 8% 8%,rgba(183,135,187,.29),transparent 32%),
+radial-gradient(circle at 94% 92%,rgba(239,199,212,.40),transparent 32%),
+var(--cream);
+box-shadow:var(--shadow);
+}
+
+.introduction-panel::after{
+content:"✦";
+position:absolute;
+right:24px;
+top:17px;
+color:var(--gold);
+font-size:24px;
+}
+
+.introduction-panel h2{
+font-family:'Cormorant Garamond',serif;
+font-size:55px;
+line-height:1.05;
+font-weight:600;
+color:var(--purple);
+margin-bottom:18px;
+}
+
+.introduction-panel p{
+font-family:'Cormorant Garamond',serif;
+font-size:23px;
+line-height:1.5;
+font-style:italic;
+color:var(--gold);
+}
+
+.introduction-copy p{
+margin-bottom:19px;
+color:#5e5061;
+}
+
+.introduction-copy strong{
+color:var(--purple);
+}
+
+/* LIBRARY */
+
+.library{
+padding:100px 7%;
+background:
+linear-gradient(rgba(255,250,246,.95),rgba(255,250,246,.95)),
+radial-gradient(circle at 10% 15%,rgba(208,177,213,.40),transparent 28%),
+radial-gradient(circle at 92% 85%,rgba(239,202,216,.40),transparent 28%);
+}
+
+.section-heading{
+max-width:850px;
+margin:0 auto 60px;
+text-align:center;
+}
+
+.section-heading .small-title{
+color:var(--gold);
+font-size:12px;
+font-weight:600;
+letter-spacing:3px;
+text-transform:uppercase;
+}
+
+.section-heading h2{
+font-family:'Cormorant Garamond',serif;
+font-size:58px;
+color:var(--purple);
+margin:15px 0;
+}
+
+.section-heading p{
+font-size:18px;
+color:#6a5b6c;
+line-height:1.8;
+}
+
+.library-grid{
+max-width:1450px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(4,minmax(0,1fr));
+gap:30px;
+}
+
+.journal-card{
+background:white;
+border:1px solid rgba(188,146,56,.22);
+box-shadow:var(--shadow);
+overflow:hidden;
+transition:.3s;
+display:flex;
+flex-direction:column;
+}
+
+.journal-card:hover{
+transform:translateY(-8px);
+box-shadow:0 28px 60px rgba(40,10,45,.18);
+}
+
+.card-image{
+position:relative;
+aspect-ratio:4/5;
+overflow:hidden;
+}
+
+.card-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:.5s;
+}
+
+.journal-card:hover img{
+transform:scale(1.03);
+}
+
+.volume-label{
+position:absolute;
+z-index:2;
+top:18px;
+left:18px;
+padding:8px 14px;
+background:rgba(255,255,255,.92);
+border:1px solid rgba(188,146,56,.35);
+font-size:10px;
+letter-spacing:2px;
+text-transform:uppercase;
+font-weight:600;
+color:var(--purple);
+}
+
+.card-content{
+padding:28px;
+display:flex;
+flex-direction:column;
+flex:1;
+text-align:center;
+}
+
+.card-content h3{
+font-family:'Cormorant Garamond',serif;
+font-size:40px;
+color:var(--purple);
+margin-bottom:10px;
+}
+
+.card-theme{
+font-size:11px;
+text-transform:uppercase;
+letter-spacing:1.5px;
+color:var(--gold);
+font-weight:600;
+}
+
+.card-divider{
+width:60px;
+height:1px;
+background:var(--gold);
+margin:20px auto;
+}
+
+.card-description{
+font-size:15px;
+line-height:1.8;
+color:#655668;
+margin-bottom:22px;
+}
+
+.card-quote{
+font-family:'Cormorant Garamond',serif;
+font-style:italic;
+font-size:19px;
+color:var(--purple);
+margin-bottom:28px;
+}
+
+.card-button{
+margin-top:auto;
+display:inline-block;
+padding-bottom:5px;
+background:none;
+border:none;
+border-bottom:1px solid rgba(77,1,77,.25);
+color:var(--purple);
+font-size:12px;
+font-weight:600;
+letter-spacing:1px;
+text-transform:uppercase;
+cursor:pointer;
+transition:.25s;
+}
+
+.card-button:hover{
+color:var(--gold);
+border-color:var(--gold);
+}
+
+/* MAIN RESPONSIVE RULES */
+
+@media(max-width:1150px){
+.library-grid{
+grid-template-columns:repeat(2,minmax(0,1fr));
+}
+}
+
+@media(max-width:900px){
+nav{
+flex-direction:column;
+gap:20px;
+}
+
+.menu{
+justify-content:center;
+}
+
+.hero h1{
+font-size:56px;
+}
+
+.hero-description{
+font-size:21px;
+}
+
+.introduction-inner{
+grid-template-columns:1fr;
+gap:40px;
+}
+}
+
+@media(max-width:650px){
+.library-grid{
+grid-template-columns:1fr;
+}
+
+.hero{
+padding:90px 7%;
+}
+
+.hero h1{
+font-size:46px;
+}
+
+.section-heading h2{
+font-size:44px;
+}
+
+.introduction-panel h2{
+font-size:42px;
+}
+
+.menu{
+gap:12px 14px;
+}
+
+.menu a{
+font-size:11px;
+}
+}
+
 </style>
 
 </head>
