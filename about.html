@@ -52,18 +52,22 @@ display:block;
 
 .menu{
 display:flex;
-gap:18px;
+align-items:center;
+justify-content:flex-end;
+gap:25px;
 flex-wrap:wrap;
 }
 
 .menu a{
 text-decoration:none;
-color:#333;
-font-weight:500;
+color:#383038;
 font-size:14px;
+font-weight:500;
+transition:.25s;
 }
 
-.menu a:hover{
+.menu a:hover,
+.menu a.active{
 color:#4d014d;
 }
 
@@ -269,7 +273,102 @@ color:white;
 text-align:center;
 padding:50px;
 }
+footer{
+background:#240024;
+color:white;
+text-align:center;
+padding:50px;
+}
 
+/* MOBILE */
+
+@media(max-width:900px){
+
+nav{
+flex-direction:column;
+gap:20px;
+padding:20px 6%;
+}
+
+.logo img{
+height:90px;
+}
+
+.menu{
+justify-content:center;
+gap:15px 18px;
+text-align:center;
+}
+
+.hero{
+grid-template-columns:1fr;
+gap:40px;
+text-align:center;
+padding:70px 7%;
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero img{
+justify-self:center;
+max-width:420px;
+}
+
+.kiva,
+.community,
+.beliefs,
+.cta{
+padding-left:7%;
+padding-right:7%;
+}
+
+}
+
+@media(max-width:650px){
+
+.topbar{
+font-size:10px;
+letter-spacing:2px;
+}
+
+.logo img{
+height:80px;
+}
+
+.menu{
+gap:12px 14px;
+}
+
+.menu a{
+font-size:11px;
+}
+
+.hero h1{
+font-size:46px;
+}
+
+.hero h3{
+font-size:13px;
+line-height:1.6;
+}
+
+.kiva h2,
+.community h2,
+.beliefs h2{
+font-size:42px;
+}
+
+.btn{
+display:block;
+max-width:280px;
+margin:12px auto;
+}
+
+}
+
+</style>
 </style>
 <!-- MailerLite Universal -->
 <script>
@@ -305,9 +404,9 @@ alt="Faith By Faith"
 
 <a href="index.html">HOME</a>
 
-<a href="about.html">MEET FAITH</a>
+<a class="active" href="about.html">MEET FAITH</a>
 
-<a href="books.html">BOOKS & RESOURCES</a>
+<a href="books.html">BOOKS &amp; RESOURCES</a>
 
 <a href="EMPOWERMENT.html">EMPOWERMENT</a>
 
@@ -469,15 +568,10 @@ Learning matters most when it inspires action that creates positive change for o
 </p>
 </div>
 
-</div>
-
 </section>
 
 <!-- CTA -->
 <section class="cta">
-
-<section class="cta">
-
 <h2 style="font-family:'Cormorant Garamond',serif;
 font-size:52px;
 color:#4d014d;
@@ -514,9 +608,6 @@ Whether you're looking for practical guidance, meaningful conversations, inspiri
 </a>
 
 </section>
-
-</section>
-<footer class="footer">
 <section style="background:#fffaf7;padding:60px 8%;text-align:center;">
 
 <p style="
