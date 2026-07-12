@@ -52,18 +52,22 @@ display:block;
 
 .menu{
 display:flex;
+align-items:center;
 gap:25px;
 flex-wrap:wrap;
 }
 
 .menu a{
+margin:0;
 text-decoration:none;
-color:#333;
+color:#383038;
+font-size:14px;
 font-weight:500;
-transition:.3s;
+transition:.25s;
 }
 
-.menu a:hover{
+.menu a:hover,
+.menu a.active{
 color:#4d014d;
 }
 
@@ -119,6 +123,17 @@ margin-bottom:25px;
 nav{
 flex-direction:column;
 gap:20px;
+padding:20px 6%;
+}
+
+.logo img{
+height:90px;
+}
+
+.menu{
+justify-content:center;
+gap:15px 18px;
+text-align:center;
 }
 
 .hero h1{
@@ -135,6 +150,47 @@ font-size:42px;
 
 }
 
+@media(max-width:650px){
+
+.topbar{
+font-size:10px;
+letter-spacing:2px;
+}
+
+.logo img{
+height:80px;
+}
+
+.menu{
+gap:12px 14px;
+}
+
+.menu a{
+font-size:11px;
+}
+
+.hero{
+padding:70px 6% 55px;
+}
+
+.hero h1{
+font-size:44px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+.section{
+padding-left:7%;
+padding-right:7%;
+}
+
+.section-title{
+font-size:40px;
+}
+
+}
 </style>
 
 </head>
@@ -168,7 +224,7 @@ alt="Faith By Faith"
 
 <a href="about.html">MEET FAITH</a>
 
-<a href="books.html">BOOKS & RESOURCES</a>
+<a href="books.html">BOOKS &amp; RESOURCES</a>
 
 <a href="EMPOWERMENT.html">EMPOWERMENT</a>
 
@@ -176,7 +232,7 @@ alt="Faith By Faith"
 
 <a href="work-with-faith.html">WORK WITH FAITH</a>
 
-<a href="contact.html">CONTACT</a>
+<a class="active" href="contact.html">CONTACT</a>
 
 </div>
 
