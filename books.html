@@ -41,11 +41,25 @@ width:auto;
 display:block;
 }
 
+.menu{
+display:flex;
+align-items:center;
+gap:25px;
+flex-wrap:wrap;
+}
+
 .menu a{
-margin-left:20px;
+margin:0;
 text-decoration:none;
-color:#333;
+color:#383038;
+font-size:14px;
 font-weight:500;
+transition:.25s;
+}
+
+.menu a:hover,
+.menu a.active{
+color:#4d014d;
 }
 
 .hero{
@@ -155,23 +169,18 @@ margin-top:40px;
 
 nav{
 flex-direction:column;
-gap:16px;
-padding:18px 5%;
+gap:20px;
+padding:20px 6%;
 }
 
 .logo img{
-height:78px;
+height:90px;
 }
 
 .menu{
-display:flex;
 justify-content:center;
-gap:12px 16px;
+gap:15px 18px;
 text-align:center;
-}
-
-.menu a{
-font-size:12px;
 }
 
 .book-section{
@@ -198,15 +207,15 @@ letter-spacing:2px;
 }
 
 .logo img{
-height:70px;
+height:80px;
 }
 
 .menu{
-gap:10px 12px;
+gap:12px 14px;
 }
 
 .menu a{
-font-size:10px;
+font-size:11px;
 }
 
 .hero{
@@ -274,7 +283,7 @@ alt="Faith By Faith"
 
 <a href="about.html">MEET FAITH</a>
 
-<a href="books.html">BOOKS & RESOURCES</a>
+<a class="active" href="books.html">BOOKS &amp; RESOURCES</a>
 
 <a href="EMPOWERMENT.html">EMPOWERMENT</a>
 
@@ -317,8 +326,6 @@ Whether you're seeking personal growth, deeper understanding, or practical tools
 </p>
 
 </div>
-
-</section>
 
 </section>
 
@@ -390,8 +397,6 @@ hello@faithbyfaith.com
 </p>
 
 </footer>
-
-</div>
 
 </body>
 </html>
