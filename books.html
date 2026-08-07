@@ -2,192 +2,508 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Books & Resources | Faith By Faith</title>
 
-<meta name="description" content="Faith By Faith books and resources created from real mentoring experiences to inspire confidence, self-awareness, and personal growth.">
+<meta name="description" content="Faith By Faith books and resources created from real mentoring experiences to inspire confidence, self-awareness, faith and personal growth.">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 
 <style>
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #fffdf8;
-    line-height: 1.7;
-}
+:root {
 
-header {
-    text-align: center;
-    padding: 30px;
-}
+--purple:#4d014d;
+--dark-purple:#270029;
+--cream:#fdf8f2;
+--gold:#bc9238;
+--pink:#f0c7d5;
+--text:#5e5061;
+--border:rgba(77,1,77,.12);
 
-header img {
-    width: 220px;
-}
-
-nav {
-    text-align: center;
-    padding: 15px;
-    background-color: #f5efe6;
-}
-
-nav a {
-    text-decoration: none;
-    color: #4d5c45;
-    margin: 0 15px;
-    font-weight: 600;
-}
-
-.hero {
-    text-align: center;
-    padding: 70px 20px;
-    background-color: #f7f2ea;
-}
-
-.hero h1 {
-    color: #4d5c45;
-    font-size: 42px;
-}
-
-.hero p {
-    max-width: 750px;
-    margin: auto;
-    font-size: 18px;
 }
 
 
-.book-story {
-    max-width: 850px;
-    margin: 60px auto;
-    padding: 45px;
-    background-color: #ffffff;
-    border-left: 5px solid #9aa886;
-}
-
-.book-story h2 {
-    color: #4d5c45;
+*{
+box-sizing:border-box;
 }
 
 
-.book-section {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 20px;
-    text-align: center;
-}
+body{
 
-.book-section img {
-    max-width: 280px;
-    margin: 20px;
-}
+margin:0;
+font-family:Arial,sans-serif;
+color:var(--text);
+background:white;
+line-height:1.8;
 
-
-.button {
-    display: inline-block;
-    background-color: #8b9b76;
-    color: white;
-    padding: 14px 30px;
-    border-radius: 30px;
-    text-decoration: none;
-    margin-top: 20px;
-}
-
-.button:hover {
-    background-color: #687653;
 }
 
 
-footer {
-    text-align: center;
-    padding: 40px;
-    background-color: #f5efe6;
-    margin-top: 60px;
+
+/* HEADER */
+
+
+header{
+
+text-align:center;
+padding:35px;
+background:white;
+
 }
 
+
+header img{
+
+width:220px;
+
+}
+
+
+
+/* NAVIGATION */
+
+
+nav{
+
+text-align:center;
+padding:18px;
+background:#f8f1f6;
+
+}
+
+
+nav a{
+
+text-decoration:none;
+color:var(--purple);
+margin:0 14px;
+font-weight:600;
+
+}
+
+
+
+/* HERO */
+
+
+.hero{
+
+padding:100px 8%;
+text-align:center;
+
+background:
+
+radial-gradient(
+circle at 15% 20%,
+rgba(201,161,207,.35),
+transparent 30%
+),
+
+var(--cream);
+
+}
+
+
+.hero h1{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:62px;
+
+line-height:1.1;
+
+color:var(--purple);
+
+margin-bottom:25px;
+
+}
+
+
+.hero p{
+
+max-width:850px;
+
+margin:auto;
+
+font-size:18px;
+
+}
+
+
+
+/* INTRO STORY */
+
+
+.book-story{
+
+max-width:900px;
+
+margin:80px auto;
+
+padding:60px 55px;
+
+text-align:center;
+
+
+background:
+
+radial-gradient(
+circle at 90% 10%,
+rgba(240,199,213,.45),
+transparent 30%
+),
+
+var(--cream);
+
+
+border:1px solid var(--border);
+
+box-shadow:
+0 25px 60px rgba(77,1,77,.10);
+
+
+}
+
+
+
+.book-story h2{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:52px;
+
+line-height:1.1;
+
+color:var(--purple);
+
+}
+
+
+
+.book-story p{
+
+font-size:17px;
+
+}
+
+
+
+.highlight{
+
+color:var(--purple);
+
+font-weight:600;
+
+}
+
+
+
+/* BUTTON */
+
+
+.button{
+
+display:inline-block;
+
+margin-top:25px;
+
+padding:15px 35px;
+
+background:var(--gold);
+
+color:#2d1730;
+
+text-decoration:none;
+
+font-weight:600;
+
+border-radius:0;
+
+transition:.3s;
+
+}
+
+
+
+.button:hover{
+
+background:#d2b269;
+
+}
+
+
+
+/* BOOK AREA */
+
+
+.book-section{
+
+max-width:1000px;
+
+margin:80px auto;
+
+padding:60px 30px;
+
+text-align:center;
+
+}
+
+
+
+.book-section h2{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:58px;
+
+color:var(--purple);
+
+}
+
+
+
+.book-section img{
+
+max-width:320px;
+
+margin:35px auto;
+
+display:block;
+
+box-shadow:
+0 30px 55px rgba(77,1,77,.20);
+
+}
+
+
+
+.book-section p{
+
+max-width:650px;
+
+margin:auto;
+
+font-size:17px;
+
+}
+
+
+
+/* FOOTER */
+
+
+footer{
+
+background:var(--dark-purple);
+
+color:white;
+
+text-align:center;
+
+padding:50px 20px;
+
+margin-top:80px;
+
+}
+
+
+
+footer .footer-name{
+
+font-size:24px;
+
+font-weight:600;
+
+}
+
+
+footer .footer-site{
+
+margin-top:10px;
+
+}
+
+
+
+/* MOBILE */
+
+
+@media(max-width:700px){
+
+
+nav a{
+
+display:block;
+
+margin:12px;
+
+}
+
+
+.hero h1{
+
+font-size:44px;
+
+}
+
+
+.book-story{
+
+margin:40px 20px;
+
+padding:40px 25px;
+
+}
+
+
+.book-story h2{
+
+font-size:40px;
+
+}
+
+
+.book-section h2{
+
+font-size:44px;
+
+}
+
+
+}
 
 </style>
 
+
 </head>
+
 
 
 <body>
 
 
+
 <header>
 
-<img src="Master Faith By Faith logo.jpg" alt="Faith By Faith Logo">
+<img src="Master Faith By Faith logo.jpg" alt="Faith By Faith">
 
 </header>
+
 
 
 <nav>
 
 <a href="index.html">HOME</a>
+
 <a href="meet-faith.html">MEET FAITH</a>
+
 <a href="books.html">BOOKS & RESOURCES</a>
+
 <a href="empowerment.html">EMPOWERMENT</a>
+
 <a href="sistersmarts.html">SISTERSMARTS</a>
+
 <a href="work-with-faith.html">WORK WITH FAITH</a>
+
 <a href="contact.html">CONTACT</a>
 
 </nav>
 
 
 
+
 <section class="hero">
 
-<h1>Faith By Faith Collection</h1>
+
+<h1>
+Books & Resources
+</h1>
+
 
 <p>
+
 Beautifully written books, practical resources, and thoughtfully created guides 
 designed to inspire confidence, deepen wisdom, and support every season of your journey.
+
 </p>
 
+
 </section>
+
+
 
 
 
 
 <section class="book-story">
 
-<h2>Why Faith By Faith Books Were Created</h2>
+
+<h2>
+Why Faith By Faith Books Were Created
+</h2>
+
 
 
 <p>
-Faith By Faith resources are born from real conversations, mentoring experiences, 
+
+Faith By Faith resources are born from real conversations, mentoring experiences,
 and a desire to provide practical guidance for personal growth.
+
 </p>
 
 
+
 <p>
-<strong>The Confidence Code</strong> began through years of mentoring, where I 
-repeatedly saw confidence become one of the biggest barriers preventing people 
-from recognising their own potential.
+
+<strong class="highlight">
+The Confidence Code
+</strong>
+
+began through years of mentoring, where I repeatedly saw confidence become one 
+of the biggest barriers preventing people from recognising their own potential.
+
 </p>
 
 
+
+
 <p>
+
 What started as a resource for mentors and mentees became a guide for anyone 
-wanting to understand themselves, challenge limiting beliefs, and develop 
-lasting confidence.
+wanting to understand themselves, challenge limiting beliefs, and build lasting confidence.
+
 </p>
+
+
 
 
 <p>
-These books are not created to simply make you feel good for a moment. They are 
-designed to encourage reflection, honesty, self-awareness, and meaningful growth.
+
+These books are not created to offer temporary encouragement alone. They invite
+reflection, honesty, self-awareness, and meaningful growth.
+
 </p>
 
 
-<a href="Homepage profile picture" class="button">
+
+
+<a href="meet-faith.html" class="button">
+
 Meet Faith →
+
 </a>
 
 
 </section>
+
+
 
 
 
@@ -195,21 +511,32 @@ Meet Faith →
 <section class="book-section">
 
 
-<h2>The Confidence Code</h2>
+<h2>
+The Confidence Code
+</h2>
+
 
 
 <img src="confidence-code-cover.jpg" alt="The Confidence Code Book">
 
 
+
 <p>
+
 A practical guide to understanding confidence, overcoming self-doubt, and 
 building a stronger relationship with yourself.
+
 </p>
 
 
-<a href="https://www.amazon.com/BECOMING-CONFIDENTLY-YOU-LIVE-CONFIDENCE/dp/B0CD91X4SG" class="button">
+
+
+<a href="YOUR-CONFIDENCE-CODE-AMAZON-LINK" class="button" target="_blank">
+
 Available on Amazon
+
 </a>
+
 
 
 </section>
@@ -218,14 +545,28 @@ Available on Amazon
 
 
 
+
+
 <footer>
 
-<p>
-Faith By Faith<br>
+
+<div class="footer-name">
+
+Faith By Faith
+
+</div>
+
+
+<div class="footer-site">
+
 faith-by-faith.com
-</p>
+
+</div>
+
+
 
 </footer>
+
 
 
 </body>
