@@ -4,623 +4,450 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Books & Resources | Faith By Faith</title>
 
 <meta name="description" content="Faith By Faith books and resources created from real mentoring experiences to inspire confidence, self-awareness, faith and personal growth.">
 
-
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
-
 
 <style>
 
 :root {
-
---purple:#4d014d;
---dark-purple:#270029;
---cream:#fdf8f2;
---gold:#bc9238;
---pink:#f0c7d5;
---text:#5e5061;
---border:rgba(77,1,77,.12);
-
+    --purple:#4d014d;
+    --dark-purple:#270029;
+    --cream:#fdf8f2;
+    --gold:#bc9238;
+    --pink:#f0c7d5;
+    --text:#5e5061;
+    --border:rgba(77,1,77,.12);
 }
 
-
-*{
-box-sizing:border-box;
+* {
+    box-sizing:border-box;
 }
 
-
-body{
-
-margin:0;
-font-family:Arial,sans-serif;
-color:var(--text);
-background:white;
-line-height:1.8;
-
+body {
+    margin:0;
+    font-family:Arial, sans-serif;
+    color:var(--text);
+    background:white;
+    line-height:1.8;
 }
-
 
 
 /* HEADER */
 
-
-header{
-
-text-align:center;
-padding:35px;
-background:white;
-
+header {
+    text-align:center;
+    padding:35px;
+    background:white;
 }
 
-
-header img{
-
-width:220px;
-
+header img {
+    width:220px;
+    max-width:90%;
 }
-
 
 
 /* NAVIGATION */
 
-
-nav{
-
-text-align:center;
-padding:18px;
-background:#f8f1f6;
-
+nav {
+    text-align:center;
+    padding:18px;
+    background:#f8f1f6;
 }
 
-
-nav a{
-
-text-decoration:none;
-color:var(--purple);
-margin:0 14px;
-font-weight:600;
-
+nav a {
+    text-decoration:none;
+    color:var(--purple);
+    margin:0 14px;
+    font-weight:600;
 }
-
 
 
 /* HERO */
 
+.hero {
+    padding:100px 8%;
+    text-align:center;
 
-.hero{
+    background:
+    radial-gradient(
+        circle at 15% 20%,
+        rgba(201,161,207,.35),
+        transparent 30%
+    ),
+    var(--cream);
+}
 
-padding:100px 8%;
-text-align:center;
+.hero h1 {
+    font-family:'Cormorant Garamond', serif;
+    font-size:62px;
+    line-height:1.1;
+    color:var(--purple);
+    margin:0 0 25px;
+}
 
-background:
-
-radial-gradient(
-circle at 15% 20%,
-rgba(201,161,207,.35),
-transparent 30%
-),
-
-var(--cream);
-
+.hero p {
+    max-width:850px;
+    margin:auto;
+    font-size:18px;
 }
 
 
-.hero h1{
+/* BOOK STORY */
 
-font-family:'Cormorant Garamond',serif;
+.book-story {
+    max-width:900px;
+    margin:80px auto;
+    padding:60px 55px;
+    text-align:center;
 
-font-size:62px;
+    background:
+    radial-gradient(
+        circle at 90% 10%,
+        rgba(240,199,213,.45),
+        transparent 30%
+    ),
+    var(--cream);
 
-line-height:1.1;
+    border:1px solid var(--border);
 
-color:var(--purple);
-
-margin-bottom:25px;
-
+    box-shadow:
+    0 25px 60px rgba(77,1,77,.10);
 }
 
-
-.hero p{
-
-max-width:850px;
-
-margin:auto;
-
-font-size:18px;
-
+.book-story h2 {
+    font-family:'Cormorant Garamond', serif;
+    font-size:52px;
+    line-height:1.1;
+    color:var(--purple);
+    margin-top:0;
 }
 
-
-
-/* INTRO STORY */
-
-
-.book-story{
-
-max-width:900px;
-
-margin:80px auto;
-
-padding:60px 55px;
-
-text-align:center;
-
-
-background:
-
-radial-gradient(
-circle at 90% 10%,
-rgba(240,199,213,.45),
-transparent 30%
-),
-
-var(--cream);
-
-
-border:1px solid var(--border);
-
-box-shadow:
-0 25px 60px rgba(77,1,77,.10);
-
-
+.book-story p {
+    font-size:17px;
 }
 
-
-
-.book-story h2{
-
-font-family:'Cormorant Garamond',serif;
-
-font-size:52px;
-
-line-height:1.1;
-
-color:var(--purple);
-
+.highlight {
+    color:var(--purple);
+    font-weight:600;
 }
-
-
-
-.book-story p{
-
-font-size:17px;
-
-}
-
-
-
-.highlight{
-
-color:var(--purple);
-
-font-weight:600;
-
-}
-
 
 
 /* BUTTON */
 
+.button {
+    display:inline-block;
+    margin-top:25px;
+    padding:15px 35px;
+    background:var(--gold);
+    color:#2d1730;
+    text-decoration:none;
+    font-weight:600;
+    border-radius:0;
+    transition:.3s;
+}
 
-.button{
-
-display:inline-block;
-
-margin-top:25px;
-
-padding:15px 35px;
-
-background:var(--gold);
-
-color:#2d1730;
-
-text-decoration:none;
-
-font-weight:600;
-
-border-radius:0;
-
-transition:.3s;
-
+.button:hover {
+    background:#d2b269;
 }
 
 
+/* FEATURED BOOKS */
 
-.button:hover{
-
-background:#d2b269;
-
+.book-section {
+    max-width:1150px;
+    margin:80px auto;
+    padding:60px 20px;
+    text-align:center;
 }
 
-
-
-/* BOOK AREA */
-
-
-.book-section{
-
-max-width:1000px;
-
-margin:80px auto;
-
-padding:60px 30px;
-
-text-align:center;
-
+.book-section h2 {
+    font-family:'Cormorant Garamond', serif;
+    font-size:58px;
+    color:var(--purple);
+    margin:0 0 35px;
 }
 
+.book-section img {
+    width:100%;
+    max-width:1050px;
+    height:auto;
+    margin:0 auto 40px;
+    display:block;
 
-
-.book-section h2{
-
-font-family:'Cormorant Garamond',serif;
-
-font-size:58px;
-
-color:var(--purple);
-
+    box-shadow:
+    0 30px 55px rgba(77,1,77,.20);
 }
 
-
-
-.book-section img{
-
-max-width:320px;
-
-margin:35px auto;
-
-display:block;
-
-box-shadow:
-0 30px 55px rgba(77,1,77,.20);
-
+.book-section p {
+    max-width:760px;
+    margin:auto;
+    font-size:17px;
 }
-
-
-
-.book-section p{
-
-max-width:650px;
-
-margin:auto;
-
-font-size:17px;
-
-}
-
 
 
 /* FOOTER */
 
-
-footer{
-
-background:var(--dark-purple);
-
-color:white;
-
-text-align:center;
-
-padding:50px 20px;
-
-margin-top:80px;
-
+footer {
+    background:var(--dark-purple);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+    margin-top:80px;
 }
 
-
-
-footer .footer-name{
-
-font-size:24px;
-
-font-weight:600;
-
+footer .footer-name {
+    font-size:24px;
+    font-weight:600;
 }
 
-
-footer .footer-site{
-
-margin-top:10px;
-
+footer .footer-site {
+    margin-top:10px;
 }
-
-
-/* SOCIAL LINKS */
 
 .social-links {
-
-margin-top:25px;
-
-display:flex;
-
-justify-content:center;
-
-gap:25px;
-
-flex-wrap:wrap;
-
+    margin-top:25px;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
 }
-
 
 .social-links a {
-
-color:white;
-
-text-decoration:none;
-
-font-size:14px;
-
-letter-spacing:.5px;
-
-opacity:.9;
-
-transition:.3s;
-
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    letter-spacing:.5px;
+    opacity:.9;
+    transition:.3s;
 }
-
 
 .social-links a:hover {
-
-color:var(--gold);
-
+    color:var(--gold);
 }
 
-
 .footer-motto {
-
-margin-top:20px;
-
-letter-spacing:3px;
-
-font-size:13px;
-
-opacity:.75;
-
+    margin-top:20px;
+    letter-spacing:3px;
+    font-size:13px;
+    opacity:.75;
 }
 
 
 /* MOBILE */
 
+@media(max-width:700px) {
 
-@media(max-width:700px){
+    nav a {
+        display:block;
+        margin:12px;
+    }
 
+    .hero {
+        padding:70px 25px;
+    }
 
-nav a{
+    .hero h1 {
+        font-size:44px;
+    }
 
-display:block;
+    .book-story {
+        margin:40px 20px;
+        padding:40px 25px;
+    }
 
-margin:12px;
+    .book-story h2 {
+        font-size:40px;
+    }
 
-}
+    .book-section {
+        margin:50px auto;
+        padding:40px 15px;
+    }
 
+    .book-section h2 {
+        font-size:44px;
+    }
 
-.hero h1{
-
-font-size:44px;
-
-}
-
-
-.book-story{
-
-margin:40px 20px;
-
-padding:40px 25px;
-
-}
-
-
-.book-story h2{
-
-font-size:40px;
-
-}
-
-
-.book-section h2{
-
-font-size:44px;
-
-}
-
+    .book-section img {
+        width:100%;
+        margin:0 auto 30px;
+    }
 
 }
 
 </style>
 
-
 </head>
 
-
-
 <body>
-
-
-
 <header>
 
-<img src="Master Faith By Faith logo.jpg" alt="Faith By Faith">
+    <img src="Master Faith By Faith logo.jpg" alt="Faith By Faith">
 
 </header>
 
 
-
 <nav>
 
-<a href="index.html">HOME</a>
+    <a href="index.html">HOME</a>
 
-<a href="meet-faith.html">MEET FAITH</a>
+    <a href="meet-faith.html">MEET FAITH</a>
 
-<a href="books.html">BOOKS & RESOURCES</a>
+    <a href="books.html">BOOKS & RESOURCES</a>
 
-<a href="empowerment.html">EMPOWERMENT</a>
+    <a href="empowerment.html">EMPOWERMENT</a>
 
-<a href="sistersmarts.html">SISTERSMARTS</a>
+    <a href="sistersmarts.html">SISTERSMARTS</a>
 
-<a href="work-with-faith.html">WORK WITH FAITH</a>
+    <a href="work-with-faith.html">WORK WITH FAITH</a>
 
-<a href="contact.html">CONTACT</a>
+    <a href="contact.html">CONTACT</a>
 
 </nav>
 
 
-
-
 <section class="hero">
 
+    <h1>
+        The Faith By Faith Book Collection
+    </h1>
 
-<h1>
-The Faith By Faith Book Collection
-</h1>
-
-
-<p>
-
-Thoughtfully created books and resources designed to inspire confidence, deepen wisdom 
-and support every season of your journey of growth, change, and becoming.
-
-</p>
-
+    <p>
+        Thoughtfully created books and resources designed to inspire confidence,
+        wisdom, faith and personal growth through practical experience and
+        meaningful reflection.
+    </p>
 
 </section>
-
-
-
-
 
 
 <section class="book-story">
 
-<h2>
-Why These Books Were Written
-</h2>
+    <h2>
+        Why These Books Were Written
+    </h2>
 
-<p>
-Faith By Faith books come from years of working alongside people, communities, and organisations in different settings, from mentoring programs and women’s initiatives to development work, social entrepreneurship, training, and supporting survivors of human trafficking as they rebuilt their lives.
-</p>
+    <p>
+        Faith By Faith books come from years of working alongside people,
+        communities and organisations in different settings—from mentoring
+        programmes and women's initiatives to development work, social
+        entrepreneurship, training, and supporting survivors of human
+        trafficking as they rebuilt their lives.
+    </p>
 
-<p>
-Through this work, I witnessed how experiences shape the way people see themselves, their choices, and what they believe is possible. For survivors rebuilding their lives after human trafficking, confidence was not simply about feeling better, it was part of finding identity, independence, and a future again. In other situations, I saw people held back by self-doubt, fear, uncertainty, or a lack of belief in their own abilities.
-</p>
+    <p>
+        Through this work I witnessed how experiences shape the way people see
+        themselves, the choices they make, and what they believe is possible.
+        For survivors rebuilding their lives after human trafficking,
+        confidence was not simply about feeling better; it became part of
+        rebuilding identity, independence and hope.
+    </p>
 
-<p>
-<strong class="highlight">
-Becoming Confidently You: Live Your Life by the Confidence Code
-</strong>
-began through my mentoring programs, where I repeatedly saw the same challenges affecting people’s progress. It was originally created as a practical guide for mentors and mentees to continue the conversations beyond the mentoring relationship, before becoming a resource for anyone wanting to strengthen their confidence and understand themselves better.
-</p>
+    <p>
+        <strong class="highlight">
+            Becoming Confidently You
+        </strong>
+        began through mentoring programmes where the same challenges repeatedly
+        appeared. It was first written as a practical resource for mentors and
+        mentees before becoming a guide for anyone wanting to build confidence
+        and better understand themselves.
+    </p>
 
-<p>
-<strong class="highlight">
-Knowledge Key
-</strong>
-came from a different place, a desire to encourage people to question, learn, and think carefully about faith and religion rather than simply accept information without reflection.
-</p>
+    <p>
+        <strong class="highlight">
+            The Knowledge Key
+        </strong>
+        was written from a different perspective—to encourage people to examine
+        history, faith and religion with curiosity, evidence and thoughtful
+        reflection rather than simply accepting ideas without question.
+    </p>
 
-<p>
-These books are not written to offer quick encouragement or easy answers. They are created from real experiences, observations, and questions, with the intention of starting honest conversations and encouraging people to think differently.
-</p>
+    <p>
+        These books are built on practical experience, historical research and
+        biblical study, with the aim of presenting ideas clearly and encouraging
+        meaningful conversation.
+    </p>
 
-<a href="meet-faith.html" class="button">
-Meet Faith →
-</a>
+    <a href="meet-faith.html" class="button">
+        Meet Faith →
+    </a>
 
 </section>
-
-
-
 
 
 <section class="book-section">
 
+    <h2>
+        Featured Books
+    </h2>
 
-<h2>
-Featured Books
-</h2>
+    <img src="2 Books page .jpg"
+         alt="Faith By Faith Featured Books">
 
+    <p>
+        These books bring together practical experience, historical research,
+        and biblical study to present ideas clearly and encourage thoughtful
+        reflection on subjects and choices that continue to shape our lives.
+    </p>
 
+    <a href="https://www.amazon.com/BECOMING-CONFIDENTLY-YOU-LIVE-CONFIDENCE/dp/B0CD91X4SG"
+       class="button"
+       target="_blank"
+       rel="noopener">
 
-<img src="2 Books page .jpg" alt="The Confidence Code Book">
+        Available on Amazon
 
-
-
-<p>
-
-These books bring together practical experience, historical research, and biblical study to present ideas clearly 
-and encourage thoughtful reflection on subjects and the choices that continue to shape our lives.
-
-</p>
-
-
-
-
-<a href="https://www.amazon.com/BECOMING-CONFIDENTLY-YOU-LIVE-CONFIDENCE/dp/B0CD91X4SG" class="button" target="_blank">
-
-Available on Amazon
-
-</a>
-
-
+    </a>
 
 </section>
-
-
-
-
-
-
-
 <footer>
 
-<div class="footer-name">
-Faith By Faith
-</div>
+    <div class="footer-name">
+        Faith By Faith
+    </div>
 
+    <div class="footer-site">
+        faith-by-faith.com
+    </div>
 
-<div class="footer-site">
-faith-by-faith.com
-</div>
+    <div class="social-links">
 
+        <a href="https://www.instagram.com/iamfaithbyfaith/"
+           target="_blank"
+           rel="noopener">
+            Instagram
+        </a>
 
-<div class="social-links">
+        <a href="https://www.tiktok.com/@sisterhoodsmarts"
+           target="_blank"
+           rel="noopener">
+            TikTok
+        </a>
 
-<a href="https://www.instagram.com/iamfaithbyfaith/" target="_blank" rel="noopener">
-Instagram
-</a>
+        <a href="https://www.youtube.com/@Sisterhoodsmarts"
+           target="_blank"
+           rel="noopener">
+            YouTube
+        </a>
 
+        <a href="https://x.com/HerstoryByFaith"
+           target="_blank"
+           rel="noopener">
+            X / Twitter
+        </a>
 
-<a href="https://www.tiktok.com/@sisterhoodsmarts" target="_blank" rel="noopener">
-TikTok
-</a>
+    </div>
 
-
-<a href="https://www.youtube.com/@Sisterhoodsmarts" target="_blank" rel="noopener">
-YouTube
-</a>
-
-
-<a href="https://x.com/HerstoryByFaith" target="_blank" rel="noopener">
-X / Twitter
-</a>
-
-
-</div>
-
-
-<p class="footer-motto">
-Learn. Grow. Become.
-</p>
-
+    <p class="footer-motto">
+        Learn. Grow. Become.
+    </p>
 
 </footer>
-
-
 
 </body>
 
